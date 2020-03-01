@@ -101,8 +101,8 @@
 		<div class="flex-center">
 			<h2 class="titles permanent">PORTFOLIO</h2>
 		</div>
-        <div class="flex-horz-space">
-            <div class="box-size-alt box-margin">
+        <div class="flex-horz-space box-margin-logo-top">
+            <div class="box-size-alt">
                 <a href="https://github.com/Lmpwybb/My-CV" target="_blank">
                     <div class="font-content">
                         <h3>Comment a été réalisé ce site</h3>
@@ -110,7 +110,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt box-margin">
+            <div class="box-size-alt">
                 <a href="https://github.com/Lmpwybb/Manys" target="_blank">
                     <div class="font-content">
                         <h3>Manys agence immobilière</h3>
@@ -119,8 +119,8 @@
                 </a>
             </div>
         </div>
-        <div class="flex-horz-space">
-            <div class="box-size-alt box-margin">
+        <div class="flex-horz-space box-margin">
+            <div class="box-size-alt">
                 <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
                     <div class="font-content">
                         <h3>Quelques projets durant ma formation</h3>
@@ -128,7 +128,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt box-margin">
+            <div class="box-size-alt">
                 <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
                     <div class="font-content">
                         <h3>CMS Wordpress</h3>
@@ -137,8 +137,8 @@
                 </a>
             </div>
         </div>
-        <div class="flex-horz-space">
-            <div class="box-size-alt box-margin">
+        <div class="flex-horz-space box-margin-logo-bottom">
+            <div class="box-size-alt">
                 <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
                     <div class="font-content">
                         <h3>Mon LinkedIn</h3>
@@ -146,7 +146,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt box-margin">
+            <div class="box-size-alt">
                 <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
                     <div class="font-content">
                         <h3>Youtubeur à mes heures</h3>

@@ -57,8 +57,21 @@ a {
 .box-size-alt {
 	width: 45%;
 }
+a:hover {
+	cursor: pointer;
+	background-color: #f7b731;
+	color: #f1f2f6;
+	border-radius: 5px;
+}
 .sentence {
 	font-style: italic;
+}
+.logo {
+	margin: 0 auto;
+	color: #f1f2f6;
+	font-size: 64px;
+	font-family: 'Permanent Marker', cursive;
+	z-index: 1;
 }
 .input {
 	height: 35px;
@@ -109,17 +122,10 @@ a {
 	background-color: #e15f41;
 	font-size: 22px;
 }
-a:hover {
-	cursor: pointer;
-}
 #menu-nav a {
 	padding: 15px 25px;
 	color: #f1f2f6;
 	font-family: 'Permanent Marker', cursive;
-}
-#menu-nav a:hover {
-	background-color: #f7b731;
-	border-radius: 5px;
 }
 #about {
 	margin-top: 20px;
@@ -130,13 +136,6 @@ a:hover {
 }
 #personality {
 	text-align: justify;
-}
-.logo {
-	margin: 0 auto;
-	color: #f1f2f6;
-	font-size: 64px;
-	font-family: 'Permanent Marker', cursive;
-	z-index: 1;
 }
 .logo-circle {
 	width: 100px;
