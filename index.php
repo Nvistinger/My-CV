@@ -15,10 +15,10 @@
         </div>
 		<div class="text-center">
             <h1 id="me">SEBASTIEN CARTOUX</h1>
-            <h2 id="function">DEVELOPPEUR WEB JUNIOR</h2>
+            <h2 id="function" class="permanent">DEVELOPPEUR WEB JUNIOR</h2>
         </div>
 		<div class="flex-vert-center">
-			<a class="button" href="download/CV-dev-web-seb-cartoux.pdf" download="download/CV-dev-web-seb-cartoux.pdf">Télécharger CV</a>
+			<a class="button permanent" href="download/CV-dev-web-seb-cartoux.pdf" download="download/CV-dev-web-seb-cartoux.pdf">Télécharger CV</a>
 		</div>
 	</header>
     <nav id="menu-nav" class="flex-center">
@@ -33,10 +33,10 @@
         <div class="flex-center">
             <h2 class="titles">A PROPOS</h2>
         </div>
-        <div class="box-size flex-center">
+        <div class="box-size box-margin flex-center">
             <h3 class="sentence">"A l'écoute d'opportunités dans la région de Marseille et ses périphéries, disponible à partir de juin 2020"</h3>
         </div>
-        <div class="box-size-alt flex-horz-space">
+        <div class="box-size-alt box-margin flex-horz-space">
             <div class="flex-vert-center">
                 <img id="portrait" src="pictures/portrait.png" alt="portrait icon">
             </div>
@@ -56,7 +56,7 @@
 		<div class="flex-center">
 			<h2 class="titles">COMPETENCES</h2>
 		</div>
-        <div class="flex-horz-space box-size text-center">
+        <div class="flex-horz-space box-size box-margin-logo-top text-center">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">UBUNTU</h3>
                 <div id="ubuntu" class="logo logo-circle flex-horz-space flex-vert-center">U</div>
@@ -66,7 +66,7 @@
                 <div id="git" class="logo logo-circle flex-horz-space flex-vert-center">Git</div>
             </div>
         </div>
-		<div class="flex-horz-space box-size-logo-bottom  text-center">
+		<div class="flex-horz-space box-size box-margin-logo-middle text-center">
 			<div class="logo-responsive">
 				<h3 class="langage-responsive">HTML</h3>
 				<div id="html" class="logo logo-pentagon flex-horz-space flex-vert-center">5</div>
@@ -86,13 +86,23 @@
 				<div id="symfony" class="logo logo-circle flex-horz-space flex-vert-center">5</div>
 			</div>
 		</div>
+        <div class="flex-horz-space box-size box-margin-logo-bottom text-center">
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">Bootstrap</h3>
+                <div id="bootstrap" class="logo logo-bootstrap flex-horz-space flex-vert-center">B</div>
+            </div>
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">Docker</h3>
+                <div id="docker" class="logo logo-docker flex-horz-space flex-vert-center">d</div>
+            </div>
+        </div>
 	</section>
 	<section id="portfolio" class="section text-center">
 		<div class="flex-center">
-			<h2 class="titles">PORTFOLIO</h2>
+			<h2 class="titles permanent">PORTFOLIO</h2>
 		</div>
         <div class="flex-horz-space">
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin">
                 <a href="https://github.com/Lmpwybb/My-CV" target="_blank">
                     <div class="font-content">
                         <h3>Comment a été réalisé ce site</h3>
@@ -100,7 +110,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin">
                 <a href="https://github.com/Lmpwybb/Manys" target="_blank">
                     <div class="font-content">
                         <h3>Manys agence immobilière</h3>
@@ -110,7 +120,7 @@
             </div>
         </div>
         <div class="flex-horz-space">
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin">
                 <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
                     <div class="font-content">
                         <h3>Quelques projets durant ma formation</h3>
@@ -118,7 +128,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin">
                 <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
                     <div class="font-content">
                         <h3>CMS Wordpress</h3>
@@ -128,7 +138,7 @@
             </div>
         </div>
         <div class="flex-horz-space">
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin">
                 <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
                     <div class="font-content">
                         <h3>Mon LinkedIn</h3>
@@ -136,7 +146,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin">
                 <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
                     <div class="font-content">
                         <h3>Youtubeur à mes heures</h3>
@@ -148,20 +158,20 @@
 	</section>
 	<section id="education" class="section font-content text-center">
 		<div class="flex-center">
-			<h2 class="titles">FORMATIONS</h2>
+			<h2 class="titles permanent">FORMATIONS</h2>
 		</div>
-		<div class="box-size">
+		<div class="box-size box-margin">
 			<h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
 			<h4>UTOPLAB / SIMPLON / GRANDE ECOLE DU NUMERIQUE</h4>
 			<h5>07/2019 - 05/2020</h5>
 			<h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, Ajax, JSON, Docker et Bootstrap.</h6>
 		</div>
-		<div class="box-size-alt">
+		<div class="box-size-alt box-margin">
 			<h3>BAC PROFESSIONNEL EN ELECTROTECHNIQUE</h3>
 			<h4>LYCEE CHARLES PRIVAT</h4>
 			<h5>2004 - 2006</h5>
         </div>
-        <div class="box-size-alt">
+        <div class="box-size-alt box-margin">
             <h3>CAP + BEP EN ELECTROTECHNIQUE</h3>
             <h4>LYCEE CHARLES PRIVAT</h4>
             <h5>2002 - 2004</h5>
@@ -169,19 +179,19 @@
 	</section>
 	<section id="experience" class="section font-content text-center">
 		<div class="flex-center">
-			<h2 class="titles">EXPERIENCE</h2>
+			<h2 class="titles permanent">EXPERIENCE</h2>
 		</div>
-        <div class="box-size-alt">
+        <div class="box-size-alt box-margin">
             <h3>STAGIAIRE DEVELOPPEUR JUNIOR</h3>
             <h4>MOOGLEPOST</h4>
             <h5>02/2020 - 03/2020</h5>
         </div>
-        <div class="box-size-alt">
+        <div class="box-size-alt box-margin">
             <h3>OPÉRATEUR TUTEUR EN SALLE BLANCHE</h3>
             <h4>SARTORIUS STEDIM BIOTECH FMT</h4>
             <h5>11/2014 - 03/2019</h5>
         </div>
-        <div class="box-size-alt">
+        <div class="box-size-alt box-margin">
             <h3>AGENT DE MAINTENANCE INDUSTRIELLE</h3>
             <h4>ALAZARD ET ROUX</h4>
             <h5>07/2007 - 06/2012</h5>
@@ -189,9 +199,9 @@
 	</section>
 	<section id="contact" class="section font-content text-center">
 		<div class="flex-center">
-			<h2 class="titles">CONTACT</h2>
+			<h2 class="titles permanent">CONTACT</h2>
 		</div>
-		<form method="POST" class="box-size" action="contact.php">
+		<form method="POST" class="box-size box-margin" action="contact.php">
             <div class="success">
                 <?php
                     if (isset ($_GET['success']) && $_GET['success'] == 'send') {
@@ -240,7 +250,7 @@
                     }
                 ?>
             </div>
-            <input id="submit-button" class="button contact-space" name="send" type="submit" value="Envoyer">
+            <input id="submit-button" class="button permanent contact-space" name="send" type="submit" value="Envoyer">
 		</form>
 	</section>
 	<section id="footer" class="flex-horz-space font-content text-center">
