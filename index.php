@@ -88,11 +88,11 @@
 		</div>
         <div class="flex-horz-space box-size box-margin-logo-bottom text-center">
             <div class="logo-responsive">
-                <h3 class="langage-responsive">Bootstrap</h3>
+                <h3 class="langage-responsive">BSTRAP</h3>
                 <div id="bootstrap" class="logo logo-bootstrap flex-horz-space flex-vert-center">B</div>
             </div>
             <div class="logo-responsive">
-                <h3 class="langage-responsive">Docker</h3>
+                <h3 class="langage-responsive">DOCKER</h3>
                 <div id="docker" class="logo logo-docker flex-horz-space flex-vert-center">d</div>
             </div>
         </div>
