@@ -31,7 +31,7 @@
     </nav>
     <section id="about" class="section font-content text-center">
         <div class="flex-center">
-            <h2 class="titles">A PROPOS</h2>
+            <h2 class="titles permanent">A PROPOS</h2>
         </div>
         <div class="box-size box-margin flex-center">
             <h3 class="sentence">"A l'écoute d'opportunités dans la région de Marseille et ses périphéries, disponible à partir de juin 2020"</h3>
@@ -54,7 +54,7 @@
     </section>
 	<section id="skills" class="section font-content text-center">
 		<div class="flex-center">
-			<h2 class="titles">COMPETENCES</h2>
+			<h2 class="titles permanent">COMPETENCES</h2>
 		</div>
         <div class="flex-horz-space box-size box-margin-logo-top text-center">
             <div class="logo-responsive">
