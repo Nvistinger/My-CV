@@ -55,6 +55,7 @@ a {
 	margin: 0 auto 40px;
 }
 .box-size-alt {
+	margin: 0 auto;
 	width: 45%;
 }
 a:hover {
