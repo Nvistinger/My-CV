@@ -127,21 +127,23 @@
                 </a>
             </div>
         </div>
-        <div class="box-size-alt">
-            <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
-                <div class="font-content">
-                    <h3>Mon LinkedIn</h3>
-                    <img src="pictures/linkedin.png" alt="linkedin">
-                </div>
-            </a>
-        </div>
-        <div class="box-size-alt">
-            <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
-                <div class="font-content">
-                    <h3>Youtubeur à mes heures</h3>
-                    <img src="pictures/youtube.png" alt="youtube">
-                </div>
-            </a>
+        <div class="flex-horz-space">
+            <div class="box-size-alt">
+                <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
+                    <div class="font-content">
+                        <h3>Mon LinkedIn</h3>
+                        <img src="pictures/linkedin.png" alt="linkedin">
+                    </div>
+                </a>
+            </div>
+            <div class="box-size-alt">
+                <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
+                    <div class="font-content">
+                        <h3>Youtubeur à mes heures</h3>
+                        <img src="pictures/youtube.png" alt="youtube">
+                    </div>
+                </a>
+            </div>
         </div>
 	</section>
 	<section id="education" class="section font-content text-center">
@@ -169,6 +171,11 @@
 		<div class="flex-center">
 			<h2 class="titles">EXPERIENCE</h2>
 		</div>
+        <div class="box-size-alt">
+            <h3>STAGIAIRE DEVELOPPEUR JUNIOR</h3>
+            <h4>MOOGLEPOST</h4>
+            <h5>02/2020 - 03/2020</h5>
+        </div>
         <div class="box-size-alt">
             <h3>OPÉRATEUR TUTEUR EN SALLE BLANCHE</h3>
             <h4>SARTORIUS STEDIM BIOTECH FMT</h4>
