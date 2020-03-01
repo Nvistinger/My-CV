@@ -96,26 +96,36 @@
                 <a href="https://github.com/Lmpwybb/My-CV" target="_blank">
                     <div class="font-content">
                         <h3>Comment a été réalisé ce site</h3>
-                        <img src="pictures/github.png" alt="github link">
+                        <img src="pictures/github.png" alt="github my cv link">
                     </div>
                 </a>
             </div>
             <div class="box-size-alt">
-                <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
+                <a href="https://github.com/Lmpwybb/Manys" target="_blank">
                     <div class="font-content">
-                        <h3>Quelques projets durant ma formation</h3>
-                        <img src="pictures/github.png" alt="github link">
+                        <h3>Manys agence immobilière</h3>
+                        <img src="pictures/github.png" alt="github manys link">
                     </div>
                 </a>
             </div>
         </div>
-        <div class="box-size-alt">
-            <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
-                <div class="font-content">
-                    <h3>CMS Wordpress</h3>
-                    <img src="pictures/wordpress.png" alt="wordpress">
-                </div>
-            </a>
+        <div class="flex-horz-space">
+            <div class="box-size-alt">
+                <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
+                    <div class="font-content">
+                        <h3>Quelques projets durant ma formation</h3>
+                        <img src="pictures/github.png" alt="github utoplab link">
+                    </div>
+                </a>
+            </div>
+            <div class="box-size-alt">
+                <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
+                    <div class="font-content">
+                        <h3>CMS Wordpress</h3>
+                        <img src="pictures/wordpress.png" alt="wordpress">
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="box-size-alt">
             <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
