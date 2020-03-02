@@ -40,7 +40,7 @@
             <div class="flex-vert-center">
                 <img id="portrait" src="pictures/portrait.png" alt="portrait icon">
             </div>
-            <div id="personality">
+            <div id="flex-center">
                 <h3 class="sentence">Détenteur du Permis B</h3>
                 <h4>Capacité d'adaptation</h4>
                 <h4>Force de proposition</h4>
@@ -56,7 +56,7 @@
 		<div class="flex-center">
 			<h2 class="titles permanent">COMPETENCES</h2>
 		</div>
-        <div class="flex-horz-space box-size box-margin-logo-top text-center">
+        <div class="flex-horz-space box-size box-margin-top text-center">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">UBUNTU</h3>
                 <div id="ubuntu" class="logo logo-circle flex-horz-space flex-vert-center">U</div>
@@ -66,7 +66,7 @@
                 <div id="git" class="logo logo-circle flex-horz-space flex-vert-center">Git</div>
             </div>
         </div>
-		<div class="flex-horz-space box-size box-margin-logo-middle text-center">
+		<div class="flex-horz-space box-size box-margin-middle text-center">
 			<div class="logo-responsive">
 				<h3 class="langage-responsive">HTML</h3>
 				<div id="html" class="logo logo-pentagon flex-horz-space flex-vert-center">5</div>
@@ -86,7 +86,7 @@
 				<div id="symfony" class="logo logo-circle flex-horz-space flex-vert-center">5</div>
 			</div>
 		</div>
-        <div class="flex-horz-space box-size box-margin-logo-bottom text-center">
+        <div class="flex-horz-space box-size box-margin-bottom text-center">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">BSTRAP</h3>
                 <div id="bootstrap" class="logo logo-bootstrap flex-horz-space flex-vert-center">B</div>
@@ -101,7 +101,7 @@
 		<div class="flex-center">
 			<h2 class="titles permanent">PORTFOLIO</h2>
 		</div>
-        <div class="flex-horz-space box-margin-logo-top">
+        <div class="flex-horz-space box-margin-top">
             <div class="box-size-alt">
                 <a href="https://github.com/Lmpwybb/My-CV" target="_blank">
                     <div class="font-content">
@@ -119,11 +119,11 @@
                 </a>
             </div>
         </div>
-        <div class="flex-horz-space box-margin">
+        <div class="flex-horz-space box-margin-middle">
             <div class="box-size-alt">
                 <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
                     <div class="font-content">
-                        <h3>Quelques projets durant ma formation</h3>
+                        <h3>Quelques projets</h3>
                         <img src="pictures/github.png" alt="github utoplab link">
                     </div>
                 </a>
@@ -137,7 +137,7 @@
                 </a>
             </div>
         </div>
-        <div class="flex-horz-space box-margin-logo-bottom">
+        <div class="flex-horz-space box-margin-bottom">
             <div class="box-size-alt">
                 <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
                     <div class="font-content">
@@ -160,7 +160,7 @@
 		<div class="flex-center">
 			<h2 class="titles permanent">FORMATIONS</h2>
 		</div>
-		<div class="box-size box-margin">
+		<div class="box-size box-margin-top">
 			<h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
 			<h4>UTOPLAB / SIMPLON / GRANDE ECOLE DU NUMERIQUE</h4>
 			<h5>07/2019 - 05/2020</h5>
@@ -171,7 +171,7 @@
 			<h4>LYCEE CHARLES PRIVAT</h4>
 			<h5>2004 - 2006</h5>
         </div>
-        <div class="box-size-alt box-margin">
+        <div class="box-size-alt box-margin-bottom">
             <h3>CAP + BEP EN ELECTROTECHNIQUE</h3>
             <h4>LYCEE CHARLES PRIVAT</h4>
             <h5>2002 - 2004</h5>
@@ -181,7 +181,7 @@
 		<div class="flex-center">
 			<h2 class="titles permanent">EXPERIENCE</h2>
 		</div>
-        <div class="box-size-alt box-margin">
+        <div class="box-size-alt box-margin-top">
             <h3>STAGIAIRE DEVELOPPEUR JUNIOR</h3>
             <h4>MOOGLEPOST</h4>
             <h5>02/2020 - 03/2020</h5>
@@ -191,7 +191,7 @@
             <h4>SARTORIUS STEDIM BIOTECH FMT</h4>
             <h5>11/2014 - 03/2019</h5>
         </div>
-        <div class="box-size-alt box-margin">
+        <div class="box-size-alt box-margin-bottom">
             <h3>AGENT DE MAINTENANCE INDUSTRIELLE</h3>
             <h4>ALAZARD ET ROUX</h4>
             <h5>07/2007 - 06/2012</h5>

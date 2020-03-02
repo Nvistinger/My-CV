@@ -9,6 +9,9 @@ html {
 body {
 	background-color: #f1f2f6;
 }
+div {
+	margin: 0 auto;
+}
 a {
 	text-decoration: none;
 }
@@ -45,17 +48,16 @@ a {
 .box-margin {
 	margin: 40px auto 40px;
 }
-.box-margin-logo-top {
+.box-margin-top {
 	margin: 40px auto 0;
 }
-.box-margin-logo-middle {
+.box-margin-middle {
 	margin: 0 auto 0;
 }
-.box-margin-logo-bottom {
+.box-margin-bottom {
 	margin: 0 auto 40px;
 }
 .box-size-alt {
-	margin: 0 auto;
 	width: 45%;
 }
 a:hover {
@@ -68,7 +70,6 @@ a:hover {
 	font-style: italic;
 }
 .logo {
-	margin: 0 auto;
 	color: #f1f2f6;
 	font-size: 64px;
 	font-family: 'Permanent Marker', cursive;
@@ -134,9 +135,6 @@ a:hover {
 #active {
 	background-color: #f7b731;
 	border-radius: 5px;
-}
-#personality {
-	text-align: justify;
 }
 .logo-circle {
 	width: 100px;
@@ -218,41 +216,12 @@ textarea {
 
 /*PARTIE RESPONSIVE*/
 @media all and (max-width: 1250px) {
-	.flex-horz-space {
-		display: inline-block;
-	}
-	.flex-center {
-		display: block;
-	}
-	.flex-vert-center {
-		display: block;
-	}
 	html, body {
 		margin: 0;
 		padding: 0;
 	}
-	.banner {
-		width: 100%;
-		height: 350px;
-		text-align: center;
-	}
-	#laptop {
-		margin-top: 40px;
-	}
-	#function {
-		margin-bottom: 40px;
-	}
-	#menu-nav {
-		display: none;
-	}
 	.box-size-alt {
 		width: 75%;
-	}
-	.titles {
-		margin: 0 auto;
-	}
-	#personality {
-		text-align: center;
 	}
 	.logo {
 		display: flex;
@@ -271,6 +240,33 @@ textarea {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+}
+@media all and (max-width: 980px) {
+	#menu-nav {
+		display: none;
+	}
+}
+@media all and (max-width: 750px) {
+	.flex-horz-space {
+		display: block;
+	}
+	.flex-vert-center {
+		display: block;
+	}
+	#function {
+		margin-bottom: 40px;
+	}
+	#laptop {
+		margin-top: 40px;
+	}
+	#about {
+		margin-top: 0;
+	}
+	.banner {
+		width: 100%;
+		height: 350px;
+		text-align: center;
 	}
 }
 @media all and (max-width: 450px) {
