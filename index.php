@@ -102,7 +102,7 @@
 			<h2 class="titles permanent">PORTFOLIO</h2>
 		</div>
         <div class="flex-horz-space box-margin-top">
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://github.com/Lmpwybb/My-CV" target="_blank">
                     <div class="font-content">
                         <h3>Comment a été réalisé ce site</h3>
@@ -110,7 +110,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://github.com/Lmpwybb/Manys" target="_blank">
                     <div class="font-content">
                         <h3>Manys agence immobilière</h3>
@@ -120,7 +120,7 @@
             </div>
         </div>
         <div class="flex-horz-space box-margin-middle">
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
                     <div class="font-content">
                         <h3>Quelques projets</h3>
@@ -128,7 +128,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
                     <div class="font-content">
                         <h3>CMS Wordpress</h3>
@@ -138,7 +138,7 @@
             </div>
         </div>
         <div class="flex-horz-space box-margin-bottom">
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
                     <div class="font-content">
                         <h3>Mon LinkedIn</h3>
@@ -146,7 +146,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
                     <div class="font-content">
                         <h3>Youtubeur à mes heures</h3>

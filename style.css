@@ -9,9 +9,6 @@ html {
 body {
 	background-color: #f1f2f6;
 }
-div {
-	margin: 0 auto;
-}
 a {
 	text-decoration: none;
 }
@@ -59,6 +56,9 @@ a {
 }
 .box-size-alt {
 	width: 45%;
+}
+.box-margin-auto {
+	margin: 0 auto;
 }
 a:hover {
 	cursor: pointer;
