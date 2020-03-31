@@ -111,10 +111,10 @@
                 </a>
             </div>
             <div class="box-size-alt box-margin-auto">
-                <a href="https://github.com/Lmpwybb/Manys" target="_blank">
+                <a href="https://manys.alwaysdata.net" target="_blank">
                     <div class="font-content">
                         <h3>Manys agence immobilière</h3>
-                        <img src="pictures/github.png" alt="github manys link">
+                        <img src="pictures/manys.png" alt="manys link">
                     </div>
                 </a>
             </div>
