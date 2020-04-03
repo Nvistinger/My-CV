@@ -164,7 +164,7 @@
 			<h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
 			<h4>UTOPLAB / SIMPLON / GRANDE ECOLE DU NUMERIQUE</h4>
 			<h5>07/2019 - 05/2020</h5>
-			<h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, Ajax, JSON, Docker et Bootstrap.</h6>
+			<h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, Ajax, JSON, Docker, Jquery et Bootstrap.</h6>
 		</div>
 		<div class="box-size-alt box-margin">
 			<h3>BAC PROFESSIONNEL EN ELECTROTECHNIQUE</h3>
