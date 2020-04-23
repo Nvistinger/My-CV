@@ -34,7 +34,7 @@
             <h2 class="titles permanent">A PROPOS</h2>
         </div>
         <div class="box-size box-margin flex-center">
-            <h3 class="sentence">"A l'écoute d'opportunités dans la région de Marseille et ses périphéries, disponible à partir de juin 2020"</h3>
+            <h3 class="sentence">"A l'écoute d'opportunités dans la région de Marseille et ses périphéries"</h3>
         </div>
         <div class="box-size-alt box-margin flex-horz-space">
             <div class="flex-vert-center">
@@ -164,7 +164,7 @@
 			<h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
 			<h4>UTOPLAB / SIMPLON / GRANDE ECOLE DU NUMERIQUE</h4>
 			<h5>07/2019 - 05/2020</h5>
-			<h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, Ajax, JSON, Docker, Jquery et Bootstrap.</h6>
+			<h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, AJAX, JSON, node.js, Docker, JQuery et Bootstrap.</h6>
 		</div>
 		<div class="box-size-alt box-margin">
 			<h3>BAC PROFESSIONNEL EN ELECTROTECHNIQUE</h3>
