@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sébastien Cartoux</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sébastien Cartoux</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rajdhani|Ubuntu&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<header class="banner flex-horz-space">
+    <header class="banner flex-horz-space">
         <div class="flex-vert-center">
             <img id="laptop" src="pictures/laptop.png" alt="laptop icon">
         </div>
-		<div class="text-center">
+        <div class="text-center">
             <h1 id="me">SEBASTIEN CARTOUX</h1>
             <h2 id="function" class="permanent">DEVELOPPEUR WEB JUNIOR</h2>
         </div>
-		<div class="flex-vert-center">
-			<a class="button permanent" href="download/CV-dev-web-seb-cartoux.pdf" download="download/CV-dev-web-seb-cartoux.pdf">Télécharger CV</a>
-		</div>
-	</header>
+        <div class="flex-vert-center">
+            <a class="button permanent" href="download/CV-dev-web-seb-cartoux.pdf" download="download/CV-dev-web-seb-cartoux.pdf">Télécharger CV</a>
+        </div>
+    </header>
     <nav id="menu-nav" class="flex-center">
         <div><a id="active" class="flex-horz-space" href="#about">A propos</a></div>
         <div><a href="#skills" class="flex-horz-space">Compétences</a></div>
@@ -52,10 +52,10 @@
             </div>
         </div>
     </section>
-	<section id="skills" class="section font-content text-center">
-		<div class="flex-center">
-			<h2 class="titles permanent">COMPETENCES</h2>
-		</div>
+    <section id="skills" class="section font-content text-center">
+        <div class="flex-center">
+            <h2 class="titles permanent">COMPETENCES</h2>
+        </div>
         <div class="flex-horz-space box-size box-margin-top text-center">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">UBUNTU</h3>
@@ -66,26 +66,26 @@
                 <div id="git" class="box-margin-auto logo logo-circle flex-horz-space flex-vert-center">Git</div>
             </div>
         </div>
-		<div class="flex-horz-space box-size box-margin-middle text-center">
-			<div class="logo-responsive">
-				<h3 class="langage-responsive">HTML</h3>
-				<div id="html" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">5</div>
-				<h3 class="langage-responsive">CSS</h3>
-				<div id="css" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">3</div>
-			</div>
-			<div class="logo-responsive">
-				<h3 class="langage-responsive">JS</h3>
-				<div id="javascript" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">8</div>
-				<h3 class="langage-responsive">MYSQL</h3>
-				<div id="mysql" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">8</div>
-			</div>
-			<div class="logo-responsive">
-				<h3 class="langage-responsive">PHP</h3>
-				<div id="php" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">7</div>
-				<h3 class="langage-responsive">SYMFONY</h3>
-				<div id="symfony" class="box-margin-auto logo logo-circle flex-horz-space flex-vert-center">5</div>
-			</div>
-		</div>
+        <div class="flex-horz-space box-size box-margin-middle text-center">
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">HTML</h3>
+                <div id="html" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">5</div>
+                <h3 class="langage-responsive">CSS</h3>
+                <div id="css" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">3</div>
+            </div>
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">JS</h3>
+                <div id="javascript" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">8</div>
+                <h3 class="langage-responsive">MYSQL</h3>
+                <div id="mysql" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">8</div>
+            </div>
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">PHP</h3>
+                <div id="php" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">7</div>
+                <h3 class="langage-responsive">SYMFONY</h3>
+                <div id="symfony" class="box-margin-auto logo logo-circle flex-horz-space flex-vert-center">5</div>
+            </div>
+        </div>
         <div class="flex-horz-space box-size box-margin-bottom text-center">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">BSTRAP</h3>
@@ -96,11 +96,11 @@
                 <div id="docker" class="box-margin-auto logo logo-docker flex-horz-space flex-vert-center">d</div>
             </div>
         </div>
-	</section>
-	<section id="portfolio" class="section text-center">
-		<div class="flex-center">
-			<h2 class="titles permanent">PORTFOLIO</h2>
-		</div>
+    </section>
+    <section id="portfolio" class="section text-center">
+        <div class="flex-center">
+            <h2 class="titles permanent">PORTFOLIO</h2>
+        </div>
         <div class="flex-horz-space box-margin-top">
             <div class="box-size-alt box-margin-auto">
                 <a href="https://github.com/Lmpwybb/My-CV" target="_blank">
@@ -155,32 +155,32 @@
                 </a>
             </div>
         </div>
-	</section>
-	<section id="education" class="section font-content text-center">
-		<div class="flex-center">
-			<h2 class="titles permanent">FORMATIONS</h2>
-		</div>
-		<div class="box-size box-margin-top">
-			<h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
-			<h4>UTOPLAB / SIMPLON / GRANDE ECOLE DU NUMERIQUE</h4>
-			<h5>07/2019 - 05/2020</h5>
-			<h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, AJAX, JSON, node.js, Docker, JQuery et Bootstrap.</h6>
-		</div>
-		<div class="box-size-alt box-margin">
-			<h3>BAC PROFESSIONNEL EN ELECTROTECHNIQUE</h3>
-			<h4>LYCEE CHARLES PRIVAT</h4>
-			<h5>2004 - 2006</h5>
+    </section>
+    <section id="education" class="section font-content text-center">
+        <div class="flex-center">
+            <h2 class="titles permanent">FORMATIONS</h2>
+        </div>
+        <div class="box-size box-margin-top">
+            <h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
+            <h4>UTOPLAB / SIMPLON / GRANDE ECOLE DU NUMERIQUE</h4>
+            <h5>07/2019 - 05/2020</h5>
+            <h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, AJAX, JSON, node.js, Docker, JQuery et Bootstrap.</h6>
+        </div>
+        <div class="box-size-alt box-margin">
+            <h3>BAC PROFESSIONNEL EN ELECTROTECHNIQUE</h3>
+            <h4>LYCEE CHARLES PRIVAT</h4>
+            <h5>2004 - 2006</h5>
         </div>
         <div class="box-size-alt box-margin-bottom">
             <h3>CAP + BEP EN ELECTROTECHNIQUE</h3>
             <h4>LYCEE CHARLES PRIVAT</h4>
             <h5>2002 - 2004</h5>
         </div>
-	</section>
-	<section id="experience" class="section font-content text-center">
-		<div class="flex-center">
-			<h2 class="titles permanent">EXPERIENCE</h2>
-		</div>
+    </section>
+    <section id="experience" class="section font-content text-center">
+        <div class="flex-center">
+            <h2 class="titles permanent">EXPERIENCE</h2>
+        </div>
         <div class="box-size-alt box-margin-top">
             <h3>STAGIAIRE DEVELOPPEUR JUNIOR</h3>
             <h4>MOOGLEPOST</h4>
@@ -196,12 +196,12 @@
             <h4>ALAZARD ET ROUX</h4>
             <h5>07/2007 - 06/2012</h5>
         </div>
-	</section>
-	<section id="contact" class="section font-content text-center">
-		<div class="flex-center">
-			<h2 class="titles permanent">CONTACT</h2>
-		</div>
-		<form method="POST" class="box-size box-margin" action="contact.php">
+    </section>
+    <section id="contact" class="section font-content text-center">
+        <div class="flex-center">
+            <h2 class="titles permanent">CONTACT</h2>
+        </div>
+        <form method="POST" class="box-size box-margin" action="contact.php">
             <div class="success">
                 <?php
                     if (isset ($_GET['success']) && $_GET['success'] == 'send') {
@@ -251,13 +251,13 @@
                 ?>
             </div>
             <input id="submit-button" class="button permanent contact-space" name="send" type="submit" value="Envoyer">
-		</form>
-	</section>
-	<section id="footer" class="flex-horz-space font-content text-center">
-		<footer class="flex-vert-center">
-			<h3>&copy lmpwybb.alwaysdata.net</h3>
-		</footer>
-	</section>
-	<script src="script.js"></script>
+        </form>
+    </section>
+    <section id="footer" class="flex-horz-space font-content text-center">
+        <footer class="flex-vert-center">
+            <h3>&copy lmpwybb.alwaysdata.net</h3>
+        </footer>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
