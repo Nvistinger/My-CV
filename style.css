@@ -60,11 +60,15 @@ a {
 .box-margin-auto {
 	margin: 0 auto;
 }
+.box-transform:hover {
+	transform: scale(1.1);
+}
 a:hover {
 	cursor: pointer;
 	background-color: #f7b731;
 	color: #f1f2f6;
 	border-radius: 5px;
+	transform: scale(1.1);
 }
 .sentence {
 	font-style: italic;
@@ -101,6 +105,7 @@ a:hover {
 .button:hover {
 	cursor: pointer;
 	background-color: #f7b731;
+	transform: scale(1.1);
 }
 @keyframes mobility {
 	from {
