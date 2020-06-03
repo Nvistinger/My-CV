@@ -140,6 +140,7 @@ a:hover {
 #active {
 	background-color: #f7b731;
 	border-radius: 5px;
+	transform: scale(1.1);
 }
 .logo-circle {
 	width: 100px;
