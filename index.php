@@ -18,7 +18,9 @@
             <h2 id="function" class="permanent">DEVELOPPEUR WEB JUNIOR</h2>
         </div>
         <div class="flex-vert-center">
-            <a class="button permanent" href="download/CV-dev-web-seb-cartoux.pdf" download="download/CV-dev-web-seb-cartoux.pdf">Télécharger CV</a>
+            <form action="download/CV-dev-web-seb-cartoux.pdf">
+                <input class="button permanent" type="submit" value="Télécharger CV">
+            </form>
         </div>
     </header>
     <nav id="menu-nav" class="flex-center">
