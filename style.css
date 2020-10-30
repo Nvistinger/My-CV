@@ -79,6 +79,9 @@ a:hover {
 	font-family: 'Permanent Marker', cursive;
 	z-index: 1;
 }
+.button-certification {
+	width: 25%;
+}
 .input {
 	height: 35px;
 	width: 500px;
@@ -89,12 +92,12 @@ a:hover {
 	height: 175px;
 }
 #me {
+	color: #f7b731;
+}
+#function {
 	font-family: 'Rajdhani', sans-serif;
 	color: #596275;
 	font-size: 38px;
-}
-#function {
-	color: #f7b731;
 }
 .button {
 	color: #f1f2f6;
@@ -238,6 +241,9 @@ textarea {
 	.logo-responsive {
 		display: inline-block;
 		width: 25%;
+	}
+	.button-certification {
+		width: 50%;
 	}
 	.input {
 		width: 95%;

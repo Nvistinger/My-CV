@@ -17,8 +17,8 @@
             <img id="laptop" src="pictures/laptop.png" alt="laptop icon">
         </div>
         <div class="text-center">
-            <h1 id="me">SEBASTIEN CARTOUX</h1>
-            <h2 id="function" class="permanent">DEVELOPPEUR WEB JUNIOR</h2>
+            <h1 id="me" class="permanent">SÉBASTIEN CARTOUX</h1>
+            <h2 id="function">DÉVELOPPEUR WEB</h2>
         </div>
         <div class="flex-vert-center">
             <form action="download/CV-dev-web-seb-cartoux.pdf">
@@ -39,7 +39,9 @@
             <h2 class="titles permanent">A PROPOS</h2>
         </div>
         <div class="box-size box-margin flex-center">
-            <h3 class="sentence">"A l'écoute d'opportunités dans la région de Marseille et ses périphéries"</h3>
+            <h3 class="sentence">"Disponible pour travailler dans la région de Marseille et ses environs.<br> Certification
+                de Développeur Web et Web Mobile (niveau 5) obtenue et d'autres supplémentaires sur freeCodeCamp."
+            </h3>
         </div>
         <div class="box-size-alt box-margin flex-horz-space">
             <div class="flex-vert-center">
@@ -59,7 +61,7 @@
     </section>
     <section id="skills" class="section font-content text-center">
         <div class="flex-center">
-            <h2 class="titles permanent">COMPETENCES</h2>
+            <h2 class="titles permanent">COMPÉTENCES</h2>
         </div>
         <div class="flex-horz-space box-size box-margin-top text-center">
             <div class="logo-responsive">
@@ -166,30 +168,56 @@
             <h2 class="titles permanent">FORMATIONS</h2>
         </div>
         <div class="box-size box-margin-top">
+            <h3>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h3>
+            <h4>FREECODECAMP</h4>
+            <h5>09/2020</h5>
+            <a href="https://freecodecamp.org/certification/lmpwybb/javascript-algorithms-and-data-structures" target="_blank">
+                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la certification</h6>
+            </a>
+        </div>
+        <div class="box-size box-margin-top">
+            <h3>RESPONSIVE WEB DESIGN</h3>
+            <h4>FREECODECAMP</h4>
+            <h5>06/2020</h5>
+            <a href="https://freecodecamp.org/certification/lmpwybb/responsive-web-design" target="_blank">
+                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la certification</h6>
+            </a>
+        </div>
+        <div class="box-size box-margin">
             <h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
-            <h4>UTOPLAB / SIMPLON / GRANDE ECOLE DU NUMERIQUE</h4>
+            <h4>UTOPLAB / SIMPLON / GRANDE ÉCOLE DU NUMERIQUE</h4>
             <h5>07/2019 - 05/2020</h5>
-            <h6 id="bigger" class="sentence">Cette formation m'apprend à travailler et gérer des projets en équipe (méthodologies Agile et Scrum, Kanban). Acquisition des bases HTML, CSS, JavaScript, PHP, MySQL, WordPress. Apprentissage en cours de POO, Symfony 5, AJAX, JSON, node.js, Docker, JQuery et Bootstrap.</h6>
+            <h6 id="bigger" class="sentence">Gestion de projets (méthodologies Agile et Scrum, Kanban).<br> Acquisition des
+                bases HTML, CSS, JavaScript, PHP, MySQL, WordPress, POO, Symfony 5, AJAX, JSON, node.js, Docker, JQuery
+                et Bootstrap.
+            </h6>
         </div>
         <div class="box-size-alt box-margin">
-            <h3>BAC PROFESSIONNEL EN ELECTROTECHNIQUE</h3>
-            <h4>LYCEE CHARLES PRIVAT</h4>
+            <h3>BAC PROFESSIONNEL EN ÉLECTROTECHNIQUE</h3>
+            <h4>LYCÉE CHARLES PRIVAT</h4>
             <h5>2004 - 2006</h5>
         </div>
         <div class="box-size-alt box-margin-bottom">
-            <h3>CAP + BEP EN ELECTROTECHNIQUE</h3>
-            <h4>LYCEE CHARLES PRIVAT</h4>
+            <h3>CAP + BEP EN ÉLECTROTECHNIQUE</h3>
+            <h4>LYCÉE CHARLES PRIVAT</h4>
             <h5>2002 - 2004</h5>
         </div>
     </section>
     <section id="experience" class="section font-content text-center">
         <div class="flex-center">
-            <h2 class="titles permanent">EXPERIENCE</h2>
+            <h2 class="titles permanent">EXPÉRIENCE</h2>
         </div>
         <div class="box-size-alt box-margin-top">
-            <h3>STAGIAIRE DEVELOPPEUR JUNIOR</h3>
+            <h3>STAGIAIRE DÉVELOPPEUR JUNIOR</h3>
             <h4>MOOGLEPOST</h4>
             <h5>02/2020 - 03/2020</h5>
+            <h6 id="bigger" class="sentence">Intervention sur la plate-forme d’email transactionnel et marketing
+                MooglePost,<br> incluant développement backend PHP/Symfony 4, front-end HTML5/CSS3/Twig/Bootstrap.<br><br>
+                La mission inclue aussi une initiation DevOps et CI/CD (GitLab + Docker),<br> et l’écriture de tests
+                unitaires/intégration.<br><br>
+                La plate-forme ayant deux bugs connus et référencés, le contexte de résolution de bug<br> et mise à jour
+                d’une application en production (sans downtime) a était abordé.
+            </h6>
         </div>
         <div class="box-size-alt box-margin">
             <h3>OPÉRATEUR TUTEUR EN SALLE BLANCHE</h3>
