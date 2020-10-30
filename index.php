@@ -39,8 +39,9 @@
             <h2 class="titles permanent">A PROPOS</h2>
         </div>
         <div class="box-size box-margin flex-center">
-            <h3 class="sentence">"Disponible pour travailler dans la région de Marseille et ses environs.<br> Certification
-                de Développeur Web et Web Mobile (niveau 5) obtenue et d'autres supplémentaires sur freeCodeCamp."
+            <h3 class="sentence">"Disponible pour travailler dans la région de Marseille et ses environs.<br>
+                Certification de Développeur Web et Web Mobile (niveau 5) obtenue et d'autres supplémentaires sur
+                freeCodeCamp."
             </h3>
         </div>
         <div class="box-size-alt box-margin flex-horz-space">
@@ -172,7 +173,9 @@
             <h4>FREECODECAMP</h4>
             <h5>10/2020</h5>
             <a href="https://freecodecamp.org/certification/lmpwybb/javascript-algorithms-and-data-structures" target="_blank">
-                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la certification</h6>
+                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la
+                    certification
+                </h6>
             </a>
         </div>
         <div class="box-size box-margin-top">
@@ -180,16 +183,18 @@
             <h4>FREECODECAMP</h4>
             <h5>06/2020</h5>
             <a href="https://freecodecamp.org/certification/lmpwybb/responsive-web-design" target="_blank">
-                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la certification</h6>
+                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la
+                    certification
+                </h6>
             </a>
         </div>
         <div class="box-size box-margin">
-            <h3>BAC +2 DÉVELOPPEUR WEB / WEB MOBILE</h3>
+            <h3>BAC +2 DÉVELOPPEUR WEB ET WEB MOBILE</h3>
             <h4>UTOPLAB / SIMPLON / GRANDE ÉCOLE DU NUMERIQUE</h4>
             <h5>07/2019 - 05/2020</h5>
-            <h6 id="bigger" class="sentence">Gestion de projets (méthodologies Agile et Scrum, Kanban).<br> Acquisition des
-                bases HTML, CSS, JavaScript, PHP, MySQL, WordPress, POO, Symfony 5, AJAX, JSON, node.js, Docker, JQuery
-                et Bootstrap.
+            <h6 id="bigger" class="sentence">Gestion de projets (méthodologies Agile et Scrum, Kanban).<br> Acquisition
+                et approfondissement des langages HTML, CSS, JavaScript, PHP, MySQL, WordPress, POO, Symfony 5, AJAX,
+                JSON, Node.js, Docker, JQuery et Bootstrap.
             </h6>
         </div>
         <div class="box-size-alt box-margin">
@@ -208,7 +213,7 @@
             <h2 class="titles permanent">EXPÉRIENCE</h2>
         </div>
         <div class="box-size-alt box-margin-top">
-            <h3>STAGIAIRE DÉVELOPPEUR JUNIOR</h3>
+            <h3>DÉVELOPPEUR WEB FULLSTACK</h3>
             <h4>MOOGLEPOST</h4>
             <h5>02/2020 - 03/2020</h5>
             <h6 id="bigger" class="sentence">Intervention sur la plate-forme d’email transactionnel et marketing
@@ -238,7 +243,7 @@
             <div class="success">
                 <?php
                     if (isset ($_GET['success']) && $_GET['success'] == 'send') {
-                        echo "Votre message a bien été transmis, merci de m'avoir contacté.";
+                        echo "Votre message a bien été transmis, je vous répondrais dans les plus brefs délais.";
                     }
                 ?>
             </div>
@@ -253,7 +258,7 @@
             <div class="error">
                 <?php
                     if (isset($_GET['error']) && $_GET['error'] == 'notanemail') {
-                        echo "Vous n'avez pas rentré une adresse email valide.";
+                        echo "Vous n'avez pas saisit une adresse email valide.";
                     }
                 ?>
             </div>
@@ -262,7 +267,7 @@
             <div class="error">
                 <?php
                     if (isset($_GET['error']) && $_GET['error'] == 'notanphone') {
-                        echo "Vous n'avez pas rentré un numéro de téléphone valide.";
+                        echo "Vous n'avez pas saisit un numéro de téléphone valide.";
                     }
                 ?>
             </div>
@@ -271,7 +276,7 @@
             <div class="error">
                 <?php
                     if (isset($_GET['error']) && $_GET['error'] == 'message') {
-                        echo "Votre message est invalide car trop court.";
+                        echo "Votre message est invalide car celui-ci est trop court.";
                     }
                 ?>
             </div>
@@ -279,7 +284,7 @@
             <div class="error">
                 <?php
                     if (isset($_GET['error']) && $_GET['error'] == 'notfilled') {
-                        echo "Un des champs n'est pas correctement remplie.";
+                        echo "Un des champs n'est pas correctement saisit, veuillez les vérifier.";
                     }
                 ?>
             </div>
