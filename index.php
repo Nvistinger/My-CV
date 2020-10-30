@@ -170,7 +170,7 @@
         <div class="box-size box-margin-top">
             <h3>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h3>
             <h4>FREECODECAMP</h4>
-            <h5>09/2020</h5>
+            <h5>10/2020</h5>
             <a href="https://freecodecamp.org/certification/lmpwybb/javascript-algorithms-and-data-structures" target="_blank">
                 <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la certification</h6>
             </a>
