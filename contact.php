@@ -6,7 +6,7 @@ $email = $_POST["email"];
 $phone = $_POST["phone"];
 $message = $_POST["message"];
 $substr_message = substr($message, 0, 500);
-$format_phone = "/^0[1-9]([-. ]?[0-9]{2}){4}$/";
+$format_phone = "/^(+33|0033|0)[1-9]([-. ]?[0-9]{2}){4}$/";
 $email_to = "ME";
 $email_subject = "Prise de contact par lmpwybb.alwaysdata.net.";
 $email_message = "Quelqu'un vous a contacté:\n\n";
@@ -34,7 +34,7 @@ if (isset($_POST['send']) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     die();
 }
 
-if (isset($_POST['send']) && strlen($message) <= 3) {
+if (isset($_POST['send']) && strlen($message) <= 15) {
     header('Location: index.php?error=message#contact');
     die();
 }

@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="robots" content="index, follow, noodp" />
+    <meta name="robots" content="index, follow, noodp">
     <meta name="description" content="Personnal and responsive curriculum vitae of Sébastien Cartoux">
-    <meta name="keywords" content="curriculum vitae native responsive HTML CSS PHP JavaScript">
+    <meta name="keywords" content="curriculum vitae web developper native responsive HTML CSS PHP JavaScript">
     <meta name="author" content="Sébastien Cartoux">
-    <meta name="HandheldFriendly" content="true" />
+    <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sébastien Cartoux</title>
     <link rel="stylesheet" href="style.css">
@@ -262,7 +262,7 @@
                 ?>
             </div>
             <label for="name">*Nom:</label><br>
-            <input class="input contact-space" type="text" name="name" id="name"><br>
+            <input class="input contact-space" type="text" name="name" id="name" value="<?php echo isset($_POST['myField1']) ? $_POST['myField1'] : '' ?>"><br>
 
             <label class="contact-space" for="first-name">*Prénom:</label><br>
             <input class="input contact-space" type="text" name="first-name" id="first-name"><br>
