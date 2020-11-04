@@ -189,21 +189,17 @@ require "contact.php";
             <h3>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h3>
             <h4>FREECODECAMP</h4>
             <h5>10/2020</h5>
-            <a href="https://freecodecamp.org/certification/lmpwybb/javascript-algorithms-and-data-structures" target="_blank">
-                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la
-                    certification
-                </h6>
-            </a>
+            <form action="https://freecodecamp.org/certification/lmpwybb/javascript-algorithms-and-data-structures">
+                <input class="button permanent" type="submit" value="Voir la certification">
+            </form>
         </div>
         <div class="box-size box-margin-top">
             <h3>RESPONSIVE WEB DESIGN</h3>
             <h4>FREECODECAMP</h4>
             <h5>06/2020</h5>
-            <a href="https://freecodecamp.org/certification/lmpwybb/responsive-web-design" target="_blank">
-                <h6 id="bigger" class="button-certification box-margin-auto button permanent sentence">Voir la
-                    certification
-                </h6>
-            </a>
+            <form action="https://freecodecamp.org/certification/lmpwybb/responsive-web-design">
+                <input class="button permanent" type="submit" value="Voir la certification">
+            </form>
         </div>
         <div class="box-size box-margin">
             <h3>BAC +2 DÉVELOPPEUR WEB ET WEB MOBILE</h3>
