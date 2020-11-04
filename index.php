@@ -2,9 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="CV Personal Reponsive">
+    <meta name="robots" content="index, follow, noodp" />
+    <meta name="description" content="Personnal and responsive curriculum vitae of Sébastien Cartoux">
+    <meta name="keywords" content="curriculum vitae native responsive HTML CSS PHP JavaScript">
     <meta name="author" content="Sébastien Cartoux">
+    <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sébastien Cartoux</title>
     <link rel="stylesheet" href="style.css">
