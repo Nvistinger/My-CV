@@ -1,5 +1,7 @@
 <?php
 
+require "config.php";
+
 function checkEmail(array $form): string {
     if (isset($form['email']) === false) {
         throw new Exception("Le tableau doit contenir une clé email");
@@ -61,13 +63,15 @@ function checkAll(array $form): bool {
 }
 
 function sendEmail(array $form): string {
+    global $config;
+
     if (checkAll($form) === false) {
         return "";
     }
 
     $substr_message = substr($form['message'], 0, 500);
 
-    $email_to = "ME";
+    $email_to = $config["email"];
     $email_subject = "Prise de contact de votre site lmpwybb.alwaysdata.net.";
     $email_message = "Quelqu'un vous a contacté:\n\n";
     $email_message .= "Nom: " . $form['name'] . "\n";
