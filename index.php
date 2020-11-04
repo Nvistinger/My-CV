@@ -112,55 +112,67 @@
             <h2 class="titles permanent">PORTFOLIO</h2>
         </div>
         <div class="flex-horz-space box-margin-top">
-            <div class="box-size-alt box-margin-auto box-transform">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://github.com/Lmpwybb/My-CV" target="_blank">
-                    <div class="font-content">
-                        <h3>Comment a été réalisé ce site</h3>
-                        <img src="pictures/github.png" alt="github my cv link">
+                    <div class="box-size-alt box-margin-auto box-transform">
+                        <div class="font-content">
+                            <h3>Comment a été réalisé ce site</h3>
+                            <img src="pictures/github.png" alt="github my cv link">
+                        </div>
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt box-margin-auto box-transform">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://manys.alwaysdata.net" target="_blank">
-                    <div class="font-content">
-                        <h3>Manys agence immobilière</h3>
-                        <img src="pictures/manys.png" alt="manys link">
+                    <div class="box-size-alt box-margin-auto box-transform">
+                        <div class="font-content">
+                            <h3>Manys agence immobilière</h3>
+                            <img src="pictures/manys.png" alt="manys link">
+                        </div>
                     </div>
                 </a>
             </div>
         </div>
         <div class="flex-horz-space box-margin-middle">
-            <div class="box-size-alt box-margin-auto box-transform">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
-                    <div class="font-content">
-                        <h3>Quelques projets</h3>
-                        <img src="pictures/github.png" alt="github utoplab link">
+                    <div class="box-size-alt box-margin-auto box-transform">
+                        <div class="font-content">
+                            <h3>Quelques projets</h3>
+                            <img src="pictures/github.png" alt="github utoplab link">
+                        </div>
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt box-margin-auto box-transform">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
-                    <div class="font-content">
-                        <h3>CMS Wordpress</h3>
-                        <img src="pictures/wordpress.png" alt="wordpress">
+                    <div class="box-size-alt box-margin-auto box-transform">
+                        <div class="font-content">
+                            <h3>CMS Wordpress</h3>
+                            <img src="pictures/wordpress.png" alt="wordpress">
+                        </div>
                     </div>
                 </a>
             </div>
         </div>
         <div class="flex-horz-space box-margin-bottom">
-            <div class="box-size-alt box-margin-auto box-transform">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
-                    <div class="font-content">
-                        <h3>Mon LinkedIn</h3>
-                        <img src="pictures/linkedin.png" alt="linkedin">
+                    <div class="box-size-alt box-margin-auto box-transform">
+                        <div class="font-content">
+                            <h3>Mon LinkedIn</h3>
+                            <img src="pictures/linkedin.png" alt="linkedin">
+                        </div>
                     </div>
                 </a>
             </div>
-            <div class="box-size-alt box-margin-auto box-transform">
+            <div class="box-size-alt box-margin-auto">
                 <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
-                    <div class="font-content">
-                        <h3>Youtubeur à mes heures</h3>
-                        <img src="pictures/youtube.png" alt="youtube">
+                    <div class="box-size-alt box-margin-auto box-transform">
+                        <div class="font-content">
+                            <h3>Youtubeur à mes heures</h3>
+                            <img src="pictures/youtube.png" alt="youtube">
+                        </div>
                     </div>
                 </a>
             </div>

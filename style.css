@@ -1,4 +1,4 @@
-/*PROPRIETES REUTILISABLE*/
+/* REUSABLE PROPERTIES */
 html, body {
 	margin: 0;
 	padding: 0;
@@ -62,6 +62,7 @@ a {
 }
 .box-transform:hover {
 	transform: scale(1.1);
+	box-shadow: 2px 2px 1px 1px rgba(89, 98, 117, 1);
 }
 a:hover {
 	cursor: pointer;
@@ -87,7 +88,7 @@ a:hover {
 	width: 500px;
 }
 
-/*MODIFICATION SITE*/
+/* UNIQUE PROPERTY */
 .banner {
 	height: 175px;
 }
@@ -223,7 +224,7 @@ textarea {
 	height: 100px;
 }
 
-/*PARTIE RESPONSIVE*/
+/*RESPONSIVE*/
 @media all and (max-width: 1250px) {
 	html, body {
 		margin: 0;
