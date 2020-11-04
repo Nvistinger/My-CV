@@ -1,46 +1,86 @@
 <?php
 
-$name = $_POST["name"];
-$first_name = $_POST["first-name"];
-$email = $_POST["email"];
-$phone = $_POST["phone"];
-$message = $_POST["message"];
-$substr_message = substr($message, 0, 500);
-$format_phone = "/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/";
-$email_to = "ME";
-$email_subject = "Prise de contact par lmpwybb.alwaysdata.net.";
-$email_message = "Quelqu'un vous a contacté:\n\n";
-$email_message .= "Nom: " . $name . "\n";
-$email_message .= "Prénom: " . $first_name . "\n";
-$email_message .= "Email: " . $email . "\n";
-$email_message .= "Telephone: " . $phone . "\n";
-$email_message .= "Message: " . $substr_message . "\n";
-$headers = 'From: ' . $email . "\r\n".
-    'Reply-To: ' . $email . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+function checkEmail(array $form): string {
+    if (isset($form['email']) === false) {
+        throw new Exception("Le tableau doit contenir une clé email");
+    }
 
-if (isset($_POST['send']) && (empty($name) || empty($first_name) || empty($email) || empty($message))) {
-    header('Location: index.php?error=notfilled#contact');
-    die();
+    if (empty($form['email'])) {
+        return  "Vous n'avez pas saisi d'adresse email.";
+    }
+
+    if (filter_var($form['email'], FILTER_VALIDATE_EMAIL) === false) {
+        return "Vous n'avez pas saisi une adresse email valide.";
+    }
+
+    return "";
 }
 
-if (isset($_POST['send']) && !empty($phone) && !preg_match($format_phone, $phone)) {
-    header('Location: index.php?error=notanphone#contact');
-    die();
+function checkPhone(array $form): string {
+    if (isset($form['phone']) === false) {
+        throw new Exception("Le tableau doit contenir une clé phone");
+    }
+
+    if (empty($form['phone'])) {
+        return "Vous n'avez pas saisi de numéro de téléphone.";
+    }
+
+    if (preg_match("/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/", $form['phone']) !== 1) {
+        return "Vous n'avez pas saisi un numéro de téléphone valide.";
+    }
+
+    return "";
 }
 
-if (isset($_POST['send']) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header('Location: index.php?error=notanemail#contact');
-    die();
+function checkMessage(array $form): string {
+    if (isset($form['message']) === false) {
+        throw new Exception("Le tableau doit contenir une clé message");
+    }
+
+    if (empty($form['message'])) {
+        return "Vous n'avez pas saisi de message";
+    }
+
+    return "";
 }
 
-if (isset($_POST['send']) && strlen($message) <= 15) {
-    header('Location: index.php?error=message#contact');
-    die();
+function checkAll(array $form): bool {
+    if (checkEmail($form) !== "") {
+        return false;
+    }
+
+    if (checkPhone($form) !== "") {
+        return false;
+    }
+
+    if (checkMessage($form) !== "") {
+        return false;
+    }
+
+    return true;
 }
 
-if (isset($_POST['send'])) {
+function sendEmail(array $form): string {
+    if (checkAll($form) === false) {
+        return "";
+    }
+
+    $substr_message = substr($form['message'], 0, 500);
+
+    $email_to = "ME";
+    $email_subject = "Prise de contact de votre site lmpwybb.alwaysdata.net.";
+    $email_message = "Quelqu'un vous a contacté:\n\n";
+    $email_message .= "Nom: " . $form['name'] . "\n";
+    $email_message .= "Prénom: " . $form['first_name'] . "\n";
+    $email_message .= "Email: " . $form['email'] . "\n";
+    $email_message .= "Telephone: " . $form['phone'] . "\n";
+    $email_message .= "Message: " . $substr_message . "\n";
+
+    $headers = 'From: ' . $form['email'] . "\r\n" .
+        'Reply-To: ' . $form['email'] . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+
     mail($email_to, $email_subject, $email_message, $headers);
-    header('Location: index.php?success=send#contact');
-    die();
+
+    return "Votre message a bien été transmis, je vous répondrais dans les plus brefs délais.";
 }

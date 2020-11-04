@@ -1,3 +1,6 @@
+<?php
+require "contact.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -253,55 +256,52 @@
         <div class="flex-center">
             <h2 class="titles permanent">CONTACT</h2>
         </div>
-        <form method="POST" class="box-size box-margin" action="contact.php">
+        <form method="POST" class="box-size box-margin" action="index.php#contact">
             <div class="success">
                 <?php
-                    if (isset ($_GET['success']) && $_GET['success'] == 'send') {
-                        echo "Votre message a bien été transmis, je vous répondrais dans les plus brefs délais.";
+                    if (isset($_POST['send'])) {
+                        echo sendEmail($_POST);
                     }
                 ?>
             </div>
             <label for="name">*Nom:</label><br>
-            <input class="input contact-space" type="text" name="name" id="name" value="<?php echo isset($_POST['myField1']) ? $_POST['myField1'] : '' ?>"><br>
+            <input class="input contact-space" type="text" name="name" id="name"
+                   value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?>"><br>
 
-            <label class="contact-space" for="first-name">*Prénom:</label><br>
-            <input class="input contact-space" type="text" name="first-name" id="first-name"><br>
+            <label class="contact-space" for="first_name">*Prénom:</label><br>
+            <input class="input contact-space" type="text" name="first_name" id="first_name"
+                   value="<?php echo isset($_POST['first_name']) ? $_POST['first_name'] : ''; ?>"><br>
 
             <label class="contact-space" for="email">*Courriel:</label><br>
-            <input class="input contact-space" type="text" name="email" id="email"><br>
+            <input class="input contact-space" type="text" name="email" id="email"
+                   value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>"><br>
             <div class="error">
                 <?php
-                    if (isset($_GET['error']) && $_GET['error'] == 'notanemail') {
-                        echo "Vous n'avez pas saisit une adresse email valide.";
+                    if (isset($_POST['send'])) {
+                        echo checkEmail($_POST);
                     }
                 ?>
             </div>
             <label class="contact-space" for="phone">Téléphone:</label><br>
-            <input class="input contact-space" type="text" name="phone" id="phone"><br>
+            <input class="input contact-space" type="text" name="phone" id="phone"
+                   value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''; ?>"><br>
             <div class="error">
                 <?php
-                    if (isset($_GET['error']) && $_GET['error'] == 'notanphone') {
-                        echo "Vous n'avez pas saisit un numéro de téléphone valide.";
+                    if (isset($_POST['send'])) {
+                        echo checkPhone($_POST);
                     }
                 ?>
             </div>
             <label class="contact-space" for="message">*Message:</label><br>
-            <textarea name="message" id="message" rows="10" cols="33" maxlength="500"></textarea><br>
+            <textarea name="message" id="message" rows="10" cols="33" maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
             <div class="error">
                 <?php
-                    if (isset($_GET['error']) && $_GET['error'] == 'message') {
-                        echo "Votre message est invalide car celui-ci est trop court.";
+                    if (isset($_POST['send'])) {
+                        echo checkMessage($_POST);
                     }
                 ?>
             </div>
             <p class="contact-space">* Ces informations sont requises.</p>
-            <div class="error">
-                <?php
-                    if (isset($_GET['error']) && $_GET['error'] == 'notfilled') {
-                        echo "Un des champs n'est pas correctement saisit, veuillez les vérifier.";
-                    }
-                ?>
-            </div>
             <input id="submit-button" class="button permanent contact-space" name="send" type="submit" value="Envoyer">
         </form>
     </section>
