@@ -78,44 +78,58 @@ require "contact.php";
         <div class="flex-center">
             <h2 class="titles permanent">COMPÉTENCES</h2>
         </div>
-        <div class="flex-horz-space box-size box-margin-top text-center">
+        <div class="flex-horz-space box-size box-margin-top">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">UBUNTU</h3>
-                <div id="ubuntu" class="box-margin-auto logo logo-circle flex-horz-space flex-vert-center">U</div>
+                <div id="ubuntu" class="box-margin-auto logo logo-circle flex-horz-space">U</div>
             </div>
             <div class="logo-responsive">
-                <h3 class="langage-responsive">GIT</h3>
-                <div id="git" class="box-margin-auto logo logo-circle flex-horz-space flex-vert-center">Git</div>
+                <h3 class="langage-responsive">GITHUB</h3>
+                <div id="git" class="box-margin-auto logo logo-circle flex-horz-space">H</div>
+            </div>
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">GITLAB</h3>
+                <div id="lab" class="box-margin-auto logo logo-fox flex-horz-space">L</div>
             </div>
         </div>
-        <div class="flex-horz-space box-size box-margin-middle text-center">
+        <div class="flex-horz-space box-size box-margin-middle">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">HTML</h3>
-                <div id="html" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">5</div>
+                <div id="html" class="box-margin-auto logo logo-pentagon flex-horz-space">5</div>
+                <h3 class="langage-responsive">MYSQL</h3>
+                <div id="mysql" class="box-margin-auto logo logo-circle flex-horz-space">8</div>
+            </div>
+            <div class="logo-responsive">
                 <h3 class="langage-responsive">CSS</h3>
-                <div id="css" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">3</div>
+                <div id="css" class="box-margin-auto logo logo-pentagon flex-horz-space">3</div>
+                <h3 class="langage-responsive">PHP</h3>
+                <div id="php" class="box-margin-auto logo logo-oval flex-horz-space">7</div>
             </div>
             <div class="logo-responsive">
                 <h3 class="langage-responsive">JS</h3>
-                <div id="javascript" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">8</div>
-                <h3 class="langage-responsive">MYSQL</h3>
-                <div id="mysql" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">8</div>
-            </div>
-            <div class="logo-responsive">
-                <h3 class="langage-responsive">PHP</h3>
-                <div id="php" class="box-margin-auto logo logo-pentagon flex-horz-space flex-vert-center">7</div>
+                <div id="javascript" class="box-margin-auto logo logo-pentagon flex-horz-space">8</div>
                 <h3 class="langage-responsive">SYMFONY</h3>
-                <div id="symfony" class="box-margin-auto logo logo-circle flex-horz-space flex-vert-center">5</div>
+                <div id="symfony" class="box-margin-auto logo logo-circle flex-horz-space">5</div>
             </div>
         </div>
-        <div class="flex-horz-space box-size box-margin-bottom text-center">
+        <div class="flex-horz-space box-size box-margin-middle">
             <div class="logo-responsive">
                 <h3 class="langage-responsive">BSTRAP</h3>
-                <div id="bootstrap" class="box-margin-auto logo logo-bootstrap flex-horz-space flex-vert-center">B</div>
+                <div id="bootstrap" class="box-margin-auto logo logo-bootstrap flex-horz-space">B</div>
             </div>
             <div class="logo-responsive">
                 <h3 class="langage-responsive">DOCKER</h3>
-                <div id="docker" class="box-margin-auto logo logo-docker flex-horz-space flex-vert-center">d</div>
+                <div id="docker" class="box-margin-auto logo logo-docker flex-horz-space">d</div>
+            </div>
+        </div>
+        <div class="flex-horz-space box-size box-margin-bottom">
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">AJAX</h3>
+                <div id="ajax" class="box-margin-auto logo logo-arrow flex-horz-space">.</div>
+            </div>
+            <div class="logo-responsive">
+                <h3 class="langage-responsive">JSON</h3>
+                <div id="json" class="box-margin-auto logo logo-circle flex-horz-space">{j}</div>
             </div>
         </div>
     </section>
