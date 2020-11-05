@@ -4,7 +4,7 @@ require "config.php";
 
 function checkEmail(array $form): string {
     if (isset($form['email']) === false) {
-        throw new Exception("Le tableau doit contenir une clé email");
+        throw new Exception("Le tableau doit contenir une clé email.");
     }
 
     if (empty($form['email'])) {
@@ -20,7 +20,7 @@ function checkEmail(array $form): string {
 
 function checkPhone(array $form): string {
     if (isset($form['phone']) === false) {
-        throw new Exception("Le tableau doit contenir une clé phone");
+        throw new Exception("Le tableau doit contenir une clé phone.");
     }
 
     if (empty($form['phone'])) {
@@ -36,11 +36,11 @@ function checkPhone(array $form): string {
 
 function checkMessage(array $form): string {
     if (isset($form['message']) === false) {
-        throw new Exception("Le tableau doit contenir une clé message");
+        throw new Exception("Le tableau doit contenir une clé message.");
     }
 
     if (empty($form['message'])) {
-        return "Vous n'avez pas saisi de message";
+        return "Vous n'avez pas saisi de message.";
     }
 
     return "";
@@ -62,22 +62,26 @@ function checkAll(array $form): bool {
     return true;
 }
 
-function sendEmail(array $form): string {
+function checkToken(string $userToken, string $serverToken): bool {
+    return ($userToken === $serverToken);
+}
+
+function sendEmail(array $form): bool {
     global $config;
 
     if (checkAll($form) === false) {
-        return "";
+        return false;
     }
 
     $substr_message = substr($form['message'], 0, 500);
 
     $email_to = $config["email"];
-    $email_subject = "Prise de contact de votre site lmpwybb.alwaysdata.net.";
-    $email_message = "Quelqu'un vous a contacté:\n\n";
+    $email_subject = "Prise de contact.";
+    $email_message = "On vous a contacté de votre site lmpwybb.alwaysdata.net:\n\n";
     $email_message .= "Nom: " . $form['name'] . "\n";
     $email_message .= "Prénom: " . $form['first_name'] . "\n";
     $email_message .= "Email: " . $form['email'] . "\n";
-    $email_message .= "Telephone: " . $form['phone'] . "\n";
+    $email_message .= "Téléphone: " . $form['phone'] . "\n";
     $email_message .= "Message: " . $substr_message . "\n";
 
     $headers = 'From: ' . $form['email'] . "\r\n" .
@@ -86,5 +90,5 @@ function sendEmail(array $form): string {
 
     mail($email_to, $email_subject, $email_message, $headers);
 
-    return "Votre message a bien été transmis, je vous répondrais dans les plus brefs délais.";
+    return true;
 }

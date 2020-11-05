@@ -1,4 +1,13 @@
 <?php
+
+session_start();
+
+$savedToken = "";
+if (isset($_POST['send'])) {
+    $savedToken = $_SESSION['token'];
+}
+$_SESSION['token'] = bin2hex(random_bytes(16));
+
 require "contact.php";
 ?>
 <!DOCTYPE html>
@@ -253,10 +262,19 @@ require "contact.php";
             <h2 class="titles permanent">CONTACT</h2>
         </div>
         <form method="POST" class="box-size box-margin" action="index.php#contact">
+            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['token']; ?>">
             <div class="success">
                 <?php
                     if (isset($_POST['send'])) {
-                        echo sendEmail($_POST);
+                        if (checkToken($_POST['csrf_token'], $savedToken)) {
+                            $status = sendEmail($_POST);
+                            if ($status) {
+                                $_POST = [];
+                                echo "Votre message a bien été transmis, je vous répondrais dans les plus brefs délais.";
+                            }
+                        } else {
+                            echo '<span class="error">' . "Le token CSRF a expiré, votre message n'a pas été transmis." . '</span>';
+                        }
                     }
                 ?>
             </div>
