@@ -154,6 +154,9 @@ a:hover {
 	border-radius: 5px;
 	transform: scale(1.1);
 }
+#portrait {
+	border-radius: 15px;
+}
 .logo-circle {
 	width: 100px;
 	height: 100px;
