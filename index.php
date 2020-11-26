@@ -116,20 +116,36 @@ require "contact.php";
                     <div id="symfony" class="logo logo-circle">5</div>
                 </div>
                 <div class="grid-items-spacing">
+                    <h3 class="langage-responsive">JQUERY</h3>
+                    <div id="jquery" class="logo">Q</div>
+                </div>
+                <div class="grid-items-spacing">
                     <h3 class="langage-responsive">BSTRAP</h3>
                     <div id="bootstrap" class="logo logo-bootstrap">B</div>
                 </div>
                 <div class="grid-items-spacing">
+                    <h3 class="langage-responsive">BULMA</h3>
+                    <div id="bulma" class="logo logo-bulma"></div>
+                </div>
+                <div class="grid-items-spacing">
                     <h3 class="langage-responsive">DOCKER</h3>
-                    <div id="docker" class="logo logo-docker">d</div>
+                    <div id="docker" class="logo logo-docker"></div>
                 </div>
                 <div class="grid-items-spacing">
                     <h3 class="langage-responsive">AJAX</h3>
-                    <div id="ajax" class="logo logo-arrow">.</div>
+                    <div id="ajax" class="logo logo-arrow"></div>
                 </div>
                 <div class="grid-items-spacing">
                     <h3 class="langage-responsive">JSON</h3>
-                    <div id="json" class="logo logo-circle">{j}</div>
+                    <div id="json" class="logo logo-circle">{}</div>
+                </div>
+                <div class="grid-items-spacing">
+                    <h3 class="langage-responsive">NODE.JS</h3>
+                    <div id="node" class="logo logo-node"></div>
+                </div>
+                <div class="grid-items-spacing">
+                    <h3 class="langage-responsive">WPRESS</h3>
+                    <div id="wordpress" class="logo logo-circle">W</div>
                 </div>
             </div>
         </section>
@@ -214,8 +230,8 @@ require "contact.php";
                     <h4>UTOPLAB / SIMPLON / GRANDE ÉCOLE DU NUMERIQUE</h4>
                     <h5>07/2019 - 05/2020</h5>
                     <h6 id="bigger" class="italic-sentence">Gestion de projets (méthodologies Agile et Scrum, Kanban).<br> Acquisition
-                        et approfondissement des langages HTML, CSS, JavaScript, PHP, MySQL, WordPress, POO, Symfony 5, AJAX,
-                        JSON, Node.js, Docker, JQuery et Bootstrap.
+                        et approfondissement des langages HTML, MySQL, CSS, PHP, JavaScript, Symfony, JQuery, Bootstrap, Bulma,
+                         Docker, AJAX, JSON, Node.js, WordPress, et POO.
                     </h6>
                 </div>
                 <div class="box-size box-margin-middle">
