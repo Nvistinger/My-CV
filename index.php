@@ -252,7 +252,7 @@ require "contact.php";
             </div>
             <div class="grid grid-tc2-align grid-responsive box-margin">
                 <div class="box-size box-margin-middle grid-special">
-                    <h3>DÉVELOPPEUR WEB FULLSTACK</h3>
+                    <h3>DÉVELOPPEUR WEB FULLSTACK (STAGE)</h3>
                     <h4>MOOGLEPOST</h4>
                     <h5>02/2020 - 03/2020</h5>
                     <h6 id="bigger" class="italic-sentence">Intervention sur la plate-forme d’email transactionnel et marketing
