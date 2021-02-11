@@ -43,9 +43,9 @@ require "contact.php";
         <nav id="menu-nav" class="grid grid-menu-nav">
             <div><a id="active" class="grid-items-spacing" href="#about">A propos</a></div>
             <div><a href="#skills" class="grid-items-spacing">Compétences</a></div>
+            <div><a href="#experience" class="grid-items-spacing">Expérience</a></div>
             <div><a href="#portfolio" class="grid-items-spacing">Portfolio</a></div>
             <div><a href="#education" class="grid-items-spacing">Formations</a></div>
-            <div><a href="#experience" class="grid-items-spacing">Expérience</a></div>
             <div><a href="#contact" class="grid-items-spacing">Contact</a></div>
         </nav>
         <section id="about" class="section font-content text-center">
@@ -53,9 +53,10 @@ require "contact.php";
                 <h2 class="titles permanent">A PROPOS</h2>
             </div>
             <div class="box-size box-margin">
-                <h3 class="italic-sentence">"Disponible pour travailler dans la région de Marseille et ses environs.<br>
-                    Certification de Développeur Web et Web Mobile (niveau 5) obtenue et d'autres supplémentaires sur
-                    freeCodeCamp."
+                <h3 class="italic-sentence">"Disponible pour travailler dans la région de Marseille et ses environs.
+                    Certification de niveau 5 obtenue, j'ai appris à travailler et gérer des projets en équipe
+                    (méthodologies agile Scrum et Kanban). Et actuellement en continue au travers de certifications
+                    sur freeCodeCamp. "
                 </h3>
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
@@ -149,6 +150,36 @@ require "contact.php";
                 </div>
             </div>
         </section>
+        <section id="experience" class="section font-content text-center">
+            <div class="flex-titles">
+                <h2 class="titles permanent">EXPÉRIENCE</h2>
+            </div>
+            <div class="grid grid-tc2-align grid-responsive box-margin">
+                <div class="box-size box-margin-middle grid-special">
+                    <h3>DÉVELOPPEUR WEB FULLSTACK (STAGE)</h3>
+                    <h4>MOOGLEPOST</h4>
+                    <h5>02/2020 - 03/2020</h5>
+                    <h6 id="bigger" class="italic-sentence">Intervention sur la plate-forme d’email transactionnel et
+                        marketing MooglePost, incluant développement backend PHP/Symfony 4, front-end
+                        HTML5/CSS3/Twig/Bootstrap.<br><br>
+                        La mission inclue aussi une initiation DevOps et CI/CD (GitLab + Docker), et l’écriture de
+                        tests unitaires/intégration.<br><br>
+                        La plate-forme ayant deux bugs connus et référencés, le contexte de résolution de bug et mise
+                        à jour d’une application en production (sans downtime) a était abordé.
+                    </h6>
+                </div>
+                <div class="box-size box-margin-middle">
+                    <h3>OPÉRATEUR TUTEUR EN SALLE BLANCHE</h3>
+                    <h4>SARTORIUS STEDIM BIOTECH FMT</h4>
+                    <h5>11/2014 - 03/2019</h5>
+                </div>
+                <div class="box-size box-margin-middle">
+                    <h3>AGENT DE MAINTENANCE INDUSTRIELLE</h3>
+                    <h4>ALAZARD ET ROUX</h4>
+                    <h5>07/2007 - 06/2012</h5>
+                </div>
+            </div>
+        </section>
         <section id="portfolio" class="section font-content text-center">
             <div class="flex-titles">
                 <h2 class="titles permanent">PORTFOLIO</h2>
@@ -229,9 +260,17 @@ require "contact.php";
                     <h3>BAC +2 DÉVELOPPEUR WEB ET WEB MOBILE</h3>
                     <h4>UTOPLAB / SIMPLON / GRANDE ÉCOLE DU NUMERIQUE</h4>
                     <h5>07/2019 - 05/2020</h5>
-                    <h6 id="bigger" class="italic-sentence">Gestion de projets (méthodologies Agile et Scrum, Kanban).<br> Acquisition
-                        et approfondissement des langages HTML, MySQL, CSS, PHP, JavaScript, Symfony, JQuery, Bootstrap, Bulma,
-                         Docker, AJAX, JSON, Node.js, WordPress, et POO.
+                    <h6 id="bigger" class="italic-sentence">Cette formation m'a appris à travailler et gérer des
+                        projets en équipe (méthodologies Agile et Scrum, Kanban). Et de développer ces compétences :<br><br>
+                        - Maquetter une application.<br>
+                        - Réaliser une interface utilisateur web statique et adaptable.<br>
+                        - Développer une interface utilisateur web dynamique.<br>
+                        - Réaliser une interface utilisateur avec une solution de gestion de contenu e-commerce (CMS).<br>
+                        - Créer une base de données.<br>
+                        - Développer les composants d'accès aux données.<br>
+                        - Développer la partie back-end d'une application web ou web mobile.<br>
+                        - Elaborer et mettre en œuvre des composants dans une application des gestion de contenu ou
+                        e-commerce.
                     </h6>
                 </div>
                 <div class="box-size box-margin-middle">
@@ -243,35 +282,6 @@ require "contact.php";
                     <h3>CAP + BEP EN ÉLECTROTECHNIQUE</h3>
                     <h4>LYCÉE CHARLES PRIVAT</h4>
                     <h5>2002 - 2004</h5>
-                </div>
-            </div>
-        </section>
-        <section id="experience" class="section font-content text-center">
-            <div class="flex-titles">
-                <h2 class="titles permanent">EXPÉRIENCE</h2>
-            </div>
-            <div class="grid grid-tc2-align grid-responsive box-margin">
-                <div class="box-size box-margin-middle grid-special">
-                    <h3>DÉVELOPPEUR WEB FULLSTACK (STAGE)</h3>
-                    <h4>MOOGLEPOST</h4>
-                    <h5>02/2020 - 03/2020</h5>
-                    <h6 id="bigger" class="italic-sentence">Intervention sur la plate-forme d’email transactionnel et marketing
-                        MooglePost,<br> incluant développement backend PHP/Symfony 4, front-end HTML5/CSS3/Twig/Bootstrap.<br><br>
-                        La mission inclue aussi une initiation DevOps et CI/CD (GitLab + Docker),<br> et l’écriture de tests
-                        unitaires/intégration.<br><br>
-                        La plate-forme ayant deux bugs connus et référencés, le contexte de résolution de bug<br> et mise à jour
-                        d’une application en production (sans downtime) a était abordé.
-                    </h6>
-                </div>
-                <div class="box-size box-margin-middle">
-                    <h3>OPÉRATEUR TUTEUR EN SALLE BLANCHE</h3>
-                    <h4>SARTORIUS STEDIM BIOTECH FMT</h4>
-                    <h5>11/2014 - 03/2019</h5>
-                </div>
-                <div class="box-size box-margin-middle">
-                    <h3>AGENT DE MAINTENANCE INDUSTRIELLE</h3>
-                    <h4>ALAZARD ET ROUX</h4>
-                    <h5>07/2007 - 06/2012</h5>
                 </div>
             </div>
         </section>
@@ -326,7 +336,7 @@ require "contact.php";
                         ?>
                     </div>
                     <label for="message">*Message:</label><br>
-                    <textarea name="message" id="message" rows="10" maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
+                    <textarea class="box-margin-middle" name="message" id="message" rows="10" maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
