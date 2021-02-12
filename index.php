@@ -306,9 +306,9 @@ require "contact.php";
                             }
                         ?>
                     </div>
-                    <label for="name">*Nom:</label><br>
-                    <input class="input box-margin-middle" type="text" name="name" id="name"
-                           value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?>"><br>
+                    <label for="last_name">*Nom:</label><br>
+                    <input class="input box-margin-middle" type="text" name="last_name" id="last_name"
+                           value="<?php echo isset($_POST['last_name']) ? $_POST['last_name'] : ''; ?>"><br>
 
                     <label for="first_name">*Prénom:</label><br>
                     <input class="input box-margin-middle" type="text" name="first_name" id="first_name"
