@@ -202,10 +202,10 @@ require "contact.php";
                     </a>
                 </div>
                 <div class="box-size-alt box-margin-middle box-transform">
-                    <a href="https://github.com/Lmpwybb/Utoplab" target="_blank">
+                    <a href="https://github.com/Lmpwybb" target="_blank">
                         <div class="font-content">
-                            <h3>Quelques projets</h3>
-                            <img src="pictures/github.png" alt="github utoplab link">
+                            <h3>Mes projets</h3>
+                            <img src="pictures/github.png" alt="github link">
                         </div>
                     </a>
                 </div>
