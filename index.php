@@ -268,7 +268,7 @@ require "contact.php";
                         - Créer une base de données.<br>
                         - Développer les composants d'accès aux données.<br>
                         - Développer la partie back-end d'une application web ou web mobile.<br>
-                        - Elaborer et mettre en œuvre des composants dans une application des gestion de contenu ou
+                        - Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou
                         e-commerce.
                     </h6>
                 </div>
