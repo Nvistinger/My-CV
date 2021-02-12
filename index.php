@@ -54,9 +54,8 @@ require "contact.php";
             </div>
             <div class="box-size box-margin">
                 <h3 class="italic-sentence">"Disponible pour travailler dans la région de Marseille et ses environs.
-                    Certification de niveau 5 obtenue, j'ai appris à travailler et gérer des projets en équipe
-                    (méthodologies agile Scrum et Kanban). Et actuellement en continue au travers de certifications
-                    sur freeCodeCamp. "
+                    Titre professionnel Développeur Web et Web Mobile (BAC+2) obtenu, j'ai appris à travailler et
+                    gérer des projets en équipe (méthodologies agile Scrum et Kanban)."
                 </h3>
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
@@ -165,7 +164,7 @@ require "contact.php";
                         La mission inclue aussi une initiation DevOps et CI/CD (GitLab + Docker), et l’écriture de
                         tests unitaires/intégration.<br><br>
                         La plate-forme ayant deux bugs connus et référencés, le contexte de résolution de bug et mise
-                        à jour d’une application en production (sans downtime) a était abordé.
+                        à jour d’une application en production (sans downtime) a été abordé.
                     </h6>
                 </div>
                 <div class="box-size box-margin-middle">
