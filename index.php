@@ -54,7 +54,7 @@ require "contact.php";
             </div>
             <div class="box-size box-margin">
                 <h3 class="italic-sentence">"En recherche d'une entreprise pouvant m'accueillir en alternance à partir
-                    de Janvier 2022 pour une formation BAC+5 chez Epitech Marseille débutant en septembre 2021."
+                    de Janvier 2022 pour une formation BAC+5 (MSc Pro) à Epitech Marseille débutant en septembre 2021."
                 </h3>
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
