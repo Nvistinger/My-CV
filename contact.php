@@ -2,6 +2,30 @@
 
 require "config.php";
 
+function checkFirstName(array $form): string {
+    if (isset($form['first_name']) === false) {
+        throw new Exception("Le tableau doit contenir une clé first_name.");
+    }
+
+    if (empty($form['first_name'])) {
+        return  "Vous n'avez pas saisi de prénom.";
+    }
+
+    return "";
+}
+
+function checkLastName(array $form): string {
+    if (isset($form['last_name']) === false) {
+        throw new Exception("Le tableau doit contenir une clé last_name.");
+    }
+
+    if (empty($form['last_name'])) {
+        return  "Vous n'avez pas saisi de nom.";
+    }
+
+    return "";
+}
+
 function checkEmail(array $form): string {
     if (isset($form['email']) === false) {
         throw new Exception("Le tableau doit contenir une clé email.");
@@ -47,6 +71,14 @@ function checkMessage(array $form): string {
 }
 
 function checkAll(array $form): bool {
+    if (checkFirstName($form) !== "") {
+        return false;
+    }
+
+    if (checkLastName($form) !== "") {
+        return false;
+    }
+
     if (checkEmail($form) !== "") {
         return false;
     }

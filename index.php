@@ -308,11 +308,23 @@ require "contact.php";
                     <label for="last_name">*Nom:</label><br>
                     <input class="input box-margin-middle" type="text" name="last_name" id="last_name"
                            value="<?php echo isset($_POST['last_name']) ? $_POST['last_name'] : ''; ?>"><br>
-
+                    <div class="error form-margin-middle">
+                        <?php
+                        if (isset($_POST['send'])) {
+                            echo checkLastName($_POST);
+                        }
+                        ?>
+                    </div>
                     <label for="first_name">*Prénom:</label><br>
                     <input class="input box-margin-middle" type="text" name="first_name" id="first_name"
                            value="<?php echo isset($_POST['first_name']) ? $_POST['first_name'] : ''; ?>"><br>
-
+                    <div class="error form-margin-middle">
+                        <?php
+                        if (isset($_POST['send'])) {
+                            echo checkFirstName($_POST);
+                        }
+                        ?>
+                    </div>
                     <label for="email">*Courriel:</label><br>
                     <input class="input box-margin-middle" type="text" name="email" id="email"
                            value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>"><br>
