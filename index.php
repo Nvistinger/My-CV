@@ -53,9 +53,8 @@ require "contact.php";
                 <h2 class="titles permanent">A PROPOS</h2>
             </div>
             <div class="box-size box-margin">
-                <h3 class="italic-sentence">"Disponible pour travailler dans la région de Marseille et ses environs.
-                    Titre professionnel Développeur Web et Web Mobile (BAC+2) obtenu, j'ai appris à travailler et
-                    gérer des projets en équipe (méthodologies agile Scrum et Kanban)."
+                <h3 class="italic-sentence">"En recherche d'une entreprise pouvant m'accueillir en alternance à partir
+                    de Janvier 2022 pour une formation BAC+5 chez Epitech Marseille débutant en septembre 2021."
                 </h3>
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
