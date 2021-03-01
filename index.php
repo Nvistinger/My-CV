@@ -305,28 +305,25 @@ require "contact.php";
                             }
                         ?>
                     </div>
-                    <label for="last_name">*Nom:</label><br>
-                    <input class="input box-margin-middle" type="text" name="last_name" id="last_name"
+                    <input class="input box-margin-middle" type="text" name="last_name" id="last_name" placeholder="* Nom:"
                            value="<?php echo isset($_POST['last_name']) ? $_POST['last_name'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
-                        if (isset($_POST['send'])) {
-                            echo checkLastName($_POST);
-                        }
+                            if (isset($_POST['send'])) {
+                                echo checkLastName($_POST);
+                            }
                         ?>
                     </div>
-                    <label for="first_name">*Prénom:</label><br>
-                    <input class="input box-margin-middle" type="text" name="first_name" id="first_name"
+                    <input class="input box-margin-middle" type="text" name="first_name" id="first_name" placeholder="* Prénom"
                            value="<?php echo isset($_POST['first_name']) ? $_POST['first_name'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
-                        if (isset($_POST['send'])) {
-                            echo checkFirstName($_POST);
-                        }
+                            if (isset($_POST['send'])) {
+                                echo checkFirstName($_POST);
+                            }
                         ?>
                     </div>
-                    <label for="email">*Courriel:</label><br>
-                    <input class="input box-margin-middle" type="text" name="email" id="email"
+                    <input class="input box-margin-middle" type="text" name="email" id="email" placeholder="* Courriel"
                            value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
@@ -335,8 +332,7 @@ require "contact.php";
                             }
                         ?>
                     </div>
-                    <label for="phone">Téléphone:</label><br>
-                    <input class="input box-margin-middle" type="text" name="phone" id="phone"
+                    <input class="input box-margin-middle" type="text" name="phone" id="phone" placeholder="Téléphone"
                            value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
@@ -345,8 +341,7 @@ require "contact.php";
                             }
                         ?>
                     </div>
-                    <label for="message">*Message:</label><br>
-                    <textarea class="box-margin-middle" name="message" id="message" rows="10" maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
+                    <textarea class="box-margin-middle" name="message" id="message" placeholder="* Message:" rows="10" maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {

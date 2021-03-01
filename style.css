@@ -71,7 +71,7 @@ a {
 .box-transform:hover {
 	transform: scale(1.1);
 	border-radius: 5px;
-	box-shadow: 2px 2px 1px 1px rgba(89, 98, 117, 1);
+	box-shadow: 2px 2px 2px 0px rgba(89, 98, 117, 0.4);
 }
 a:hover {
 	cursor: pointer;
@@ -93,6 +93,7 @@ a:hover {
 	height: 35px;
 	width: 50%;
 	border-radius: 5px;
+	border: none;
 }
 
 /* UNIQUE PROPERTY */
@@ -271,6 +272,7 @@ a:hover {
 textarea {
 	width: 95%;
 	border-radius: 5px;
+	border: none;
 }
 
 /*RESPONSIVE*/
