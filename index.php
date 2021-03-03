@@ -6,7 +6,10 @@ $savedToken = "";
 if (isset($_POST['send'])) {
     $savedToken = $_SESSION['token'];
 }
-$_SESSION['token'] = bin2hex(random_bytes(16));
+try {
+    $_SESSION['token'] = bin2hex(random_bytes(16));
+} catch (Exception $e) {
+}
 
 require "contact.php";
 ?>
@@ -27,20 +30,19 @@ require "contact.php";
     </head>
     <body>
         <header class="grid grid-tc3 grid-align grid-responsive">
-            <div class="text-center">
+            <div class="text-change">
                 <img id="laptop" src="pictures/laptop.png" alt="laptop icon">
             </div>
-            <div class="text-center">
+            <div class="text-change">
                 <h1 id="me" class="permanent">SÉBASTIEN CARTOUX</h1>
                 <h2 id="function">DÉVELOPPEUR WEB</h2>
             </div>
-            <div class="text-center">
-                <form action="download/CV-dev-web-seb-cartoux.pdf">
-                    <input class="button permanent" type="submit" value="Télécharger CV">
-                </form>
+            <div class="text-change">
+                <input type="button" class="button permanent" value="Télécharger le CV"
+                       onclick="window.open('download/CV-dev-web-seb-cartoux.pdf', '_blank')">
             </div>
         </header>
-        <nav id="menu-nav" class="grid grid-menu-nav">
+        <nav id="menu-nav" class="grid grid-menu-nav text-change">
             <div><a id="active" class="grid-items-spacing" href="#about">A propos</a></div>
             <div><a href="#skills" class="grid-items-spacing">Compétences</a></div>
             <div><a href="#experience" class="grid-items-spacing">Expérience</a></div>
@@ -48,7 +50,7 @@ require "contact.php";
             <div><a href="#education" class="grid-items-spacing">Formations</a></div>
             <div><a href="#contact" class="grid-items-spacing">Contact</a></div>
         </nav>
-        <section id="about" class="section font-content text-center">
+        <section id="about" class="section font-content text-change">
             <div class="flex-titles">
                 <h2 class="titles permanent">A PROPOS</h2>
             </div>
@@ -73,7 +75,7 @@ require "contact.php";
                 </div>
             </div>
         </section>
-        <section id="skills" class="section font-content text-center">
+        <section id="skills" class="section font-content text-change">
             <div class="flex-titles">
                 <h2 class="titles permanent">COMPÉTENCES</h2>
             </div>
@@ -104,7 +106,7 @@ require "contact.php";
                 </div>
                 <div class="grid-items-spacing">
                     <h3 class="langage-responsive">PHP</h3>
-                    <div id="php" class="logo logo-oval">7</div>
+                    <div id="php" class="logo logo-oval">8</div>
                 </div>
                 <div class="grid-items-spacing">
                     <h3 class="langage-responsive">JS</h3>
@@ -148,7 +150,7 @@ require "contact.php";
                 </div>
             </div>
         </section>
-        <section id="experience" class="section font-content text-center">
+        <section id="experience" class="section font-content text-change">
             <div class="flex-titles">
                 <h2 class="titles permanent">EXPÉRIENCE</h2>
             </div>
@@ -178,7 +180,7 @@ require "contact.php";
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="section font-content text-center">
+        <section id="portfolio" class="section font-content text-change">
             <div class="flex-titles">
                 <h2 class="titles permanent">PORTFOLIO</h2>
             </div>
@@ -233,7 +235,7 @@ require "contact.php";
                 </div>
             </div>
         </section>
-        <section id="education" class="section font-content text-center">
+        <section id="education" class="section font-content text-change">
             <div class="flex-titles">
                 <h2 class="titles permanent">FORMATIONS</h2>
             </div>
@@ -242,17 +244,17 @@ require "contact.php";
                     <h3>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h3>
                     <h4>FREECODECAMP</h4>
                     <h5>10/2020</h5>
-                    <form action="https://freecodecamp.org/certification/lmpwybb/javascript-algorithms-and-data-structures">
-                        <input class="button permanent" type="submit" value="Voir la certification">
-                    </form>
+                    <input type="button" class="button permanent" value="Voir la certification"
+                           onclick="window.open('https://freecodecamp.org/certification/lmpwybb/javascript-algorithms-and-data-structures',
+                           '_blank')">
                 </div>
                 <div class="box-size box-margin-middle">
                     <h3>RESPONSIVE WEB DESIGN</h3>
                     <h4>FREECODECAMP</h4>
                     <h5>06/2020</h5>
-                    <form action="https://freecodecamp.org/certification/lmpwybb/responsive-web-design">
-                        <input class="button permanent" type="submit" value="Voir la certification">
-                    </form>
+                    <input type="button" class="button permanent" value="Voir la certification"
+                           onclick="window.open('https://freecodecamp.org/certification/lmpwybb/responsive-web-design',
+                           '_blank')">
                 </div>
                 <div class="box-size box-margin-middle grid-special">
                     <h3>BAC +2 DÉVELOPPEUR WEB ET WEB MOBILE</h3>
@@ -283,7 +285,7 @@ require "contact.php";
                 </div>
             </div>
         </section>
-        <section id="contact" class="section font-content text-center">
+        <section id="contact" class="section font-content text-change">
             <div class="flex-titles">
                 <h2 class="titles permanent">CONTACT</h2>
             </div>
@@ -305,47 +307,68 @@ require "contact.php";
                             }
                         ?>
                     </div>
+                    <label for="last_name"></label>
                     <input class="input box-margin-middle" type="text" name="last_name" id="last_name" placeholder="* Nom:"
                            value="<?php echo isset($_POST['last_name']) ? $_POST['last_name'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
-                                echo checkLastName($_POST);
+                                try {
+                                    echo checkLastName($_POST);
+                                } catch (Exception $e) {
+                                }
                             }
                         ?>
                     </div>
+                    <label for="first_name"></label>
                     <input class="input box-margin-middle" type="text" name="first_name" id="first_name" placeholder="* Prénom"
                            value="<?php echo isset($_POST['first_name']) ? $_POST['first_name'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
-                                echo checkFirstName($_POST);
+                                try {
+                                    echo checkFirstName($_POST);
+                                } catch (Exception $e) {
+                                }
                             }
                         ?>
                     </div>
+                    <label for="email"></label>
                     <input class="input box-margin-middle" type="text" name="email" id="email" placeholder="* Courriel"
                            value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
-                                echo checkEmail($_POST);
+                                try {
+                                    echo checkEmail($_POST);
+                                } catch (Exception $e) {
+                                }
                             }
                         ?>
                     </div>
+                    <label for="phone"></label>
                     <input class="input box-margin-middle" type="text" name="phone" id="phone" placeholder="Téléphone"
                            value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
-                                echo checkPhone($_POST);
+                                try {
+                                    echo checkPhone($_POST);
+                                } catch (Exception $e) {
+                                }
                             }
                         ?>
                     </div>
-                    <textarea class="box-margin-middle" name="message" id="message" placeholder="* Message:" rows="10" maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
+                    <label for="message"></label>
+                    <textarea class="box-margin-middle" name="message" id="message" placeholder="* Message:" rows="10"
+                              maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
-                                echo checkMessage($_POST);
+                                try {
+                                    echo checkMessage($_POST);
+                                } catch (Exception $e) {
+                                }
                             }
                         ?>
                     </div>
@@ -354,11 +377,9 @@ require "contact.php";
                 </form>
             </div>
         </section>
-        <section id="footer" class="font-content text-center">
-            <footer class="flex-titles">
-                <h3>&copy lmpwybb.alwaysdata.net</h3>
-            </footer>
-        </section>
+        <footer id="footer" class="font-content text-change flex-titles">
+            <h3>&copy lmpwybb.alwaysdata.net</h3>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
