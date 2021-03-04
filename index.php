@@ -202,6 +202,14 @@ require "contact.php";
                     </a>
                 </div>
                 <div class="box-size-alt box-margin-middle box-transform">
+                    <a href="https://choupis.alwaysdata.net" target="_blank">
+                        <div class="font-content">
+                            <h3>Choupis raccourcisseur d'URL</h3>
+                            <img src="pictures/choupisV.png" alt="choupis link">
+                        </div>
+                    </a>
+                </div>
+                <div class="box-size-alt box-margin-middle box-transform">
                     <a href="https://github.com/Lmpwybb" target="_blank">
                         <div class="font-content">
                             <h3>Mes projets</h3>
