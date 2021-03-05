@@ -8,7 +8,8 @@ if (isset($_POST['send'])) {
 }
 try {
     $_SESSION['token'] = bin2hex(random_bytes(16));
-} catch (Exception $e) {
+} catch (Exception $error) {
+    die($error->getMessage());
 }
 
 require "contact.php";
@@ -323,7 +324,8 @@ require "contact.php";
                             if (isset($_POST['send'])) {
                                 try {
                                     echo checkLastName($_POST);
-                                } catch (Exception $e) {
+                                } catch (Exception $error) {
+                                    die($error->getMessage());
                                 }
                             }
                         ?>
@@ -336,7 +338,8 @@ require "contact.php";
                             if (isset($_POST['send'])) {
                                 try {
                                     echo checkFirstName($_POST);
-                                } catch (Exception $e) {
+                                } catch (Exception $error) {
+                                    die($error->getMessage());
                                 }
                             }
                         ?>
@@ -349,7 +352,8 @@ require "contact.php";
                             if (isset($_POST['send'])) {
                                 try {
                                     echo checkEmail($_POST);
-                                } catch (Exception $e) {
+                                } catch (Exception $error) {
+                                    die($error->getMessage());
                                 }
                             }
                         ?>
@@ -362,7 +366,8 @@ require "contact.php";
                             if (isset($_POST['send'])) {
                                 try {
                                     echo checkPhone($_POST);
-                                } catch (Exception $e) {
+                                } catch (Exception $error) {
+                                    die($error->getMessage());
                                 }
                             }
                         ?>
@@ -375,7 +380,8 @@ require "contact.php";
                             if (isset($_POST['send'])) {
                                 try {
                                     echo checkMessage($_POST);
-                                } catch (Exception $e) {
+                                } catch (Exception $error) {
+                                    die($error->getMessage());
                                 }
                             }
                         ?>

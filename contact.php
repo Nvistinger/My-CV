@@ -71,24 +71,29 @@ function checkMessage(array $form): string {
 }
 
 function checkAll(array $form): bool {
-    if (checkFirstName($form) !== "") {
-        return false;
-    }
+    try {
+        if (checkFirstName($form) !== "") {
+            return false;
+        }
 
-    if (checkLastName($form) !== "") {
-        return false;
-    }
+        if (checkLastName($form) !== "") {
+            return false;
+        }
 
-    if (checkEmail($form) !== "") {
-        return false;
-    }
+        if (checkEmail($form) !== "") {
+            return false;
+        }
 
-    if (checkPhone($form) !== "") {
-        return false;
-    }
+        if (checkPhone($form) !== "") {
+            return false;
+        }
 
-    if (checkMessage($form) !== "") {
-        return false;
+        if (checkMessage($form) !== "") {
+            return false;
+        }
+
+    } catch (Exception $error) {
+        die($error->getMessage());
     }
 
     return true;
