@@ -373,7 +373,7 @@ require "contact.php";
                         ?>
                     </div>
                     <label for="message"></label>
-                    <textarea class="box-margin-middle" name="message" id="message" placeholder="* Message:" rows="10"
+                    <textarea class="box-margin-middle" name="message" id="message" placeholder="* Message: (réduit automatiquement à 500 charactères)" rows="10"
                               maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
                     <div class="error form-margin-middle">
                         <?php

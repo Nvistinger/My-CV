@@ -114,7 +114,7 @@ function sendEmail(array $form): bool {
 
     $email_to = $config["email"];
     $email_subject = "Prise de contact";
-    $email_message = "On vous a contacté de votre site lmpwybb.alwaysdata.net:\n\n";
+    $email_message = "On vous a contacté de votre site " . $config['host'] . ":" . "\n\n";
     $email_message .= "Nom: " . $form['last_name'] . "\n";
     $email_message .= "Prénom: " . $form['first_name'] . "\n";
     $email_message .= "Email: " . $form['email'] . "\n";
