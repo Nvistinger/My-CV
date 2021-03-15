@@ -19,7 +19,7 @@ require "contact.php";
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="index, follow, noodp">
-        <meta name="description" content="Personnal and responsive curriculum vitae of Sébastien Cartoux">
+        <meta name="description" content="Personnal and responsive curriculum vitae of Sébastien Cartoux as Lmpwybb">
         <meta name="keywords" content="curriculum vitae web developper native responsive HTML CSS PHP JavaScript">
         <meta name="author" content="Sébastien Cartoux">
         <meta name="HandheldFriendly" content="true">
@@ -64,15 +64,31 @@ require "contact.php";
                 <div class="grid-items-spacing">
                     <img id="portrait" src="pictures/portrait.png" alt="portrait icon">
                 </div>
-                <div class="grid-items-spacing">
-                    <h3 class="italic-sentence">Détenteur du Permis B</h3>
-                    <h4>Capacité d'adaptation</h4>
-                    <h4>Force de proposition</h4>
-                    <h4>Persévérance</h4>
-                    <h4>Réactivité</h4>
-                    <h4>Rigueur</h4>
-                    <h4>Sens de l'organisation</h4>
-                    <h4>Travail en équipe</h4>
+                <div class="grid-items-spacing icons">
+                    <div class="box-transform">
+                        <a href="https://github.com/Lmpwybb" target="_blank">
+                            <div class="font-content">
+                                <h3>Mon Github</h3>
+                                <img src="pictures/githubicon.png" alt="github link">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-transform">
+                        <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
+                            <div class="font-content">
+                                <h3>Mon Linkedin</h3>
+                                <img src="pictures/linkedin.png" alt="linkedin">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-transform">
+                        <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
+                            <div class="font-content">
+                                <h3>Mon Youtube</h3>
+                                <img src="pictures/youtube.png" alt="youtube">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -160,14 +176,6 @@ require "contact.php";
                     <h3>DÉVELOPPEUR WEB FULLSTACK (STAGE)</h3>
                     <h4>MOOGLEPOST</h4>
                     <h5>02/2020 - 03/2020</h5>
-                    <h6 id="bigger" class="italic-sentence">Intervention sur la plate-forme d’email transactionnel et
-                        marketing MooglePost, incluant développement backend PHP/Symfony 4, front-end
-                        HTML5/CSS3/Twig/Bootstrap.<br><br>
-                        La mission inclue aussi une initiation DevOps et CI/CD (GitLab + Docker), et l’écriture de
-                        tests unitaires/intégration.<br><br>
-                        La plate-forme ayant deux bugs connus et référencés, le contexte de résolution de bug et mise
-                        à jour d’une application en production (sans downtime) a été abordé.
-                    </h6>
                 </div>
                 <div class="box-size box-margin-middle">
                     <h3>OPÉRATEUR TUTEUR EN SALLE BLANCHE</h3>
@@ -211,34 +219,10 @@ require "contact.php";
                     </a>
                 </div>
                 <div class="box-size-alt box-margin-middle box-transform">
-                    <a href="https://github.com/Lmpwybb" target="_blank">
-                        <div class="font-content">
-                            <h3>Mes projets</h3>
-                            <img src="pictures/github.png" alt="github link">
-                        </div>
-                    </a>
-                </div>
-                <div class="box-size-alt box-margin-middle box-transform">
                     <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
                         <div class="font-content">
                             <h3>CMS Wordpress</h3>
                             <img src="pictures/wordpress.png" alt="wordpress">
-                        </div>
-                    </a>
-                </div>
-                <div class="box-size-alt box-margin-middle box-transform">
-                    <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
-                        <div class="font-content">
-                            <h3>Mon LinkedIn</h3>
-                            <img src="pictures/linkedin.png" alt="linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="box-size-alt box-margin-middle box-transform">
-                    <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
-                        <div class="font-content">
-                            <h3>Youtubeur à mes heures</h3>
-                            <img src="pictures/youtube.png" alt="youtube">
                         </div>
                     </a>
                 </div>
@@ -269,18 +253,6 @@ require "contact.php";
                     <h3>BAC +2 DÉVELOPPEUR WEB ET WEB MOBILE</h3>
                     <h4>UTOPLAB / SIMPLON / GRANDE ÉCOLE DU NUMERIQUE</h4>
                     <h5>07/2019 - 05/2020</h5>
-                    <h6 id="bigger" class="italic-sentence">Cette formation m'a appris à travailler et gérer des
-                        projets en équipe (méthodologies Agile et Scrum, Kanban). Et de développer ces compétences :<br><br>
-                        - Maquetter une application.<br>
-                        - Réaliser une interface utilisateur web statique et adaptable.<br>
-                        - Développer une interface utilisateur web dynamique.<br>
-                        - Réaliser une interface utilisateur avec une solution de gestion de contenu e-commerce (CMS).<br>
-                        - Créer une base de données.<br>
-                        - Développer les composants d'accès aux données.<br>
-                        - Développer la partie back-end d'une application web ou web mobile.<br>
-                        - Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou
-                        e-commerce.
-                    </h6>
                 </div>
                 <div class="box-size box-margin-middle">
                     <h3>BAC PROFESSIONNEL EN ÉLECTROTECHNIQUE</h3>
