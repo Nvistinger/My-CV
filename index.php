@@ -221,7 +221,7 @@ require "contact.php";
                 <div class="box-size-alt box-margin-middle box-transform">
                     <a href="https://lmpwybb.alwaysdata.net/wpcms/" target="_blank">
                         <div class="font-content">
-                            <h3>CMS Wordpress</h3>
+                            <h3>Lady-M boutique de chaussures</h3>
                             <img src="pictures/wordpress.png" alt="wordpress">
                         </div>
                     </a>
@@ -363,7 +363,7 @@ require "contact.php";
                 </form>
             </div>
         </section>
-        <footer id="footer" class="font-content text-change flex-titles">
+        <footer class="font-content text-change flex-titles">
             <h3>&copy lmpwybb.alwaysdata.net</h3>
         </footer>
         <script src="script.js"></script>
