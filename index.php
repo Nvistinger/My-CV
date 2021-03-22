@@ -56,8 +56,9 @@ require "contact.php";
                 <h2 class="titles permanent">A PROPOS</h2>
             </div>
             <div class="box-size box-margin">
-                <h3 class="italic-sentence">"En recherche d'une entreprise pouvant m'accueillir en alternance à partir
-                    de Janvier 2022 pour une formation BAC+5 (MSc Pro) à Epitech Marseille débutant en septembre 2021."
+                <h3 class="italic-sentence">"En recherche d'un contrat à durée déterminée en tant que développeur
+                    web prenant fin maximum en début septembre mais également d'une entreprise pouvant m'accueillir
+                    en alternance à partir de janvier 2022 pour une formation MSc Pro à Marseille. "
                 </h3>
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
@@ -232,6 +233,11 @@ require "contact.php";
             <div class="flex-titles">
                 <h2 class="titles permanent">FORMATIONS</h2>
             </div>
+            <div class="box-size box-margin-middle grid-special">
+                <h3>MSC PRO | BAC +5</h3>
+                <h4>EPITECH</h4>
+                <h5>09/2021 - 2024</h5>
+            </div>
             <div class="grid grid-tc2-align grid-responsive box-margin">
                 <div class="box-size box-margin-middle">
                     <h3>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h3>
@@ -250,17 +256,17 @@ require "contact.php";
                            '_blank')">
                 </div>
                 <div class="box-size box-margin-middle grid-special">
-                    <h3>BAC +2 DÉVELOPPEUR WEB ET WEB MOBILE</h3>
+                    <h3>DÉVELOPPEUR WEB ET WEB MOBILE | BAC +2 </h3>
                     <h4>UTOPLAB / SIMPLON / GRANDE ÉCOLE DU NUMERIQUE</h4>
                     <h5>07/2019 - 05/2020</h5>
                 </div>
                 <div class="box-size box-margin-middle">
-                    <h3>BAC PROFESSIONNEL EN ÉLECTROTECHNIQUE</h3>
+                    <h3>ÉLECTROTECHNIQUE | BAC PROFESSIONNEL</h3>
                     <h4>LYCÉE CHARLES PRIVAT</h4>
                     <h5>2004 - 2006</h5>
                 </div>
                 <div class="box-size box-margin-middle">
-                    <h3>CAP + BEP EN ÉLECTROTECHNIQUE</h3>
+                    <h3>ÉLECTROTECHNIQUE | CAP + BEP</h3>
                     <h4>LYCÉE CHARLES PRIVAT</h4>
                     <h5>2002 - 2004</h5>
                 </div>
