@@ -362,6 +362,6 @@ require "contact.php";
             <h3>&copy lmpwybb.alwaysdata.net</h3>
         </footer>
         <script src="script.js"></script>
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async></script>
     </body>
 </html>
