@@ -62,29 +62,24 @@ require "contact.php";
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
                 <div class="grid-items-spacing">
-                    <img id="portrait" src="pictures/portrait.png" alt="portrait icon">
+                    <div id="portrait" class="LI-profile-badge" data-version="v1" data-size="large" data-locale="fr_FR"
+                         data-type="horizontal" data-theme="light" data-vanity="seb-cartoux">
+                        <a class="LI-simple-link" href='https://fr.linkedin.com/in/seb-cartoux?trk=profile-badge'>Sébastien Cartoux</a>
+                    </div>
                 </div>
                 <div class="grid-items-spacing icons">
                     <div class="box-transform">
                         <a href="https://github.com/Lmpwybb" target="_blank">
                             <div class="font-content">
-                                <h3>Mon Github</h3>
+                                <h3>Voir le Github</h3>
                                 <img src="pictures/githubicon.png" alt="github link">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box-transform">
-                        <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
-                            <div class="font-content">
-                                <h3>Mon Linkedin</h3>
-                                <img src="pictures/linkedin.png" alt="linkedin">
                             </div>
                         </a>
                     </div>
                     <div class="box-transform">
                         <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
                             <div class="font-content">
-                                <h3>Mon Youtube</h3>
+                                <h3>Voir la chaîne</h3>
                                 <img src="pictures/youtube.png" alt="youtube">
                             </div>
                         </a>
@@ -367,5 +362,6 @@ require "contact.php";
             <h3>&copy lmpwybb.alwaysdata.net</h3>
         </footer>
         <script src="script.js"></script>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     </body>
 </html>
