@@ -131,7 +131,7 @@ a:hover, .button:hover, #active, .box-transform:hover, .input:hover, textarea:ho
 		transform: translate(0px);
 	}
 }
-#laptop, #menu-nav {
+#laptop, #menu-nav, #portrait {
 	animation: 1s fromLeft;
 }
 #menu-nav {
