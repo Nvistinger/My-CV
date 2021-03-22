@@ -62,10 +62,7 @@ require "contact.php";
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
                 <div class="grid-items-spacing">
-                    <div id="portrait" class="LI-profile-badge" data-version="v1" data-size="large" data-locale="fr_FR"
-                         data-type="horizontal" data-theme="light" data-vanity="seb-cartoux">
-                        <a class="LI-simple-link" href='https://fr.linkedin.com/in/seb-cartoux?trk=profile-badge'>Sébastien Cartoux</a>
-                    </div>
+                    <img id="portrait" src="pictures/portrait.png" alt="portrait icon">
                 </div>
                 <div class="grid-items-spacing icons">
                     <div class="box-transform">
@@ -73,6 +70,14 @@ require "contact.php";
                             <div class="font-content">
                                 <h3>Voir le Github</h3>
                                 <img src="pictures/githubicon.png" alt="github link">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-transform">
+                        <a href="https://www.linkedin.com/in/seb-cartoux/" target="_blank">
+                            <div class="font-content">
+                                <h3>Voir le profil</h3>
+                                <img src="pictures/linkedin.png" alt="linkedin">
                             </div>
                         </a>
                     </div>
@@ -362,6 +367,5 @@ require "contact.php";
             <h3>&copy lmpwybb.alwaysdata.net</h3>
         </footer>
         <script src="script.js"></script>
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async></script>
     </body>
 </html>
