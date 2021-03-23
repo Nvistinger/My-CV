@@ -56,9 +56,10 @@ require "contact.php";
                 <h2 class="titles permanent">A PROPOS</h2>
             </div>
             <div class="box-size box-margin">
-                <h3 class="italic-sentence">"En recherche d'un contrat à durée déterminée en tant que développeur
-                    web prenant fin maximum en début septembre mais également d'une entreprise pouvant m'accueillir
-                    en alternance à partir de janvier 2022 pour une formation MSc Pro à Marseille. "
+                <h3 class="italic-sentence">"En recherche d'un contrat à durée déterminée en tant que développeur web
+                    prenant fin maximum en début septembre 2021."<br><br>
+                    "En recherche d'une entreprise pour une alternance à partir de Janvier 2022 dans le cadre de la
+                    formation MSc Pro Epitech Marseille."
                 </h3>
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
