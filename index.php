@@ -235,7 +235,7 @@ require "contact.php";
                 <h2 class="titles permanent">FORMATIONS</h2>
             </div>
             <div class="box-size box-margin-middle grid-special">
-                <h3>MSC PRO | BAC +5</h3>
+                <h3>ARCHITECTE SYSTÈME RÉSEAU ET SÉCURITÉ | BAC +5</h3>
                 <h4>EPITECH</h4>
                 <h5>09/2021 - 2024</h5>
             </div>
