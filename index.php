@@ -81,14 +81,6 @@ require "contact.php";
                             </div>
                         </a>
                     </div>
-                    <div class="box-transform">
-                        <a href="https://www.youtube.com/channel/UCZsJpXPuepI4J-vIknwv_bQ" target="_blank">
-                            <div class="font-content">
-                                <h3>Voir la chaîne</h3>
-                                <img src="pictures/youtube.png" alt="youtube">
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
