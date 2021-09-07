@@ -205,6 +205,9 @@ a:hover, .button:hover, #active, .box-transform:hover, .input:hover, textarea:ho
 .logo-node {
 	clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
+.logo-webdriver {
+	border-radius: 1vw;
+}
 #ubuntu {
 	background-color: #DD4814;
 }
@@ -255,6 +258,9 @@ a:hover, .button:hover, #active, .box-transform:hover, .input:hover, textarea:ho
 }
 #node {
 	background-color: #73AA63;
+}
+#webdriver {
+	background-color: #EA5906;
 }
 #wordpress {
 	background-color: #453F3D;

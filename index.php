@@ -81,6 +81,14 @@ require "contact.php";
                             </div>
                         </a>
                     </div>
+                    <div class="box-transform">
+                        <a href="https://my.indeed.com/p/nivi-opcv1kc" target="_blank">
+                            <div class="font-content">
+                                <h3>Voir le profil</h3>
+                                <img src="pictures/indeed.png" alt="indeed">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -152,6 +160,10 @@ require "contact.php";
                 <div class="grid-items-spacing">
                     <h3 class="langage-responsive">NODE.JS</h3>
                     <div id="node" class="logo logo-node"></div>
+                </div>
+                <div class="grid-items-spacing">
+                    <h3 class="langage-responsive">WDRIVER</h3>
+                    <div id="webdriver" class="logo logo-webdriver">i/o</div>
                 </div>
                 <div class="grid-items-spacing">
                     <h3 class="langage-responsive">WPRESS</h3>
