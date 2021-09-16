@@ -56,8 +56,8 @@ require "contact.php";
                 <h2 class="titles permanent">A PROPOS</h2>
             </div>
             <div class="box-size box-margin">
-                <h3 class="italic-sentence">"En recherche d'une entreprise pour une alternance à partir du 3 Janvier
-                    2022 dans le cadre de la formation MSc Pro Epitech Marseille."
+                <h3 class="italic-sentence">"En recherche d'une entreprise pour une alternance (8 mois) à partir du 3
+                    Janvier 2022 dans le cadre de la formation MSc Pro Epitech Marseille."
                 </h3>
             </div>
             <div class="box-size-alt grid grid-tc2-align grid-responsive box-margin">
