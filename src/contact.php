@@ -2,6 +2,9 @@
 
 require "config.php";
 
+/**
+ * @throws Exception
+ */
 function checkFirstName(array $form): string {
     if (isset($form['first_name']) === false) {
         throw new Exception("Le tableau doit contenir une clé first_name.");
@@ -14,6 +17,9 @@ function checkFirstName(array $form): string {
     return "";
 }
 
+/**
+ * @throws Exception
+ */
 function checkLastName(array $form): string {
     if (isset($form['last_name']) === false) {
         throw new Exception("Le tableau doit contenir une clé last_name.");
@@ -26,6 +32,9 @@ function checkLastName(array $form): string {
     return "";
 }
 
+/**
+ * @throws Exception
+ */
 function checkEmail(array $form): string {
     if (isset($form['email']) === false) {
         throw new Exception("Le tableau doit contenir une clé email.");
@@ -42,6 +51,9 @@ function checkEmail(array $form): string {
     return "";
 }
 
+/**
+ * @throws Exception
+ */
 function checkPhone(array $form): string {
     if (isset($form['phone']) === false) {
         throw new Exception("Le tableau doit contenir une clé phone.");
@@ -58,6 +70,9 @@ function checkPhone(array $form): string {
     return "";
 }
 
+/**
+ * @throws Exception
+ */
 function checkMessage(array $form): string {
     if (isset($form['message']) === false) {
         throw new Exception("Le tableau doit contenir une clé message.");

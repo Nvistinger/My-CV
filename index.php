@@ -12,7 +12,7 @@ try {
     die($error->getMessage());
 }
 
-require "contact.php";
+require "src/contact.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -25,7 +25,7 @@ require "contact.php";
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sébastien Cartoux</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="design/style.css">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rajdhani|Ubuntu&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
     </head>
@@ -299,7 +299,7 @@ require "contact.php";
                     </div>
                     <label for="last_name"></label>
                     <input class="input box-margin-middle" type="text" name="last_name" id="last_name" placeholder="* Nom:"
-                           value="<?php echo isset($_POST['last_name']) ? $_POST['last_name'] : ''; ?>"><br>
+                           value="<?php echo $_POST['last_name'] ?? ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
@@ -313,7 +313,7 @@ require "contact.php";
                     </div>
                     <label for="first_name"></label>
                     <input class="input box-margin-middle" type="text" name="first_name" id="first_name" placeholder="* Prénom"
-                           value="<?php echo isset($_POST['first_name']) ? $_POST['first_name'] : ''; ?>"><br>
+                           value="<?php echo $_POST['first_name'] ?? ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
@@ -327,7 +327,7 @@ require "contact.php";
                     </div>
                     <label for="email"></label>
                     <input class="input box-margin-middle" type="text" name="email" id="email" placeholder="* Courriel"
-                           value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>"><br>
+                           value="<?php echo $_POST['email'] ?? ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
@@ -341,7 +341,7 @@ require "contact.php";
                     </div>
                     <label for="phone"></label>
                     <input class="input box-margin-middle" type="text" name="phone" id="phone" placeholder="Téléphone"
-                           value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''; ?>"><br>
+                           value="<?php echo $_POST['phone'] ?? ''; ?>"><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
@@ -355,7 +355,7 @@ require "contact.php";
                     </div>
                     <label for="message"></label>
                     <textarea class="box-margin-middle" name="message" id="message" placeholder="* Message: (réduit automatiquement à 500 charactères)" rows="10"
-                              maxlength="500"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
+                              maxlength="500"><?php echo $_POST['message'] ?? ''; ?></textarea><br>
                     <div class="error form-margin-middle">
                         <?php
                             if (isset($_POST['send'])) {
@@ -373,8 +373,8 @@ require "contact.php";
             </div>
         </section>
         <footer class="font-content text-change flex-titles">
-            <h3>&copy lmpwybb.alwaysdata.net</h3>
+            <h3>&copy; lmpwybb.alwaysdata.net</h3>
         </footer>
-        <script src="script.js"></script>
+        <script src="script/script.js"></script>
     </body>
 </html>
