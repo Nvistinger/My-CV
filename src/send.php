@@ -7,11 +7,11 @@ require "config.php";
  */
 function checkFirstName(array $form): string {
     if (isset($form['first_name']) === false) {
-        throw new Exception("Le tableau doit contenir une clé first_name.");
+        throw new Exception("The array must contain a first_name key.");
     }
 
     if (empty($form['first_name'])) {
-        return  "Vous n'avez pas saisi de prénom.";
+        return  "You did not enter a first name.";
     }
 
     return "";
@@ -22,11 +22,11 @@ function checkFirstName(array $form): string {
  */
 function checkLastName(array $form): string {
     if (isset($form['last_name']) === false) {
-        throw new Exception("Le tableau doit contenir une clé last_name.");
+        throw new Exception("The array must contain a last_name key.");
     }
 
     if (empty($form['last_name'])) {
-        return  "Vous n'avez pas saisi de nom.";
+        return  "You did not enter a name.";
     }
 
     return "";
@@ -37,15 +37,15 @@ function checkLastName(array $form): string {
  */
 function checkEmail(array $form): string {
     if (isset($form['email']) === false) {
-        throw new Exception("Le tableau doit contenir une clé email.");
+        throw new Exception("The table must contain an email key.");
     }
 
     if (empty($form['email'])) {
-        return  "Vous n'avez pas saisi d'adresse email.";
+        return  "You did not enter an email address.";
     }
 
     if (filter_var($form['email'], FILTER_VALIDATE_EMAIL) === false) {
-        return "Vous n'avez pas saisi une adresse email valide.";
+        return "You have not entered a valid email address.";
     }
 
     return "";
@@ -56,15 +56,15 @@ function checkEmail(array $form): string {
  */
 function checkPhone(array $form): string {
     if (isset($form['phone']) === false) {
-        throw new Exception("Le tableau doit contenir une clé phone.");
+        throw new Exception("The array must contain a phone key.");
     }
 
     if (empty($form['phone'])) {
-        return "Vous n'avez pas saisi de numéro de téléphone.";
+        return "You did not enter a phone number.";
     }
 
     if (preg_match("/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/", $form['phone']) !== 1) {
-        return "Vous n'avez pas saisi un numéro de téléphone valide.";
+        return "You have not entered a valid phone number.";
     }
 
     return "";
@@ -75,11 +75,11 @@ function checkPhone(array $form): string {
  */
 function checkMessage(array $form): string {
     if (isset($form['message']) === false) {
-        throw new Exception("Le tableau doit contenir une clé message.");
+        throw new Exception("The array must contain a message key.");
     }
 
     if (empty($form['message'])) {
-        return "Vous n'avez pas saisi de message.";
+        return "You have not entered a message.";
     }
 
     return "";
