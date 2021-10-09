@@ -10,9 +10,13 @@ html {
     }
 }
 #navbar {
+    font-family: 'Roboto Mono', monospace;
     animation: 1s fromLeft;
 }
 a:hover, .column:hover {
     transition: transform 100ms ease-in;
     transform: scale(1.05);
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
 }

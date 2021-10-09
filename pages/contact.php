@@ -26,11 +26,15 @@ require "../src/send.php";
     <title>Sebastien Cartoux</title>
     <link rel="stylesheet" href="../design/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../pictures/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <header>
-    <nav id="navbar" class="navbar is-info" aria-label="main navigation">
+    <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
             <figure class="image">
                 <img class="is-rounded" src="../pictures/portrait.png" alt="picture of me">
@@ -72,9 +76,9 @@ require "../src/send.php";
 
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <div class="buttons">
+                    <div class="buttons is-centered">
 
-                        <a href="../download/CV-dev-web-seb-cartoux.pdf" class="button is-danger" target="_blank">
+                        <a href="../download/CV-dev-web-seb-cartoux.pdf" class="button is-danger is-rounded" target="_blank">
                             <strong>Download CV</strong>
                         </a>
 
@@ -230,7 +234,7 @@ require "../src/send.php";
 
                 <div class="field">
                     <div class="control">
-                        <input id="submit-button" class="button is-danger" name="send" type="submit" value="Envoyer">
+                        <input id="submit-button" class="button is-danger is-rounded" name="send" type="submit" value="Envoyer">
                     </div>
                 </div>
             </form>
