@@ -9,6 +9,9 @@ html {
         transform: translate(0%, 0%);
     }
 }
+#portrait-navbar {
+    border-radius: 50%;
+}
 #navbar {
     font-family: 'Roboto Mono', monospace;
     animation: 1s fromLeft;
