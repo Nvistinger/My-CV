@@ -13,9 +13,6 @@ html {
     font-family: 'Roboto Mono', monospace;
     animation: 1s fromLeft;
 }
-#circle {
-    border-radius: 50%;
-}
 a:hover, .column:hover {
     transition: transform 100ms ease-in;
     transform: scale(1.05);

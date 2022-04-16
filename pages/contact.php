@@ -35,13 +35,13 @@ require "../src/send.php";
 <header>
     <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <input type="image" id="circle" class="js-modal-trigger" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="picture of me" />
+            <input class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="picture of me" />
 
             <div id="picture-modal" class="modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
-                    <p class="image">
-                        <img class="is-rounded" src="../pictures/portrait-modal.jpg" alt="picture of me">
+                    <p class="image is-4by3">
+                        <img src="../pictures/portrait-modal.png" alt="picture of me">
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
