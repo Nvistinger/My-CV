@@ -19,9 +19,17 @@
 <header>
     <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <figure class="image">
-                <img class="is-rounded" src="pictures/portrait.png" alt="picture of me">
-            </figure>
+            <input type="image" id="circle" class="js-modal-trigger" data-target="picture-modal" src="pictures/portrait-navbar.png" alt="picture of me" />
+
+            <div id="picture-modal" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <p class="image">
+                        <img class="is-rounded" src="pictures/portrait-modal.jpg" alt="picture of me">
+                    </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -83,7 +91,7 @@
 
             <article class="message is-success">
                 <h2 class="message-body">
-                    On a work-study program (8 months), as part of the MSc Pro Epitech Marseille training.
+                    Work-study (8 months) from January 3, 2022 and until August 31, 2022 as part of the MSc Pro Epitech Marseille training.
                 </h2>
             </article>
         </div>
@@ -145,6 +153,7 @@
     </div>
 </section>
 
-<script src="script/script.js"></script>
+<script src="script/navbar.js"></script>
+<script src="script/modal.js"></script>
 </body>
 </html>
