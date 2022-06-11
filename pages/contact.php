@@ -107,26 +107,26 @@ require "../src/send.php";
                 <div class="field">
                     <div class="control">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['token']; ?>">
-                            <?php
-                                if (isset($_POST['send'])) {
-                                    if (checkToken($_POST['csrf_token'], $savedToken)) {
+                        <?php
+                        if (isset($_POST['send'])) {
+                            if (checkToken($_POST['csrf_token'], $savedToken)) {
 
-                                        $status = sendEmail($_POST);
-                                        if ($status) {
+                                $status = sendEmail($_POST);
+                                if ($status) {
 
-                                            $_POST = [];
-                                            echo '<article class="message is-success"><h2 class="message-body">'
-                                                . "Your message has been sent, I will get back to you as soon as possible."
-                                                . '</h2></article>';
-                                        }
-                                    } else {
-
-                                        echo '<article class="message is-danger"><h2 class="message-body">'
-                                            . "The CSRF token has expired, your message has not been transmitted."  .
-                                            '</h2></article>';
-                                    }
+                                    $_POST = [];
+                                    echo '<article class="message is-success"><h2 class="message-body">'
+                                        . "Your message has been sent, I will get back to you as soon as possible."
+                                        . '</h2></article>';
                                 }
-                            ?>
+                            } else {
+
+                                echo '<article class="message is-danger"><h2 class="message-body">'
+                                    . "The CSRF token has expired, your message has not been transmitted."
+                                    . '</h2></article>';
+                            }
+                        }
+                        ?>
                     </div>
                 </div>
 
@@ -136,17 +136,17 @@ require "../src/send.php";
                         <input class="input" type="text" name="last_name" id="last_name" placeholder="* Last Name"
                                value="<?php echo $_POST['last_name'] ?? ''; ?>">
                         <?php
-                            if (isset($_POST['send'])) {
+                        if (isset($_POST['send'])) {
 
-                                try {
+                            try {
 
-                                    echo '<p class="help is-danger">' . checkLastName($_POST) . '</p>';
+                                echo '<p class="help is-danger">' . checkLastName($_POST) . '</p>';
 
-                                } catch (Exception $error) {
+                            } catch (Exception $error) {
 
-                                    die($error->getMessage());
-                                }
+                                die($error->getMessage());
                             }
+                        }
                         ?>
                     </div>
                 </div>
@@ -157,16 +157,16 @@ require "../src/send.php";
                         <input class="input" type="text" name="first_name" id="first_name" placeholder="* First Name"
                                value="<?php echo $_POST['first_name'] ?? ''; ?>">
                         <?php
-                            if (isset($_POST['send'])) {
-                                try {
+                        if (isset($_POST['send'])) {
+                            try {
 
-                                    echo '<p class="help is-danger">' . checkFirstName($_POST) . '</p>';
+                                echo '<p class="help is-danger">' . checkFirstName($_POST) . '</p>';
 
-                                } catch (Exception $error) {
+                            } catch (Exception $error) {
 
-                                    die($error->getMessage());
-                                }
+                                die($error->getMessage());
                             }
+                        }
                         ?>
                     </div>
                 </div>
@@ -177,16 +177,16 @@ require "../src/send.php";
                         <input class="input box-margin-middle" type="text" name="email" id="email" placeholder="* Email"
                                value="<?php echo $_POST['email'] ?? ''; ?>">
                         <?php
-                            if (isset($_POST['send'])) {
-                                try {
+                        if (isset($_POST['send'])) {
+                            try {
 
-                                    echo '<p class="help is-danger">' . checkEmail($_POST) . '</p>';
+                                echo '<p class="help is-danger">' . checkEmail($_POST) . '</p>';
 
-                                } catch (Exception $error) {
+                            } catch (Exception $error) {
 
-                                    die($error->getMessage());
-                                }
+                                die($error->getMessage());
                             }
+                        }
                         ?>
                     </div>
                 </div>
@@ -198,16 +198,16 @@ require "../src/send.php";
                         <input class="input box-margin-middle" type="text" name="phone" id="phone" placeholder="Phone"
                                value="<?php echo $_POST['phone'] ?? ''; ?>">
                         <?php
-                            if (isset($_POST['send'])) {
-                                try {
+                        if (isset($_POST['send'])) {
+                            try {
 
-                                    echo '<p class="help is-danger">' . checkPhone($_POST) . '</p>';
+                                echo '<p class="help is-danger">' . checkPhone($_POST) . '</p>';
 
-                                } catch (Exception $error) {
+                            } catch (Exception $error) {
 
-                                    die($error->getMessage());
-                                }
+                                die($error->getMessage());
                             }
+                        }
                         ?>
                     </div>
                 </div>
@@ -219,16 +219,16 @@ require "../src/send.php";
                                   placeholder="* Message: (automatically reduced to 500 characters)"
                                   maxlength="500"><?php echo $_POST['message'] ?? ''; ?></textarea>
                         <?php
-                            if (isset($_POST['send'])) {
-                                try {
+                        if (isset($_POST['send'])) {
+                            try {
 
-                                    echo '<p class="help is-danger">' . checkMessage($_POST) . '</p>';
+                                echo '<p class="help is-danger">' . checkMessage($_POST) . '</p>';
 
-                                } catch (Exception $error) {
+                            } catch (Exception $error) {
 
-                                    die($error->getMessage());
-                                }
+                                die($error->getMessage());
                             }
+                        }
                         ?>
                     </div>
                 </div>
