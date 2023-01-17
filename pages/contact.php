@@ -235,7 +235,7 @@ require "../src/send.php";
 
                 <div class="field">
                     <div class="control">
-                        <p class="help is-danger">* This informations are required.</p>
+                        <p class="help is-danger">* This information is required.</p>
                     </div>
                 </div>
 
