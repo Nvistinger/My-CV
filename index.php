@@ -1,3 +1,22 @@
+<?php
+@header('Content-Type: text/html; charset=utf-8');
+mb_internal_encoding('UTF-8');
+
+if (isset($_GET['locale'])) {
+    setcookie('locale', $_GET['locale'], time() + 60 * 60 * 24 * 30, '/');
+    $_COOKIE['locale'] = $_GET['locale'];
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+}
+
+if (!isset($_COOKIE['locale'])) {
+    setcookie('locale', 'en_GB', time() + 60 * 60 * 24 * 30, '/');
+    $_COOKIE['locale'] = 'en_GB';
+}
+
+bindtextdomain('main', __DIR__ . '/locale/');
+
+require 'src/translate.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +38,13 @@
 <header>
     <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="pictures/portrait-navbar.png" alt="picture of me" />
+            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="pictures/portrait-navbar.png" alt="<?php echo _('picture of me'); ?>" />
 
             <div id="picture-modal" class="modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image">
-                        <img class="is-rounded" src="pictures/portrait-modal.png" alt="picture of me">
+                        <img src="pictures/portrait-modal.png" alt="<?php echo _('picture of me'); ?>">
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
@@ -40,28 +59,28 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="index.html" class="navbar-item">
-                    About
+                <a href="index.php" class="navbar-item">
+                    <?php echo _('About'); ?>
                 </a>
 
-                <a href="pages/skills.html" class="navbar-item">
-                    Skills
+                <a href="pages/skills.php" class="navbar-item">
+                    <?php echo _('Skills'); ?>
                 </a>
 
-                <a href="pages/experience.html" class="navbar-item">
-                    Experience
+                <a href="pages/experience.php" class="navbar-item">
+                    <?php echo _('Experience'); ?>
                 </a>
 
-                <a href="pages/portfolio.html" class="navbar-item">
-                    Portfolio
+                <a href="pages/portfolio.php" class="navbar-item">
+                    <?php echo _('Portfolio'); ?>
                 </a>
 
-                <a href="pages/training.html" class="navbar-item">
-                    Training
+                <a href="pages/training.php" class="navbar-item">
+                    <?php echo _('Training'); ?>
                 </a>
 
                 <a href="pages/contact.php" class="navbar-item">
-                    Contact
+                    <?php echo _('Contact'); ?>
                 </a>
             </div>
 
@@ -69,8 +88,24 @@
                 <div class="navbar-item">
                     <div class="buttons is-centered">
 
+                        <a id="flag-fr" href="index.php?locale=fr_FR" class="button is-white is-rounded">
+                            🇫🇷
+                        </a>
+
+                        <a id="flag-en" href="index.php?locale=en_GB" class="button is-white is-rounded">
+                            🇬🇧
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item">
+                    <div class="buttons is-centered">
+
                         <a href="download/CV-dev-web-seb-cartoux.pdf" class="button is-danger is-rounded" target="_blank">
-                            <strong>Download CV</strong>
+                            <strong>
+                                <?php echo _('Download CV'); ?>
+                            </strong>
                         </a>
 
                     </div>
@@ -84,14 +119,18 @@
     <div class="card">
         <div class="card-content">
             <div class="box has-background-info">
-                <h1 class="title has-text-white">About</h1>
+                <h1 class="title has-text-white">
+                    <?php echo _('About'); ?>
+                </h1>
             </div>
 
-            <h2 class="subtitle">I am Sebastien Cartoux student at Epitech Marseille in web and mobile development.</h2>
+            <h2 class="subtitle">
+                <?php echo _('I am Sebastien Cartoux student at Epitech Marseille in web and mobile development.'); ?>
+            </h2>
 
             <article class="message is-success">
                 <h2 class="message-body">
-                    Work-study until August 31, 2024, as part of the MSc Pro Epitech Marseille training.
+                    <?php echo _('Alternation until August 31, 2024, as part of the MSc Pro Epitech Marseille training.'); ?>
                 </h2>
             </article>
         </div>
@@ -107,11 +146,13 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="box has-background-info">
-                                <h2 class="subtitle has-text-white">My Github</h2>
+                                <h2 class="subtitle has-text-white">
+                                    <?php echo _('My Github'); ?>
+                                </h2>
                             </div>
 
                             <figure class="image">
-                                <img src="pictures/about/qrcode_github.png" alt="link to github profil">
+                                <img src="pictures/about/qrcode_github.png" alt="<?php echo _('link to github profile'); ?>">
                             </figure>
                         </div>
                     </div>
@@ -123,11 +164,13 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="box has-background-info">
-                                <h2 class="subtitle has-text-white">My Linkedin</h2>
+                                <h2 class="subtitle has-text-white">
+                                    <?php echo _('My Linkedin'); ?>
+                                </h2>
                             </div>
 
                             <figure class="image">
-                                <img src="pictures/about/qrcode_linkedin.png" alt="link to linkedin profil">
+                                <img src="pictures/about/qrcode_linkedin.png" alt="<?php echo _('link to linkedin profile'); ?>">
                             </figure>
                         </div>
                     </div>
@@ -139,11 +182,13 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="box has-background-info">
-                                <h2 class="subtitle has-text-white">My Indeed</h2>
+                                <h2 class="subtitle has-text-white">
+                                    <?php echo _('My Indeed'); ?>
+                                </h2>
                             </div>
 
                             <figure class="image">
-                                <img src="pictures/about/qrcode_indeed.png" alt="link to indeed profil">
+                                <img src="pictures/about/qrcode_indeed.png" alt="<?php echo _('link to indeed profile'); ?>">
                             </figure>
                         </div>
                     </div>

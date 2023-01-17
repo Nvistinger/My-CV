@@ -1,0 +1,375 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 23:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: index.php:59 index.php:119 pages/contact.php:74 pages/skills.php:59
+#: pages/experience.php:59 pages/portfolio.php:59 pages/training.php:59
+msgid "About"
+msgstr ""
+
+#: pages/skills.php:184
+msgid "Adaptability"
+msgstr ""
+
+#: index.php:129
+msgid ""
+"Alternation until August 31, 2024, as part of the MSc Pro Epitech Marseille "
+"training."
+msgstr ""
+
+#: pages/training.php:222 pages/training.php:240
+msgid "Charles Privat High School"
+msgstr ""
+
+#: pages/experience.php:168
+msgid "Cleanroom Tutor Operator"
+msgstr ""
+
+#: pages/skills.php:247
+msgid "Computer hardware"
+msgstr ""
+
+#: index.php:79 pages/contact.php:94 pages/skills.php:79
+#: pages/experience.php:79 pages/portfolio.php:79 pages/training.php:79
+msgid "Contact"
+msgstr ""
+
+#: index.php:103 pages/contact.php:118 pages/skills.php:103
+#: pages/experience.php:103 pages/portfolio.php:103 pages/training.php:103
+msgid "Download CV"
+msgstr ""
+
+#: pages/training.php:234
+msgid "Electrotechnics | CAP + BEP"
+msgstr ""
+
+#: pages/training.php:216
+msgid "Electrotechnics | Profesional BAC"
+msgstr ""
+
+#: pages/contact.php:207
+msgid "Email"
+msgstr ""
+
+#: index.php:67 pages/contact.php:82 pages/skills.php:67
+#: pages/experience.php:67 pages/experience.php:119 pages/portfolio.php:67
+#: pages/training.php:67
+msgid "Experience"
+msgstr ""
+
+#: pages/contact.php:187
+msgid "First Name"
+msgstr ""
+
+#: pages/skills.php:191
+msgid "Force of proposal"
+msgstr ""
+
+#: pages/experience.php:130
+msgid "FullStack Web Developer (Alternation)"
+msgstr ""
+
+#: pages/experience.php:151
+msgid "FullStack Web Developer (Traineeship)"
+msgstr ""
+
+#: pages/training.php:205
+msgid "Great School Of Digital"
+msgstr ""
+
+#: pages/skills.php:119
+msgid "Hard skills"
+msgstr ""
+
+#: index.php:124
+msgid ""
+"I am Sebastien Cartoux student at Epitech Marseille in web and mobile "
+"development."
+msgstr ""
+
+#: pages/experience.php:185
+msgid "Industrial Maintenance Agent"
+msgstr ""
+
+#: pages/contact.php:166
+msgid "Last Name"
+msgstr ""
+
+#: pages/skills.php:239
+msgid "Mad skills"
+msgstr ""
+
+#: pages/skills.php:164
+msgid "More skills"
+msgstr ""
+
+#: index.php:146
+msgid "My Github"
+msgstr ""
+
+#: index.php:182
+msgid "My Indeed"
+msgstr ""
+
+#: index.php:164
+msgid "My Linkedin"
+msgstr ""
+
+#: pages/skills.php:198
+msgid "Perseverance"
+msgstr ""
+
+#: pages/contact.php:228
+msgid "Phone"
+msgstr ""
+
+#: index.php:71 pages/contact.php:86 pages/skills.php:71
+#: pages/experience.php:71 pages/portfolio.php:71 pages/portfolio.php:119
+#: pages/training.php:71
+msgid "Portfolio"
+msgstr ""
+
+#: pages/skills.php:205
+msgid "Reactivity"
+msgstr ""
+
+#: pages/portfolio.php:134
+msgid "Real estate agency"
+msgstr ""
+
+#: pages/skills.php:212
+msgid "Rigor"
+msgstr ""
+
+#: pages/skills.php:261
+msgid "Scientific documentaries"
+msgstr ""
+
+#: pages/contact.php:268
+msgid "Send"
+msgstr ""
+
+#: pages/skills.php:219
+msgid "Sense of organisation"
+msgstr ""
+
+#: index.php:63 pages/contact.php:78 pages/skills.php:63
+#: pages/experience.php:63 pages/portfolio.php:63 pages/training.php:63
+msgid "Skills"
+msgstr ""
+
+#: pages/skills.php:176
+msgid "Soft skills"
+msgstr ""
+
+#: pages/training.php:130
+msgid "Software architect, application developer | BAC +5"
+msgstr ""
+
+#: pages/skills.php:268
+msgid "Sport"
+msgstr ""
+
+#: pages/skills.php:226
+msgid "Team work"
+msgstr ""
+
+#: pages/contact.php:155
+msgid "The CSRF token has expired, your message has not been transmitted."
+msgstr ""
+
+#: src/send.php:23
+msgid "The array must contain a first_name key."
+msgstr ""
+
+#: src/send.php:38
+msgid "The array must contain a last_name key."
+msgstr ""
+
+#: src/send.php:91
+msgid "The array must contain a message key."
+msgstr ""
+
+#: src/send.php:72
+msgid "The array must contain a phone key."
+msgstr ""
+
+#: src/send.php:53
+msgid "The table must contain an email key."
+msgstr ""
+
+#: index.php:75 pages/contact.php:90 pages/skills.php:75
+#: pages/experience.php:75 pages/portfolio.php:75 pages/training.php:75
+#: pages/training.php:119
+msgid "Training"
+msgstr ""
+
+#: pages/portfolio.php:152
+msgid "Url Shortener"
+msgstr ""
+
+#: pages/skills.php:254
+msgid "Video games"
+msgstr ""
+
+#: pages/training.php:200
+msgid "Web And Mobile Developer | BAC +2"
+msgstr ""
+
+#: pages/training.php:149
+msgid "Web and mobile project manager | BAC +3"
+msgstr ""
+
+#: src/send.php:27
+msgid "You did not enter a first name."
+msgstr ""
+
+#: src/send.php:42
+msgid "You did not enter a name."
+msgstr ""
+
+#: src/send.php:76
+msgid "You did not enter a phone number."
+msgstr ""
+
+#: src/send.php:57
+msgid "You did not enter an email address."
+msgstr ""
+
+#: src/send.php:95
+msgid "You have not entered a message."
+msgstr ""
+
+#: src/send.php:61
+msgid "You have not entered a valid email address."
+msgstr ""
+
+#: src/send.php:80
+msgid "You have not entered a valid phone number."
+msgstr ""
+
+#: pages/contact.php:149
+msgid "Your message has been sent, I will get back to you as soon as possible."
+msgstr ""
+
+#: pages/skills.php:182
+msgid "adaptability icon"
+msgstr ""
+
+#: pages/training.php:168 pages/training.php:184
+msgid "certificate icon"
+msgstr ""
+
+#: pages/skills.php:162
+msgid "down arrow picture"
+msgstr ""
+
+#: pages/skills.php:189
+msgid "force of proposal icon"
+msgstr ""
+
+#: pages/training.php:204
+msgid "graduation icon"
+msgstr ""
+
+#: pages/skills.php:245
+msgid "hardware icon"
+msgstr ""
+
+#: pages/training.php:220 pages/training.php:238
+msgid "high school icon"
+msgstr ""
+
+#: pages/training.php:153
+msgid "learning icon"
+msgstr ""
+
+#: pages/portfolio.php:155
+msgid "link to choupis"
+msgstr ""
+
+#: index.php:151
+msgid "link to github profile"
+msgstr ""
+
+#: index.php:187
+msgid "link to indeed profile"
+msgstr ""
+
+#: index.php:169
+msgid "link to linkedin profile"
+msgstr ""
+
+#: pages/portfolio.php:137
+msgid "link to manys"
+msgstr ""
+
+#: pages/experience.php:155
+msgid "mail icon"
+msgstr ""
+
+#: pages/skills.php:196
+msgid "perseverance icon"
+msgstr ""
+
+#: index.php:37 index.php:43 pages/contact.php:52 pages/contact.php:58
+#: pages/skills.php:37 pages/skills.php:43 pages/experience.php:37
+#: pages/experience.php:43 pages/portfolio.php:37 pages/portfolio.php:43
+#: pages/training.php:37 pages/training.php:43
+msgid "picture of me"
+msgstr ""
+
+#: pages/experience.php:172
+msgid "pils icon"
+msgstr ""
+
+#: pages/skills.php:203
+msgid "reactivity icon"
+msgstr ""
+
+#: pages/skills.php:210
+msgid "rigor icon"
+msgstr ""
+
+#: pages/skills.php:259
+msgid "scientific documentaries icon"
+msgstr ""
+
+#: pages/skills.php:217
+msgid "sense of organisation icon"
+msgstr ""
+
+#: pages/experience.php:134
+msgid "speech icon"
+msgstr ""
+
+#: pages/skills.php:266
+msgid "sport icon"
+msgstr ""
+
+#: pages/skills.php:224
+msgid "team work icon"
+msgstr ""
+
+#: pages/experience.php:189
+msgid "tools icon"
+msgstr ""
+
+#: pages/skills.php:252
+msgid "video games icon"
+msgstr ""

@@ -1,3 +1,8 @@
+<?php
+bindtextdomain('main', __DIR__ . '../locale/');
+
+require '../src/translate.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +24,13 @@
 <header>
     <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="picture of me" />
+            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="<?php echo _('picture of me'); ?>" />
 
             <div id="picture-modal" class="modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image">
-                        <img class="is-rounded" src="../pictures/portrait-modal.png" alt="picture of me">
+                        <img src="../pictures/portrait-modal.png" alt="<?php echo _('picture of me'); ?>">
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
@@ -40,28 +45,28 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="../index.html" class="navbar-item">
-                    About
+                <a href="../index.php" class="navbar-item">
+                    <?php echo _('About'); ?>
                 </a>
 
-                <a href="skills.html" class="navbar-item">
-                    Skills
+                <a href="skills.php" class="navbar-item">
+                    <?php echo _('Skills'); ?>
                 </a>
 
-                <a href="experience.html" class="navbar-item">
-                    Experience
+                <a href="experience.php" class="navbar-item">
+                    <?php echo _('Experience'); ?>
                 </a>
 
-                <a href="portfolio.html" class="navbar-item">
-                    Portfolio
+                <a href="portfolio.php" class="navbar-item">
+                    <?php echo _('Portfolio'); ?>
                 </a>
 
-                <a href="training.html" class="navbar-item">
-                    Training
+                <a href="training.php" class="navbar-item">
+                    <?php echo _('Training'); ?>
                 </a>
 
                 <a href="contact.php" class="navbar-item">
-                    Contact
+                    <?php echo _('Contact'); ?>
                 </a>
             </div>
 
@@ -69,8 +74,24 @@
                 <div class="navbar-item">
                     <div class="buttons is-centered">
 
+                        <a id="flag-fr" href="../index.php?locale=fr_FR" class="button is-white is-rounded">
+                            🇫🇷
+                        </a>
+
+                        <a id="flag-en" href="../index.php?locale=en_GB" class="button is-white is-rounded">
+                            🇬🇧
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item">
+                    <div class="buttons is-centered">
+
                         <a href="../download/CV-dev-web-seb-cartoux.pdf" class="button is-danger is-rounded" target="_blank">
-                            <strong>Download CV</strong>
+                            <strong>
+                                <?php echo _('Download CV'); ?>
+                            </strong>
                         </a>
 
                     </div>
@@ -84,7 +105,9 @@
     <div class="card">
         <div class="card-content">
             <div class="box has-background-info">
-                <h1 class="title has-text-white">Portfolio</h1>
+                <h1 class="title has-text-white">
+                    <?php echo _('Portfolio'); ?>
+                </h1>
             </div>
 
             <div class="columns">
@@ -97,9 +120,11 @@
                                     <h2 class="subtitle has-text-white">Manys</h2>
                                 </div>
 
-                                <h3 class="subtitle">Real estate agency</h3>
+                                <h3 class="subtitle">
+                                    <?php echo _('Real estate agency'); ?>
+                                </h3>
 
-                                <img src="../pictures/portfolio/manys.png" alt="link to manys">
+                                <img src="../pictures/portfolio/manys.png" alt="<?php echo _('link to manys') ?>">
                             </div>
                         </div>
                     </a>
@@ -113,9 +138,11 @@
                                     <h2 class="subtitle has-text-white">Choupis</h2>
                                 </div>
 
-                                <h3 class="subtitle">Url Shortener</h3>
+                                <h3 class="subtitle">
+                                    <?php echo _('Url Shortener'); ?>
+                                </h3>
 
-                                <img src="../pictures/portfolio/choupisV.png" alt="link to choupis">
+                                <img src="../pictures/portfolio/choupisV.png" alt="<?php echo _('link to choupis') ?>">
                             </div>
                         </div>
                     </a>

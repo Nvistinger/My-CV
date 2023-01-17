@@ -20,6 +20,10 @@ html {
     animation: 1s fromLeft;
 }
 
+#flag-en, #flag-fr {
+    font-size: 1.5em;
+}
+
 a:hover, .column:hover {
     transition: transform 100ms ease-in;
     transform: scale(1.05);

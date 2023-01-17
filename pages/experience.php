@@ -1,3 +1,8 @@
+<?php
+bindtextdomain('main', __DIR__ . '../locale/');
+
+require '../src/translate.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +24,13 @@
 <header>
     <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="picture of me" />
+            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="<?php echo _('picture of me'); ?>" />
 
             <div id="picture-modal" class="modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image">
-                        <img class="is-rounded" src="../pictures/portrait-modal.png" alt="picture of me">
+                        <img src="../pictures/portrait-modal.png" alt="<?php echo _('picture of me'); ?>">
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
@@ -40,28 +45,28 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="../index.html" class="navbar-item">
-                    About
+                <a href="../index.php" class="navbar-item">
+                    <?php echo _('About'); ?>
                 </a>
 
-                <a href="skills.html" class="navbar-item">
-                    Skills
+                <a href="skills.php" class="navbar-item">
+                    <?php echo _('Skills'); ?>
                 </a>
 
-                <a href="experience.html" class="navbar-item">
-                    Experience
+                <a href="experience.php" class="navbar-item">
+                    <?php echo _('Experience'); ?>
                 </a>
 
-                <a href="portfolio.html" class="navbar-item">
-                    Portfolio
+                <a href="portfolio.php" class="navbar-item">
+                    <?php echo _('Portfolio'); ?>
                 </a>
 
-                <a href="training.html" class="navbar-item">
-                    Training
+                <a href="training.php" class="navbar-item">
+                    <?php echo _('Training'); ?>
                 </a>
 
                 <a href="contact.php" class="navbar-item">
-                    Contact
+                    <?php echo _('Contact'); ?>
                 </a>
             </div>
 
@@ -69,8 +74,24 @@
                 <div class="navbar-item">
                     <div class="buttons is-centered">
 
+                        <a id="flag-fr" href="../index.php?locale=fr_FR" class="button is-white is-rounded">
+                            🇫🇷
+                        </a>
+
+                        <a id="flag-en" href="../index.php?locale=en_GB" class="button is-white is-rounded">
+                            🇬🇧
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item">
+                    <div class="buttons is-centered">
+
                         <a href="../download/CV-dev-web-seb-cartoux.pdf" class="button is-danger is-rounded" target="_blank">
-                            <strong>Download CV</strong>
+                            <strong>
+                                <?php echo _('Download CV'); ?>
+                            </strong>
                         </a>
 
                     </div>
@@ -84,7 +105,9 @@
     <div class="card">
         <div class="card-content">
             <div class="box has-background-info">
-                <h1 class="title has-text-white">Experience</h1>
+                <h1 class="title has-text-white">
+                    <?php echo _('Experience'); ?>
+                </h1>
             </div>
 
             <div class="columns">
@@ -93,10 +116,12 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="box has-background-info">
-                                <h2 class="subtitle has-text-white">FullStack Web Developer (Work-Study)</h2>
+                                <h2 class="subtitle has-text-white">
+                                    <?php echo _('FullStack Web Developer (Alternation)'); ?>
+                                </h2>
                             </div>
 
-                            <img src="../pictures/experience/je_donne_mon_avis.png" alt="speech icon">
+                            <img src="../pictures/experience/je_donne_mon_avis.png" alt="<?php echo _('speech icon') ?>">
                             <h3 class="subtitle">Digifast Interactive</h3>
                             <h4 class="subtitle">01/2022 - 08/2024</h4>
 
@@ -112,10 +137,12 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="box has-background-info">
-                                <h2 class="subtitle has-text-white">FullStack Web Developer (Traineeship)</h2>
+                                <h2 class="subtitle has-text-white">
+                                    <?php echo _('FullStack Web Developer (Traineeship)'); ?>
+                                </h2>
                             </div>
 
-                            <img src="../pictures/experience/mooglepost.png" alt="mail icon">
+                            <img src="../pictures/experience/mooglepost.png" alt="<?php echo _('mail icon') ?>">
                             <h3 class="subtitle">Mooglepost</h3>
                             <h4 class="subtitle">02/2020 - 03/2020</h4>
 
@@ -127,10 +154,12 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="box has-background-info">
-                                <h2 class="subtitle has-text-white">Cleanroom Tutor Operator</h2>
+                                <h2 class="subtitle has-text-white">
+                                    <?php echo _('Cleanroom Tutor Operator'); ?>
+                                </h2>
                             </div>
 
-                            <img src="../pictures/experience/sartorius_stedim.png" alt="pils icon">
+                            <img src="../pictures/experience/sartorius_stedim.png" alt="<?php echo _('pils icon') ?>">
                             <h3 class="subtitle">Sartorius Stedim Biotech FMT</h3>
                             <h4 class="subtitle">11/2014 - 03/2019</h4>
 
@@ -142,10 +171,12 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="box has-background-info">
-                                <h2 class="subtitle has-text-white">Industrial Maintenance Agent</h2>
+                                <h2 class="subtitle has-text-white">
+                                    <?php echo _('Industrial Maintenance Agent'); ?>
+                                </h2>
                             </div>
 
-                            <img src="../pictures/experience/alazard_&_roux.png" alt="tools icon">
+                            <img src="../pictures/experience/alazard_&_roux.png" alt="<?php echo _('tools icon') ?>">
                             <h3 class="subtitle">Alazard & Roux</h3>
                             <h4 class="subtitle">07/2007 - 06/2012</h4>
 

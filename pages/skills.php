@@ -1,3 +1,8 @@
+<?php
+bindtextdomain('main', __DIR__ . '../locale/');
+
+require '../src/translate.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +24,13 @@
 <header>
     <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="picture of me" />
+            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="<?php echo _('picture of me'); ?>" />
 
             <div id="picture-modal" class="modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image">
-                        <img class="is-rounded" src="../pictures/portrait-modal.png" alt="picture of me">
+                        <img src="../pictures/portrait-modal.png" alt="<?php echo _('picture of me'); ?>">
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
@@ -40,28 +45,28 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="../index.html" class="navbar-item">
-                    About
+                <a href="../index.php" class="navbar-item">
+                    <?php echo _('About'); ?>
                 </a>
 
-                <a href="skills.html" class="navbar-item">
-                    Skills
+                <a href="skills.php" class="navbar-item">
+                    <?php echo _('Skills'); ?>
                 </a>
 
-                <a href="experience.html" class="navbar-item">
-                    Experience
+                <a href="experience.php" class="navbar-item">
+                    <?php echo _('Experience'); ?>
                 </a>
 
-                <a href="portfolio.html" class="navbar-item">
-                    Portfolio
+                <a href="portfolio.php" class="navbar-item">
+                    <?php echo _('Portfolio'); ?>
                 </a>
 
-                <a href="training.html" class="navbar-item">
-                    Training
+                <a href="training.php" class="navbar-item">
+                    <?php echo _('Training'); ?>
                 </a>
 
                 <a href="contact.php" class="navbar-item">
-                    Contact
+                    <?php echo _('Contact'); ?>
                 </a>
             </div>
 
@@ -69,8 +74,24 @@
                 <div class="navbar-item">
                     <div class="buttons is-centered">
 
+                        <a id="flag-fr" href="../index.php?locale=fr_FR" class="button is-white is-rounded">
+                            🇫🇷
+                        </a>
+
+                        <a id="flag-en" href="../index.php?locale=en_GB" class="button is-white is-rounded">
+                            🇬🇧
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item">
+                    <div class="buttons is-centered">
+
                         <a href="../download/CV-dev-web-seb-cartoux.pdf" class="button is-danger is-rounded" target="_blank">
-                            <strong>Download CV</strong>
+                            <strong>
+                                <?php echo _('Download CV'); ?>
+                            </strong>
                         </a>
 
                     </div>
@@ -84,7 +105,9 @@
     <div class="card">
         <div class="card-content">
             <div class="box has-background-info">
-                <h1 class="title has-text-white	">Hard Skills</h1>
+                <h1 class="title has-text-white	">
+                    <?php echo _('Hard skills'); ?>
+                </h1>
             </div>
 
             <div class="columns">
@@ -126,8 +149,10 @@
     <ul>
         <li>
             <a href="#moreSkills">
-                <span class="icon"><img src="../pictures/skills/hard_skills/arrow-down.png" alt="down arrow picture"></span>
-                <span>More down</span>
+                <span class="icon"><img src="../pictures/skills/hard_skills/arrow-down.png" alt="<?php echo _('down arrow picture') ?>"></span>
+                <span>
+                    <?php echo _('More skills'); ?>
+                </span>
             </a>
         </li>
     </ul>
@@ -137,43 +162,59 @@
     <div class="card">
         <div class="card-content">
             <div class="box has-background-info">
-                <h1 class="title has-text-white">Soft Skills</h1>
+                <h1 class="title has-text-white">
+                    <?php echo _('Soft skills'); ?>
+                </h1>
             </div>
 
             <div class="columns is-vcentered">
                 <div class="column">
-                    <img src="../pictures/skills/soft_skills/adaptability.png" alt="adaptability icon">
-                    <h2 class="subtitle">Adaptability</h2>
+                    <img src="../pictures/skills/soft_skills/adaptability.png" alt="<?php echo _('adaptability icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Adaptability'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/soft_skills/force_of_proposal.png" alt="force of proposal icon">
-                    <h2 class="subtitle">Force of proposal</h2>
+                    <img src="../pictures/skills/soft_skills/force_of_proposal.png" alt="<?php echo _('force of proposal icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Force of proposal'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/soft_skills/perseverance.png" alt="perseverance icon">
-                    <h2 class="subtitle">Perseverance</h2>
+                    <img src="../pictures/skills/soft_skills/perseverance.png" alt="<?php echo _('perseverance icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Perseverance'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/soft_skills/reactivity.png" alt="reactivity icon">
-                    <h2 class="subtitle">Reactivity</h2>
+                    <img src="../pictures/skills/soft_skills/reactivity.png" alt="<?php echo _('reactivity icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Reactivity'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/soft_skills/rigor.png" alt="rigor icon">
-                    <h2 class="subtitle">Rigor</h2>
+                    <img src="../pictures/skills/soft_skills/rigor.png" alt="<?php echo _('rigor icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Rigor'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/soft_skills/sense_of_organisation.png" alt="sense of organisation icon">
-                    <h2 class="subtitle">Sense of organization</h2>
+                    <img src="../pictures/skills/soft_skills/sense_of_organisation.png" alt="<?php echo _('sense of organisation icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Sense of organisation'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/soft_skills/team_work.png" alt="team work icon">
-                    <h2 class="subtitle">Team work</h2>
+                    <img src="../pictures/skills/soft_skills/team_work.png" alt="<?php echo _('team work icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Team work'); ?>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -184,28 +225,38 @@
     <div class="card">
         <div class="card-content">
             <div class="box has-background-info">
-                <h1 class="title has-text-white">Mad Skills</h1>
+                <h1 class="title has-text-white">
+                    <?php echo _('Mad skills'); ?>
+                </h1>
             </div>
 
             <div class="columns is-vcentered">
                 <div class="column">
-                    <img src="../pictures/skills/mad_skills/computer_hardware.png" alt="hardware icon">
-                    <h2 class="subtitle">Computer hardware</h2>
+                    <img src="../pictures/skills/mad_skills/computer_hardware.png" alt="<?php echo _('hardware icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Computer hardware'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/mad_skills/video_games.png" alt="video games icon">
-                    <h2 class="subtitle">Video games</h2>
+                    <img src="../pictures/skills/mad_skills/video_games.png" alt="<?php echo _('video games icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Video games'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/mad_skills/scientific_documentaries.png" alt="scientific documentaries icon">
-                    <h2 class="subtitle">Scientific documentaries</h2>
+                    <img src="../pictures/skills/mad_skills/scientific_documentaries.png" alt="<?php echo _('scientific documentaries icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Scientific documentaries'); ?>
+                    </h2>
                 </div>
 
                 <div class="column">
-                    <img src="../pictures/skills/mad_skills/sport.png" alt="sport icon">
-                    <h2 class="subtitle">Sport</h2>
+                    <img src="../pictures/skills/mad_skills/sport.png" alt="<?php echo _('sport icon') ?>">
+                    <h2 class="subtitle">
+                        <?php echo _('Sport'); ?>
+                    </h2>
                 </div>
             </div>
         </div>

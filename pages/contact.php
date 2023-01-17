@@ -12,6 +12,9 @@ try {
     die($error->getMessage());
 }
 
+bindtextdomain('main', __DIR__ . '../locale/');
+
+require '../src/translate.php';
 require "../src/send.php";
 ?>
 <!DOCTYPE html>
@@ -35,13 +38,13 @@ require "../src/send.php";
 <header>
     <nav id="navbar" class="navbar is-info has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="picture of me" />
+            <input id="portrait-navbar" class="js-modal-trigger" type="image" data-target="picture-modal" src="../pictures/portrait-navbar.png" alt="<?php echo _('picture of me'); ?>" />
 
             <div id="picture-modal" class="modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image">
-                        <img class="is-rounded" src="../pictures/portrait-modal.png" alt="picture of me">
+                        <img src="../pictures/portrait-modal.png" alt="<?php echo _('picture of me'); ?>">
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
@@ -56,28 +59,28 @@ require "../src/send.php";
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="../index.html" class="navbar-item">
-                    About
+                <a href="../index.php" class="navbar-item">
+                    <?php echo _('About'); ?>
                 </a>
 
-                <a href="skills.html" class="navbar-item">
-                    Skills
+                <a href="skills.php" class="navbar-item">
+                    <?php echo _('Skills'); ?>
                 </a>
 
-                <a href="experience.html" class="navbar-item">
-                    Experience
+                <a href="experience.php" class="navbar-item">
+                    <?php echo _('Experience'); ?>
                 </a>
 
-                <a href="portfolio.html" class="navbar-item">
-                    Portfolio
+                <a href="portfolio.php" class="navbar-item">
+                    <?php echo _('Portfolio'); ?>
                 </a>
 
-                <a href="training.html" class="navbar-item">
-                    Training
+                <a href="training.php" class="navbar-item">
+                    <?php echo _('Training'); ?>
                 </a>
 
                 <a href="contact.php" class="navbar-item">
-                    Contact
+                    <?php echo _('Contact'); ?>
                 </a>
             </div>
 
@@ -85,8 +88,24 @@ require "../src/send.php";
                 <div class="navbar-item">
                     <div class="buttons is-centered">
 
+                        <a id="flag-fr" href="../index.php?locale=fr_FR" class="button is-white is-rounded">
+                            🇫🇷
+                        </a>
+
+                        <a id="flag-en" href="../index.php?locale=en_GB" class="button is-white is-rounded">
+                            🇬🇧
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item">
+                    <div class="buttons is-centered">
+
                         <a href="../download/CV-dev-web-seb-cartoux.pdf" class="button is-danger is-rounded" target="_blank">
-                            <strong>Download CV</strong>
+                            <strong>
+                                <?php echo _('Download CV'); ?>
+                            </strong>
                         </a>
 
                     </div>
@@ -116,13 +135,13 @@ require "../src/send.php";
 
                                     $_POST = [];
                                     echo '<article class="message is-success"><h2 class="message-body">'
-                                        . "Your message has been sent, I will get back to you as soon as possible."
+                                        . _('Your message has been sent, I will get back to you as soon as possible.')
                                         . '</h2></article>';
                                 }
                             } else {
 
                                 echo '<article class="message is-danger"><h2 class="message-body">'
-                                    . "The CSRF token has expired, your message has not been transmitted."
+                                    . _('The CSRF token has expired, your message has not been transmitted.')
                                     . '</h2></article>';
                             }
                         }
@@ -133,7 +152,7 @@ require "../src/send.php";
                 <div class="field">
                     <label for="last_name" class="label"></label>
                     <div class="control">
-                        <input class="input" type="text" name="last_name" id="last_name" placeholder="* Last Name"
+                        <input class="input" type="text" name="last_name" id="last_name" placeholder="<?php echo _('Last Name'); ?>"
                                value="<?php echo $_POST['last_name'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
@@ -154,7 +173,7 @@ require "../src/send.php";
                 <div class="field">
                     <label for="first_name" class="label"></label>
                     <div class="control">
-                        <input class="input" type="text" name="first_name" id="first_name" placeholder="* First Name"
+                        <input class="input" type="text" name="first_name" id="first_name" placeholder="<?php echo _('First Name'); ?>"
                                value="<?php echo $_POST['first_name'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
@@ -174,7 +193,7 @@ require "../src/send.php";
                 <div class="field">
                     <label for="email" class="label"></label>
                     <div class="control">
-                        <input class="input box-margin-middle" type="text" name="email" id="email" placeholder="* Email"
+                        <input class="input box-margin-middle" type="text" name="email" id="email" placeholder="<?php echo _('Email'); ?>"
                                value="<?php echo $_POST['email'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
@@ -195,7 +214,7 @@ require "../src/send.php";
                     <label for="phone" class="label"></label>
                     <div class="control">
                         <label for="phone"></label>
-                        <input class="input box-margin-middle" type="text" name="phone" id="phone" placeholder="Phone"
+                        <input class="input box-margin-middle" type="text" name="phone" id="phone" placeholder="<?php echo _('Phone'); ?>"
                                value="<?php echo $_POST['phone'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
@@ -216,7 +235,7 @@ require "../src/send.php";
                     <label for="message" class="label"></label>
                     <div class="control">
                         <textarea class="textarea" name="message" id="message"
-                                  placeholder="* Message: (automatically reduced to 500 characters)"
+                                  placeholder="<?php echo ('Message: (automatically reduced to 500 characters)'); ?>"
                                   maxlength="500"><?php echo $_POST['message'] ?? ''; ?></textarea>
                         <?php
                         if (isset($_POST['send'])) {
@@ -235,13 +254,7 @@ require "../src/send.php";
 
                 <div class="field">
                     <div class="control">
-                        <p class="help is-danger">* This information is required.</p>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <div class="control">
-                        <input id="submit-button" class="button is-danger is-rounded" name="send" type="submit" value="Envoyer">
+                        <input id="submit-button" class="button is-danger is-rounded" name="send" type="submit" value="<?php echo _('Send') ?>">
                     </div>
                 </div>
             </form>
