@@ -1,6 +1,4 @@
 <?php
-bindtextdomain('main', __DIR__ . '../locale/');
-
 require '../src/translate.php';
 ?>
 <!DOCTYPE html>

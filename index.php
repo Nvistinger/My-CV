@@ -1,19 +1,13 @@
 <?php
-@header('Content-Type: text/html; charset=utf-8');
-mb_internal_encoding('UTF-8');
-
 if (isset($_GET['locale'])) {
     setcookie('locale', $_GET['locale'], time() + 60 * 60 * 24 * 30, '/');
     $_COOKIE['locale'] = $_GET['locale'];
     header('Location: ' . $_SERVER['HTTP_REFERER']);
+    die();
 }
 
-if (!isset($_COOKIE['locale'])) {
-    setcookie('locale', 'en_GB', time() + 60 * 60 * 24 * 30, '/');
-    $_COOKIE['locale'] = 'en_GB';
-}
-
-bindtextdomain('main', __DIR__ . '/locale/');
+@header('Content-Type: text/html; charset=utf-8');
+mb_internal_encoding('UTF-8');
 
 require 'src/translate.php';
 ?>

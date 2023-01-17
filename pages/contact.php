@@ -12,8 +12,6 @@ try {
     die($error->getMessage());
 }
 
-bindtextdomain('main', __DIR__ . '../locale/');
-
 require '../src/translate.php';
 require "../src/send.php";
 ?>
