@@ -1,43 +1,32 @@
 <?php
 
-require "config.php";
-
-/**
- * @throws Exception
- */
-function checkFirstName(array $form): string {
+function checkFirstName(array $form): ?string {
     if (isset($form['first_name']) === false) {
-        throw new Exception(_('The array must contain a first_name key.'));
+        return _('The form must contain a first_name key.');
     }
 
     if (empty($form['first_name'])) {
         return _('You did not enter a first name.');
     }
 
-    return "";
+    return null;
 }
 
-/**
- * @throws Exception
- */
-function checkLastName(array $form): string {
+function checkLastName(array $form): ?string {
     if (isset($form['last_name']) === false) {
-        throw new Exception(_('The array must contain a last_name key.'));
+        return _('The form must contain a last_name key.');
     }
 
     if (empty($form['last_name'])) {
         return  _('You did not enter a name.');
     }
 
-    return "";
+    return null;
 }
 
-/**
- * @throws Exception
- */
-function checkEmail(array $form): string {
+function checkEmail(array $form): ?string {
     if (isset($form['email']) === false) {
-        throw new Exception(_('The table must contain an email key.'));
+        return _('The form must contain an email key.');
     }
 
     if (empty($form['email'])) {
@@ -48,15 +37,12 @@ function checkEmail(array $form): string {
         return _('You have not entered a valid email address.');
     }
 
-    return "";
+    return null;
 }
 
-/**
- * @throws Exception
- */
-function checkPhone(array $form): string {
+function checkPhone(array $form): ?string {
     if (isset($form['phone']) === false) {
-        throw new Exception(_('The array must contain a phone key.'));
+        return _('The form must contain a phone key.');
     }
 
     if (empty($form['phone'])) {
@@ -67,48 +53,40 @@ function checkPhone(array $form): string {
         return _('You have not entered a valid phone number.');
     }
 
-    return "";
+    return null;
 }
 
-/**
- * @throws Exception
- */
-function checkMessage(array $form): string {
+function checkMessage(array $form): ?string {
     if (isset($form['message']) === false) {
-        throw new Exception(_('The array must contain a message key.'));
+        return _('The array must contain a message key.');
     }
 
     if (empty($form['message'])) {
         return _('You have not entered a message.');
     }
 
-    return "";
+    return null;
 }
 
 function checkAll(array $form): bool {
-    try {
-        if (checkFirstName($form) !== "") {
-            return false;
-        }
+    if (checkFirstName($form) !== null) {
+        return false;
+    }
 
-        if (checkLastName($form) !== "") {
-            return false;
-        }
+    if (checkLastName($form) !== null) {
+        return false;
+    }
 
-        if (checkEmail($form) !== "") {
-            return false;
-        }
+    if (checkEmail($form) !== null) {
+        return false;
+    }
 
-        if (checkPhone($form) !== "") {
-            return false;
-        }
+    if (checkPhone($form) !== null) {
+        return false;
+    }
 
-        if (checkMessage($form) !== "") {
-            return false;
-        }
-
-    } catch (Exception $error) {
-        die($error->getMessage());
+    if (checkMessage($form) !== null) {
+        return false;
     }
 
     return true;
@@ -118,9 +96,7 @@ function checkToken(string $userToken, string $serverToken): bool {
     return ($userToken === $serverToken);
 }
 
-function sendEmail(array $form): bool {
-    global $config;
-
+function sendEmail(array $form, array $config = []): bool {
     if (checkAll($form) === false) {
         return false;
     }

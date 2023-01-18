@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 23:06+0100\n"
-"PO-Revision-Date: 2023-01-17 23:06+0100\n"
+"POT-Creation-Date: 2023-01-18 19:18+0100\n"
+"PO-Revision-Date: 2023-01-18 19:17+0100\n"
 "Last-Translator: lmpwybb <cartoux.sebastien@orange.fr>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
@@ -92,6 +92,9 @@ msgstr "Nom de famille"
 msgid "Mad skills"
 msgstr "Loisirs"
 
+msgid "Message: (automatically reduced to 500 characters)"
+msgstr "Message : (Automatiquement réduit à 500 caractères)"
+
 msgid "More skills"
 msgstr "Plus de compétences"
 
@@ -149,20 +152,20 @@ msgstr "Travail d'équipe"
 msgid "The CSRF token has expired, your message has not been transmitted."
 msgstr "Le token CSRF a expiré, votre message n'a pas été transmis."
 
-msgid "The array must contain a first_name key."
-msgstr "Le tableau doit contenir une clé prénom."
-
-msgid "The array must contain a last_name key."
-msgstr "Le tableau doit contenir une clé nom de famille."
-
 msgid "The array must contain a message key."
-msgstr "Le tableau doit contenir une clé message."
+msgstr "Le formulaire doit contenir une clé message."
 
-msgid "The array must contain a phone key."
-msgstr "Le tableau doit contenir une clé téléphone."
+msgid "The form must contain a first_name key."
+msgstr "Le formulaire doit contenir une clé message."
 
-msgid "The table must contain an email key."
-msgstr "Le tableau doit contenir une clé email."
+msgid "The form must contain a last_name key."
+msgstr "Le formulaire doit contenir une clé nom de famille."
+
+msgid "The form must contain a phone key."
+msgstr "Le formulaire doit contenir une clé téléphone."
+
+msgid "The form must contain an email key."
+msgstr "Le formulaire doit contenir une clé email."
 
 msgid "Training"
 msgstr "Formation"
