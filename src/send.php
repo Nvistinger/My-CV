@@ -1,52 +1,52 @@
 <?php
 
-function checkFirstName(array $form): ?string {
-    if (isset($form['first_name']) === false) {
-        return _('The form must contain a first_name key.');
-    }
-
-    if (empty($form['first_name'])) {
-        return _('You did not enter a first name.');
-    }
-
-    return null;
-}
-
-function checkLastName(array $form): ?string {
+function validateLastName(array $form): ?string {
     if (isset($form['last_name']) === false) {
         return _('The form must contain a last_name key.');
     }
 
     if (empty($form['last_name'])) {
-        return  _('You did not enter a name.');
+        return  _('Please enter a name.');
     }
 
     return null;
 }
 
-function checkEmail(array $form): ?string {
+function validateFirstName(array $form): ?string {
+    if (isset($form['first_name']) === false) {
+        return _('The form must contain a first_name key.');
+    }
+
+    if (empty($form['first_name'])) {
+        return _('Please enter a first name.');
+    }
+
+    return null;
+}
+
+function validateEmail(array $form): ?string {
     if (isset($form['email']) === false) {
         return _('The form must contain an email key.');
     }
 
     if (empty($form['email'])) {
-        return _('You did not enter an email address.');
+        return _('Please enter an email address.');
     }
 
     if (filter_var($form['email'], FILTER_VALIDATE_EMAIL) === false) {
-        return _('You have not entered a valid email address.');
+        return _('Please enter a valid email address.');
     }
 
     return null;
 }
 
-function checkPhone(array $form): ?string {
+function validatePhone(array $form): ?string {
     if (isset($form['phone']) === false) {
         return _('The form must contain a phone key.');
     }
 
     if (empty($form['phone'])) {
-        return _('You did not enter a phone number.');
+        return _('Please enter a phone number.');
     }
 
     if (preg_match("/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/", $form['phone']) !== 1) {
@@ -56,36 +56,36 @@ function checkPhone(array $form): ?string {
     return null;
 }
 
-function checkMessage(array $form): ?string {
+function validateMessage(array $form): ?string {
     if (isset($form['message']) === false) {
         return _('The array must contain a message key.');
     }
 
     if (empty($form['message'])) {
-        return _('You have not entered a message.');
+        return _('Please entered a message.');
     }
 
     return null;
 }
 
-function checkAll(array $form): bool {
-    if (checkFirstName($form) !== null) {
+function validateForm(array $form): bool {
+    if (validateFirstName($form) !== null) {
         return false;
     }
 
-    if (checkLastName($form) !== null) {
+    if (validateLastName($form) !== null) {
         return false;
     }
 
-    if (checkEmail($form) !== null) {
+    if (validateEmail($form) !== null) {
         return false;
     }
 
-    if (checkPhone($form) !== null) {
+    if (validateForm($form) !== null) {
         return false;
     }
 
-    if (checkMessage($form) !== null) {
+    if (validateMessage($form) !== null) {
         return false;
     }
 
@@ -97,7 +97,7 @@ function checkToken(string $userToken, string $serverToken): bool {
 }
 
 function sendEmail(array $form, array $config = []): bool {
-    if (checkAll($form) === false) {
+    if (validateForm($form) === false) {
         return false;
     }
 

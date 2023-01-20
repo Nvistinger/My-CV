@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-18 19:18+0100\n"
-"PO-Revision-Date: 2023-01-18 19:17+0100\n"
+"POT-Creation-Date: 2023-01-20 17:50+0100\n"
+"PO-Revision-Date: 2023-01-20 17:53+0100\n"
 "Last-Translator: lmpwybb <cartoux.sebastien@orange.fr>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
@@ -113,6 +113,24 @@ msgstr "Persévérance"
 msgid "Phone"
 msgstr "Téléphone"
 
+msgid "Please enter a first name."
+msgstr "Veuillez saisir un prénom s'il vous plaît."
+
+msgid "Please enter a name."
+msgstr "Veuillez saisir un nom s'il vous plaît."
+
+msgid "Please enter a phone number."
+msgstr "Veuillez saisir un numéro de téléphone s'il vous plaît."
+
+msgid "Please enter a valid email address."
+msgstr "Veuillez saisir une adresse e-mail valide s'il vous plaît."
+
+msgid "Please enter an email address."
+msgstr "Veuillez saisir une adresse email s'il vous plaît."
+
+msgid "Please entered a message."
+msgstr "Veuillez saisir un message s'il vous plaît."
+
 msgid "Portfolio"
 msgstr "Portfolio"
 
@@ -181,24 +199,6 @@ msgstr "Développeur Web et Web Mobile | BAC +2"
 
 msgid "Web and mobile project manager | BAC +3"
 msgstr "Responsable de projet web et mobile | BAC +3"
-
-msgid "You did not enter a first name."
-msgstr "Vous n'avez pas saisit de prénom."
-
-msgid "You did not enter a name."
-msgstr "Vous n'avez pas saisit de nom de famille."
-
-msgid "You did not enter a phone number."
-msgstr "Vous n'avez pas saisit de numéro de téléphone."
-
-msgid "You did not enter an email address."
-msgstr "Vous n'avez pas saisit d'adresse email."
-
-msgid "You have not entered a message."
-msgstr "Vous n'avez pas saisit de message."
-
-msgid "You have not entered a valid email address."
-msgstr "Vous n'avez pas saisit d'adresse email valide."
 
 msgid "You have not entered a valid phone number."
 msgstr "Vous n'avez pas saisit d'e numéro de téléphone valide."

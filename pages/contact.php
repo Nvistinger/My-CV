@@ -55,7 +55,7 @@ require __DIR__ . '/header.php';
                                value="<?php echo $_POST['last_name'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
-                            echo '<p class="help is-danger">' . checkLastName($_POST) . '</p>';
+                            echo '<p class="help is-danger">' . validateLastName($_POST) . '</p>';
                         }
                         ?>
                     </div>
@@ -68,7 +68,7 @@ require __DIR__ . '/header.php';
                                value="<?php echo $_POST['first_name'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
-                            echo '<p class="help is-danger">' . checkFirstName($_POST) . '</p>';
+                            echo '<p class="help is-danger">' . validateFirstName($_POST) . '</p>';
                         }
                         ?>
                     </div>
@@ -81,7 +81,7 @@ require __DIR__ . '/header.php';
                                value="<?php echo $_POST['email'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
-                            echo '<p class="help is-danger">' . checkEmail($_POST) . '</p>';
+                            echo '<p class="help is-danger">' . validateEmail($_POST) . '</p>';
                         }
                         ?>
                     </div>
@@ -95,7 +95,7 @@ require __DIR__ . '/header.php';
                                value="<?php echo $_POST['phone'] ?? ''; ?>">
                         <?php
                         if (isset($_POST['send'])) {
-                            echo '<p class="help is-danger">' . checkPhone($_POST) . '</p>';
+                            echo '<p class="help is-danger">' . validatePhone($_POST) . '</p>';
                         }
                         ?>
                     </div>
@@ -109,7 +109,7 @@ require __DIR__ . '/header.php';
                                   maxlength="500"><?php echo $_POST['message'] ?? ''; ?></textarea>
                         <?php
                         if (isset($_POST['send'])) {
-                            echo '<p class="help is-danger">' . checkMessage($_POST) . '</p>';
+                            echo '<p class="help is-danger">' . validateMessage($_POST) . '</p>';
                         }
                         ?>
                     </div>

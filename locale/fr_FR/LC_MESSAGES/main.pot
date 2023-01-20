@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-18 19:42+0100\n"
+"POT-Creation-Date: 2023-01-20 17:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,6 +137,30 @@ msgstr ""
 msgid "Phone"
 msgstr ""
 
+#: src/send.php:9
+msgid "Please enter a first name."
+msgstr ""
+
+#: src/send.php:21
+msgid "Please enter a name."
+msgstr ""
+
+#: src/send.php:49
+msgid "Please enter a phone number."
+msgstr ""
+
+#: src/send.php:37
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: src/send.php:33
+msgid "Please enter an email address."
+msgstr ""
+
+#: src/send.php:65
+msgid "Please entered a message."
+msgstr ""
+
 #: pages/header.php:64 pages/portfolio.php:8
 msgid "Portfolio"
 msgstr ""
@@ -227,30 +251,6 @@ msgstr ""
 
 #: pages/training.php:38
 msgid "Web and mobile project manager | BAC +3"
-msgstr ""
-
-#: src/send.php:9
-msgid "You did not enter a first name."
-msgstr ""
-
-#: src/send.php:21
-msgid "You did not enter a name."
-msgstr ""
-
-#: src/send.php:49
-msgid "You did not enter a phone number."
-msgstr ""
-
-#: src/send.php:33
-msgid "You did not enter an email address."
-msgstr ""
-
-#: src/send.php:65
-msgid "You have not entered a message."
-msgstr ""
-
-#: src/send.php:37
-msgid "You have not entered a valid email address."
 msgstr ""
 
 #: src/send.php:53
