@@ -32,14 +32,15 @@ require __DIR__ . '/src/translate.php';
 <header>
     <nav id="navbar" class="navbar is-fixed-top has-text-centered" aria-label="main navigation">
         <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div id="navbar" class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <a href="#about" class="navbar-item">
                     <?php echo _('About'); ?>
@@ -68,7 +69,7 @@ require __DIR__ . '/src/translate.php';
 
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <div class="buttons">
+                    <div class="buttons is-centered">
 
                         <a id="flag-fr" href="/index.php?locale=fr_FR" class="button is-light">
                             🇫🇷
@@ -82,7 +83,7 @@ require __DIR__ . '/src/translate.php';
                 </div>
 
                 <div class="navbar-item">
-                    <div class="buttons">
+                    <div class="buttons is-centered">
 
                         <a href="/download/CV-dev-web-seb-cartoux.pdf" class="button is-primary" target="_blank">
                             <strong>
