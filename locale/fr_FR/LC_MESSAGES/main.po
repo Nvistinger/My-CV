@@ -2,13 +2,13 @@
 # Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Lmpwybb <lmpwybb@lmpwybb-asus>, 2023.
+# Lmpwybb <lmpwybb@lmpwybb-asus>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 17:53+0100\n"
-"PO-Revision-Date: 2023-01-20 17:53+0100\n"
+"POT-Creation-Date: 2024-03-28 20:03+0100\n"
+"PO-Revision-Date: 2024-03-28 20:03+0100\n"
 "Last-Translator: lmpwybb <cartoux.sebastien@orange.fr>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
@@ -25,11 +25,11 @@ msgid "Adaptability"
 msgstr "Adaptabilité"
 
 msgid ""
-"Alternation until August 31, 2024, as part of the MSc Pro Epitech Marseille "
+"Alternation until July 31, 2024, as part of the MSc Pro Epitech Marseille "
 "training."
 msgstr ""
-"En alternance jusqu'au 31 août 2024, dans le cadre de la formation MSc Pro à "
-"Epitech Marseille"
+"En alternance jusqu'au 31 Juillet 2024, dans le cadre de la formation MSc "
+"Pro à Epitech Marseille"
 
 msgid "Charles Privat High School"
 msgstr "Lycée Charles Privat"
@@ -46,20 +46,14 @@ msgstr "Contact"
 msgid "Download CV"
 msgstr "Télécharger CV"
 
-msgid "Electrotechnics | CAP + BEP"
-msgstr "Électrotechnique | CAP + BEP"
-
 msgid "Electrotechnics | Profesional BAC"
 msgstr "Électrotechnique | BAC Professionnel"
 
-msgid "Email"
-msgstr "Email"
+msgid "Email me"
+msgstr "M'envoyer un e-mail"
 
 msgid "Experience"
 msgstr "Expérience"
-
-msgid "First Name"
-msgstr "Prénom"
 
 msgid "Force of proposal"
 msgstr "Force de proposition"
@@ -73,9 +67,6 @@ msgstr "Développeur Web FullStack (Stage)"
 msgid "Great School Of Digital"
 msgstr "Grand école du numérique"
 
-msgid "Hard skills"
-msgstr "Compétences techniques"
-
 msgid ""
 "I am Sebastien Cartoux student at Epitech Marseille in web and mobile "
 "development."
@@ -86,17 +77,11 @@ msgstr ""
 msgid "Industrial Maintenance Agent"
 msgstr "Agence de Maintenance Industrielle"
 
-msgid "Last Name"
-msgstr "Nom de famille"
+msgid "Internet Of Things"
+msgstr "Objets connectés"
 
-msgid "Mad skills"
-msgstr "Loisirs"
-
-msgid "Message: (automatically reduced to 500 characters)"
-msgstr "Message : (Automatiquement réduit à 500 caractères)"
-
-msgid "More skills"
-msgstr "Plus de compétences"
+msgid "Mad skills:"
+msgstr "Loisirs :"
 
 msgid "My Github"
 msgstr "Mon Github"
@@ -109,27 +94,6 @@ msgstr "Mon Linkedin"
 
 msgid "Perseverance"
 msgstr "Persévérance"
-
-msgid "Phone"
-msgstr "Téléphone"
-
-msgid "Please enter a first name."
-msgstr "Veuillez saisir un prénom s'il vous plaît."
-
-msgid "Please enter a name."
-msgstr "Veuillez saisir un nom s'il vous plaît."
-
-msgid "Please enter a phone number."
-msgstr "Veuillez saisir un numéro de téléphone s'il vous plaît."
-
-msgid "Please enter a valid email address."
-msgstr "Veuillez saisir une adresse e-mail valide s'il vous plaît."
-
-msgid "Please enter an email address."
-msgstr "Veuillez saisir une adresse email s'il vous plaît."
-
-msgid "Please entered a message."
-msgstr "Veuillez saisir un message s'il vous plaît."
 
 msgid "Portfolio"
 msgstr "Portfolio"
@@ -146,17 +110,14 @@ msgstr "Rigueur"
 msgid "Scientific documentaries"
 msgstr "Documentaires scientifiques"
 
-msgid "Send"
-msgstr "Envoyer"
-
 msgid "Sense of organisation"
 msgstr "Sens de l'organisation"
 
 msgid "Skills"
 msgstr "Compétences"
 
-msgid "Soft skills"
-msgstr "Personnalité"
+msgid "Soft skills:"
+msgstr "Personnalité :"
 
 msgid "Software architect, application developer | BAC +5"
 msgstr "Architecte logiciel, développeur d'applications | BAC +5"
@@ -166,24 +127,6 @@ msgstr "Sport"
 
 msgid "Team work"
 msgstr "Travail d'équipe"
-
-msgid "The CSRF token has expired, your message has not been transmitted."
-msgstr "Le token CSRF a expiré, votre message n'a pas été transmis."
-
-msgid "The array must contain a message key."
-msgstr "Le formulaire doit contenir une clé message."
-
-msgid "The form must contain a first_name key."
-msgstr "Le formulaire doit contenir une clé message."
-
-msgid "The form must contain a last_name key."
-msgstr "Le formulaire doit contenir une clé nom de famille."
-
-msgid "The form must contain a phone key."
-msgstr "Le formulaire doit contenir une clé téléphone."
-
-msgid "The form must contain an email key."
-msgstr "Le formulaire doit contenir une clé email."
 
 msgid "Training"
 msgstr "Formation"
@@ -200,58 +143,35 @@ msgstr "Développeur Web et Web Mobile | BAC +2"
 msgid "Web and mobile project manager | BAC +3"
 msgstr "Responsable de projet web et mobile | BAC +3"
 
-msgid "You have not entered a valid phone number."
-msgstr "Vous n'avez pas saisit d'e numéro de téléphone valide."
-
-msgid "Your message has been sent, I will get back to you as soon as possible."
-msgstr ""
-"Votre message a bien été envoyé, je vous répondrais le plus rapidement "
-"possible."
-
-msgid "adaptability icon"
-msgstr "icône adaptabilité"
-
 msgid "certificate icon"
 msgstr "icône certification"
 
-msgid "down arrow picture"
-msgstr "flèche bas"
+msgid "email icon"
+msgstr "icône e-mail"
 
-msgid "force of proposal icon"
-msgstr "icône force de proposition"
+msgid "github icon"
+msgstr "icône github"
+
+msgid "graduate icon"
+msgstr "icône diplôme"
 
 msgid "graduation icon"
 msgstr "icône diplôme"
 
-msgid "hardware icon"
-msgstr "icône matériel informatique"
-
-msgid "high school icon"
-msgstr "icône lycée"
-
-msgid "learning icon"
-msgstr "icône étude"
+msgid "indeed icon"
+msgstr "icône indeed"
 
 msgid "link to choupis"
 msgstr "lien vers choupis"
 
-msgid "link to github profile"
-msgstr "lien vers le profil github"
-
-msgid "link to indeed profile"
-msgstr "lien vers le profil indeed"
-
-msgid "link to linkedin profile"
-msgstr "lien vers le profil linkedin"
-
 msgid "link to manys"
 msgstr "lien vers manys"
 
+msgid "linkedin icon"
+msgstr "icône linkedin"
+
 msgid "mail icon"
 msgstr "icône e-mail"
-
-msgid "perseverance icon"
-msgstr "icône persévérance"
 
 msgid "picture of me"
 msgstr "photo de moi"
@@ -259,35 +179,137 @@ msgstr "photo de moi"
 msgid "pils icon"
 msgstr "icône pilules"
 
-msgid "reactivity icon"
-msgstr "icône réactivité"
-
-msgid "rigor icon"
-msgstr "icône rigueur"
-
-msgid "scientific documentaries icon"
-msgstr "icône documentaires scientifiques"
-
-msgid "sense of organisation icon"
-msgstr "icône sens de l'organisation"
-
 msgid "speech icon"
 msgstr "icône dialogue"
-
-msgid "sport icon"
-msgstr "icône sport"
-
-msgid "team work icon"
-msgstr "icône travail d'équipe"
 
 msgid "tools icon"
 msgstr "icône outils"
 
-msgid "video games icon"
-msgstr "icône jeux vidéos"
-
 #~ msgid "* Required fields"
 #~ msgstr "* Champs requis"
 
+#~ msgid "Electrotechnics | CAP + BEP"
+#~ msgstr "Électrotechnique | CAP + BEP"
+
+#~ msgid "First Name"
+#~ msgstr "Prénom"
+
 #~ msgid "FullStack Web Developer (Work-Study)"
 #~ msgstr "Développeur Web FullStack (Alternance)"
+
+#~ msgid "Hard skills"
+#~ msgstr "Compétences techniques"
+
+#~ msgid "Last Name"
+#~ msgstr "Nom de famille"
+
+#~ msgid "Message: (automatically reduced to 500 characters)"
+#~ msgstr "Message : (Automatiquement réduit à 500 caractères)"
+
+#~ msgid "More skills"
+#~ msgstr "Plus de compétences"
+
+#~ msgid "Phone"
+#~ msgstr "Téléphone"
+
+#~ msgid "Please enter a first name."
+#~ msgstr "Veuillez saisir un prénom s'il vous plaît."
+
+#~ msgid "Please enter a name."
+#~ msgstr "Veuillez saisir un nom s'il vous plaît."
+
+#~ msgid "Please enter a phone number."
+#~ msgstr "Veuillez saisir un numéro de téléphone s'il vous plaît."
+
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Veuillez saisir une adresse e-mail valide s'il vous plaît."
+
+#~ msgid "Please enter an email address."
+#~ msgstr "Veuillez saisir une adresse email s'il vous plaît."
+
+#~ msgid "Please entered a message."
+#~ msgstr "Veuillez saisir un message s'il vous plaît."
+
+#~ msgid "Send"
+#~ msgstr "Envoyer"
+
+#~ msgid "The CSRF token has expired, your message has not been transmitted."
+#~ msgstr "Le token CSRF a expiré, votre message n'a pas été transmis."
+
+#~ msgid "The array must contain a message key."
+#~ msgstr "Le formulaire doit contenir une clé message."
+
+#~ msgid "The form must contain a first_name key."
+#~ msgstr "Le formulaire doit contenir une clé message."
+
+#~ msgid "The form must contain a last_name key."
+#~ msgstr "Le formulaire doit contenir une clé nom de famille."
+
+#~ msgid "The form must contain a phone key."
+#~ msgstr "Le formulaire doit contenir une clé téléphone."
+
+#~ msgid "The form must contain an email key."
+#~ msgstr "Le formulaire doit contenir une clé email."
+
+#~ msgid "Welcome to my personal website"
+#~ msgstr "Bienvenue sur mon site personnel"
+
+#~ msgid "You have not entered a valid phone number."
+#~ msgstr "Vous n'avez pas saisit d'e numéro de téléphone valide."
+
+#~ msgid ""
+#~ "Your message has been sent, I will get back to you as soon as possible."
+#~ msgstr ""
+#~ "Votre message a bien été envoyé, je vous répondrais le plus rapidement "
+#~ "possible."
+
+#~ msgid "adaptability icon"
+#~ msgstr "icône adaptabilité"
+
+#~ msgid "down arrow picture"
+#~ msgstr "flèche bas"
+
+#~ msgid "force of proposal icon"
+#~ msgstr "icône force de proposition"
+
+#~ msgid "hardware icon"
+#~ msgstr "icône matériel informatique"
+
+#~ msgid "high school icon"
+#~ msgstr "icône lycée"
+
+#~ msgid "learning icon"
+#~ msgstr "icône étude"
+
+#~ msgid "link to github profile"
+#~ msgstr "lien vers le profil github"
+
+#~ msgid "link to indeed profile"
+#~ msgstr "lien vers le profil indeed"
+
+#~ msgid "link to linkedin profile"
+#~ msgstr "lien vers le profil linkedin"
+
+#~ msgid "perseverance icon"
+#~ msgstr "icône persévérance"
+
+#~ msgid "reactivity icon"
+#~ msgstr "icône réactivité"
+
+#~ msgid "rigor icon"
+#~ msgstr "icône rigueur"
+
+#~ msgid "scientific documentaries icon"
+#~ msgstr "icône documentaires scientifiques"
+
+#~ msgid "sense of organisation icon"
+#~ msgstr "icône sens de l'organisation"
+
+#~ msgid "sport icon"
+#~ msgstr "icône sport"
+
+#~ msgid "team work icon"
+#~ msgstr "icône travail d'équipe"
+
+#~ msgid "video games icon"
+#~ msgstr "icône jeux vidéos"

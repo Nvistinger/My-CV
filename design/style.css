@@ -2,33 +2,20 @@ html {
     scroll-behavior: smooth;
 }
 
-@keyframes fromLeft {
-    from {
-        transform: translate(0%, -100%);
-    }
-    to {
-        transform: translate(0%, 0%);
-    }
+* {
+    font-family: "Chakra Petch", sans-serif;
+    font-style: normal;
 }
 
-#portrait-navbar {
+#portrait {
     border-radius: 50%;
-}
-
-#navbar {
-    font-family: 'Roboto Mono', monospace;
-    animation: 1s fromLeft;
 }
 
 #flag-en, #flag-fr {
     font-size: 1.5em;
 }
 
-a:hover, .column:hover {
+a:hover {
     transition: transform 100ms ease-in;
     transform: scale(1.05);
-}
-
-h1 {
-    font-family: 'Orbitron', sans-serif;
 }

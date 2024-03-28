@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 17:53+0100\n"
+"POT-Creation-Date: 2024-03-28 20:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,350 +17,218 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: index.php:17 pages/header.php:52
+#: index.php:45 index.php:104
 msgid "About"
 msgstr ""
 
-#: pages/skills.php:73
+#: index.php:135
 msgid "Adaptability"
 msgstr ""
 
-#: index.php:27
+#: index.php:117
 msgid ""
-"Alternation until August 31, 2024, as part of the MSc Pro Epitech Marseille "
+"Alternation until July 31, 2024, as part of the MSc Pro Epitech Marseille "
 "training."
 msgstr ""
 
-#: pages/training.php:111 pages/training.php:129
+#: index.php:408
 msgid "Charles Privat High School"
 msgstr ""
 
-#: pages/experience.php:57
+#: index.php:233
 msgid "Cleanroom Tutor Operator"
 msgstr ""
 
-#: pages/skills.php:136
+#: index.php:152
 msgid "Computer hardware"
 msgstr ""
 
-#: pages/header.php:72
+#: index.php:65 index.php:752
 msgid "Contact"
 msgstr ""
 
-#: pages/header.php:96
+#: index.php:89
 msgid "Download CV"
 msgstr ""
 
-#: pages/training.php:123
-msgid "Electrotechnics | CAP + BEP"
-msgstr ""
-
-#: pages/training.php:105
+#: index.php:407
 msgid "Electrotechnics | Profesional BAC"
 msgstr ""
 
-#: pages/contact.php:80
-msgid "Email"
+#: index.php:764
+msgid "Email me"
 msgstr ""
 
-#: pages/header.php:60 pages/experience.php:8
+#: index.php:49 index.php:170
 msgid "Experience"
 msgstr ""
 
-#: pages/contact.php:67
-msgid "First Name"
-msgstr ""
-
-#: pages/skills.php:80
+#: index.php:136
 msgid "Force of proposal"
 msgstr ""
 
-#: pages/experience.php:19
+#: index.php:187
 msgid "FullStack Web Developer (Alternation)"
 msgstr ""
 
-#: pages/experience.php:40
+#: index.php:208
 msgid "FullStack Web Developer (Traineeship)"
 msgstr ""
 
-#: pages/training.php:94
+#: index.php:387
 msgid "Great School Of Digital"
 msgstr ""
 
-#: pages/skills.php:8
-msgid "Hard skills"
-msgstr ""
-
-#: index.php:22
+#: index.php:123
 msgid ""
 "I am Sebastien Cartoux student at Epitech Marseille in web and mobile "
 "development."
 msgstr ""
 
-#: pages/experience.php:74
+#: index.php:254
 msgid "Industrial Maintenance Agent"
 msgstr ""
 
-#: pages/contact.php:54
-msgid "Last Name"
+#: index.php:153
+msgid "Internet Of Things"
 msgstr ""
 
-#: pages/skills.php:128
-msgid "Mad skills"
+#: index.php:148
+msgid "Mad skills:"
 msgstr ""
 
-#: pages/contact.php:108
-msgid "Message: (automatically reduced to 500 characters)"
-msgstr ""
-
-#: pages/skills.php:53
-msgid "More skills"
-msgstr ""
-
-#: index.php:44
+#: index.php:778
 msgid "My Github"
 msgstr ""
 
-#: index.php:80
+#: index.php:810
 msgid "My Indeed"
 msgstr ""
 
-#: index.php:62
+#: index.php:796
 msgid "My Linkedin"
 msgstr ""
 
-#: pages/skills.php:87
+#: index.php:137
 msgid "Perseverance"
 msgstr ""
 
-#: pages/contact.php:94
-msgid "Phone"
-msgstr ""
-
-#: src/send.php:9
-msgid "Please enter a first name."
-msgstr ""
-
-#: src/send.php:21
-msgid "Please enter a name."
-msgstr ""
-
-#: src/send.php:49
-msgid "Please enter a phone number."
-msgstr ""
-
-#: src/send.php:37
-msgid "Please enter a valid email address."
-msgstr ""
-
-#: src/send.php:33
-msgid "Please enter an email address."
-msgstr ""
-
-#: src/send.php:65
-msgid "Please entered a message."
-msgstr ""
-
-#: pages/header.php:64 pages/portfolio.php:8
+#: index.php:61 index.php:706
 msgid "Portfolio"
 msgstr ""
 
-#: pages/skills.php:94
+#: index.php:138
 msgid "Reactivity"
 msgstr ""
 
-#: pages/portfolio.php:23
+#: index.php:719
 msgid "Real estate agency"
 msgstr ""
 
-#: pages/skills.php:101
+#: index.php:139
 msgid "Rigor"
 msgstr ""
 
-#: pages/skills.php:150
+#: index.php:155
 msgid "Scientific documentaries"
 msgstr ""
 
-#: pages/contact.php:120
-msgid "Send"
-msgstr ""
-
-#: pages/skills.php:108
+#: index.php:140
 msgid "Sense of organisation"
 msgstr ""
 
-#: pages/header.php:56
+#: index.php:57 index.php:426
 msgid "Skills"
 msgstr ""
 
-#: pages/skills.php:65
-msgid "Soft skills"
+#: index.php:131
+msgid "Soft skills:"
 msgstr ""
 
-#: pages/training.php:19
+#: index.php:291
 msgid "Software architect, application developer | BAC +5"
 msgstr ""
 
-#: pages/skills.php:157
+#: index.php:156
 msgid "Sport"
 msgstr ""
 
-#: pages/skills.php:115
+#: index.php:141
 msgid "Team work"
 msgstr ""
 
-#: pages/contact.php:43
-msgid "The CSRF token has expired, your message has not been transmitted."
-msgstr ""
-
-#: src/send.php:61
-msgid "The array must contain a message key."
-msgstr ""
-
-#: src/send.php:5
-msgid "The form must contain a first_name key."
-msgstr ""
-
-#: src/send.php:17
-msgid "The form must contain a last_name key."
-msgstr ""
-
-#: src/send.php:45
-msgid "The form must contain a phone key."
-msgstr ""
-
-#: src/send.php:29
-msgid "The form must contain an email key."
-msgstr ""
-
-#: pages/header.php:68 pages/training.php:8
+#: index.php:53 index.php:274
 msgid "Training"
 msgstr ""
 
-#: pages/portfolio.php:41
+#: index.php:734
 msgid "Url Shortener"
 msgstr ""
 
-#: pages/skills.php:143
+#: index.php:154
 msgid "Video games"
 msgstr ""
 
-#: pages/training.php:89
+#: index.php:386
 msgid "Web And Mobile Developer | BAC +2"
 msgstr ""
 
-#: pages/training.php:38
+#: index.php:312
 msgid "Web and mobile project manager | BAC +3"
 msgstr ""
 
-#: src/send.php:53
-msgid "You have not entered a valid phone number."
-msgstr ""
-
-#: pages/contact.php:38
-msgid "Your message has been sent, I will get back to you as soon as possible."
-msgstr ""
-
-#: pages/skills.php:71
-msgid "adaptability icon"
-msgstr ""
-
-#: pages/training.php:57 pages/training.php:73
+#: index.php:334 index.php:357
 msgid "certificate icon"
 msgstr ""
 
-#: pages/skills.php:51
-msgid "down arrow picture"
+#: index.php:766
+msgid "email icon"
 msgstr ""
 
-#: pages/skills.php:78
-msgid "force of proposal icon"
+#: index.php:780
+msgid "github icon"
 msgstr ""
 
-#: pages/training.php:93
+#: index.php:308 index.php:403
+msgid "graduate icon"
+msgstr ""
+
+#: index.php:382
 msgid "graduation icon"
 msgstr ""
 
-#: pages/skills.php:134
-msgid "hardware icon"
+#: index.php:812
+msgid "indeed icon"
 msgstr ""
 
-#: pages/training.php:109 pages/training.php:127
-msgid "high school icon"
-msgstr ""
-
-#: pages/training.php:42
-msgid "learning icon"
-msgstr ""
-
-#: pages/portfolio.php:44
+#: index.php:736
 msgid "link to choupis"
 msgstr ""
 
-#: index.php:49
-msgid "link to github profile"
-msgstr ""
-
-#: index.php:85
-msgid "link to indeed profile"
-msgstr ""
-
-#: index.php:67
-msgid "link to linkedin profile"
-msgstr ""
-
-#: pages/portfolio.php:26
+#: index.php:721
 msgid "link to manys"
 msgstr ""
 
-#: pages/experience.php:44
+#: index.php:798
+msgid "linkedin icon"
+msgstr ""
+
+#: index.php:204
 msgid "mail icon"
 msgstr ""
 
-#: pages/skills.php:85
-msgid "perseverance icon"
-msgstr ""
-
-#: pages/header.php:30 pages/header.php:36
+#: index.php:111
 msgid "picture of me"
 msgstr ""
 
-#: pages/experience.php:61
+#: index.php:229
 msgid "pils icon"
 msgstr ""
 
-#: pages/skills.php:92
-msgid "reactivity icon"
-msgstr ""
-
-#: pages/skills.php:99
-msgid "rigor icon"
-msgstr ""
-
-#: pages/skills.php:148
-msgid "scientific documentaries icon"
-msgstr ""
-
-#: pages/skills.php:106
-msgid "sense of organisation icon"
-msgstr ""
-
-#: pages/experience.php:23
+#: index.php:183
 msgid "speech icon"
 msgstr ""
 
-#: pages/skills.php:155
-msgid "sport icon"
-msgstr ""
-
-#: pages/skills.php:113
-msgid "team work icon"
-msgstr ""
-
-#: pages/experience.php:78
+#: index.php:250
 msgid "tools icon"
-msgstr ""
-
-#: pages/skills.php:141
-msgid "video games icon"
 msgstr ""
