@@ -15,8 +15,8 @@ require __DIR__ . '/src/translate.php';
 <html lang="en" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personnal and responsive curriculum vitae of Sébastien Cartoux">
-    <meta name="keywords" content="curriculum vitae web developper native responsive HTML CSS Bulma PHP JavaScript">
+    <meta name="description" content="Personal and responsive curriculum vitae of Sébastien Cartoux">
+    <meta name="keywords" content="curriculum vitae web developer native responsive HTML CSS Bulma PHP JavaScript">
     <meta name="author" content="Sebastien Cartoux">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
