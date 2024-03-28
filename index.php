@@ -2,7 +2,11 @@
 if (isset($_GET['locale'])) {
     setcookie('locale', $_GET['locale'], time() + 60 * 60 * 24 * 30, '/');
     $_COOKIE['locale'] = $_GET['locale'];
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    if (isset($_SERVER['HTTP_REFERER'])) {
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    } else {
+        header('Location: index.php');
+    }
     die();
 }
 
