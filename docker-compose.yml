@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   my-cv:
     container_name: my-cv
