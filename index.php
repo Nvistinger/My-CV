@@ -776,7 +776,7 @@ require __DIR__ . '/src/translate.php';
                 </div>
 
                 <div class="column is-6">
-                    <a href="https://github.com/Lmpwybb" target="_blank">
+                    <a href="https://github.com/Nvistinger" target="_blank">
                         <div class="card">
 
                             <div class="card-content">
